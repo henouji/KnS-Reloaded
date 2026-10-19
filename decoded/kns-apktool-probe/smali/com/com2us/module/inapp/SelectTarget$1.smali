@@ -509,7 +509,7 @@
 
     move-result-object v2
 
-    const-string v5, "http://s.com2us.net/common/billing/check2.c2s"
+    const-string v5, "http://10.0.2.2:8080/common/billing/check2.c2s"
 
     invoke-static {v2, v5}, Lcom/com2us/module/inapp/DefaultBilling;->sendToServer(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

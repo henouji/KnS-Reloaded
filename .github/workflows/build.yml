@@ -1,0 +1,53 @@
+name: Build and Release APK
+
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Install Apktool and Android Build Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apktool apksigner zipalign
+
+      - name: Build APK with Apktool
+        run: |
+          mkdir -p build
+          apktool b decoded/kns-apktool-probe -o build/unsigned.apk
+
+      - name: Generate Keystore & Sign APK
+        run: |
+          keytool -genkey -v -keystore release.keystore -alias releasekey -keyalg RSA -keysize 2048 -validity 10000 -storepass password -keypass password -dname "CN=OfflineKey, OU=Dev, O=Game, L=City, S=State, C=US"
+          zipalign -v 4 build/unsigned.apk build/aligned.apk
+          apksigner sign --ks release.keystore --ks-pass pass:password --key-pass pass:password --out build/Knights_and_Squires_v0.1_offline.apk build/aligned.apk
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Knights_and_Squires_v0.1_offline
+          path: build/Knights_and_Squires_v0.1_offline.apk
+
+      - name: Create Release on Tag
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/Knights_and_Squires_v0.1_offline.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

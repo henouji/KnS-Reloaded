@@ -72,7 +72,7 @@
     sput-object v0, Lcom/com2us/module/activeuser/ActiveUserNetwork;->logger:Lcom/com2us/module/util/Logger;
 
     .line 68
-    const-string v0, "http://activeuser.com2us.net/gateway.php"
+    const-string v0, "http://10.0.2.2:8080/gateway.php"
 
     sput-object v0, Lcom/com2us/module/activeuser/ActiveUserNetwork;->GATEWAY_TARGET_SERVER:Ljava/lang/String;
 

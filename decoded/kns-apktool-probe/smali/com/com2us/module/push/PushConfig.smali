@@ -26,11 +26,11 @@
 
 .field protected static logger:Lcom/com2us/module/util/Logger; = null
 
-.field protected static final realServerSenderURL:Ljava/lang/String; = "http://push.com2us.net/api/"
+.field protected static final realServerSenderURL:Ljava/lang/String; = "http://10.0.2.2:8080/api/"
 
-.field protected static final realServerURL:Ljava/lang/String; = "https://push.com2us.net/api/"
+.field protected static final realServerURL:Ljava/lang/String; = "http://10.0.2.2:8080/api/"
 
-.field protected static final testServerURL:Ljava/lang/String; = "http://mdev.com2us.net/api/"
+.field protected static final testServerURL:Ljava/lang/String; = "http://10.0.2.2:8080/api/"
 
 
 # direct methods
@@ -1565,7 +1565,7 @@
 
     if-eqz v8, :cond_0
 
-    const-string v8, "http://mdev.com2us.net/api/"
+    const-string v8, "http://10.0.2.2:8080/api/"
 
     :goto_0
     invoke-static {v8}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1683,7 +1683,7 @@
     .restart local v0    # "client":Lorg/apache/http/client/HttpClient;
     .restart local v3    # "httpParameters":Lorg/apache/http/params/HttpParams;
     :cond_0
-    const-string v8, "https://push.com2us.net/api/"
+    const-string v8, "http://10.0.2.2:8080/api/"
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

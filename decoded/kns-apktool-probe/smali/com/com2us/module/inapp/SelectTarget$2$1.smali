@@ -66,7 +66,7 @@
 
     move-result-object v2
 
-    const-string v3, "http://s.com2us.net/common/billing/select_log.c2s"
+    const-string v3, "http://10.0.2.2:8080/common/billing/select_log.c2s"
 
     invoke-static {v2, v3}, Lcom/com2us/module/inapp/DefaultBilling;->sendToServer(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
