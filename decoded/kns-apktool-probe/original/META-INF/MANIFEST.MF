@@ -1,0 +1,5122 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/common/game_res/mp_desert_bg_11.dat.jpg
+SHA1-Digest: jIUwwUBNofWZHmaNhWPr00lI/Dc=
+
+Name: assets/common/game_res/mm_3200021.dat.jpg
+SHA1-Digest: 9CYPa/VFilOsI1gtY2IpSxgjeyg=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.pn
+ g
+SHA1-Digest: 2xgU0++/KN5qhzcL/Lhz8p8cTNU=
+
+Name: assets/common/game_res/mp_mushroom_304_ground.dat.jpg
+SHA1-Digest: ow/1JUOJKt6TBUeJkWxPSkYHjzQ=
+
+Name: res/drawable/com_facebook_picker_list_longpressed.9.png
+SHA1-Digest: /uU9+qqC9MjC0cwR3L+DskCy9xM=
+
+Name: assets/common/game_res/mm_3200700.dat.jpg
+SHA1-Digest: UPYOOewC3uWRSE5Trt321e8xT7A=
+
+Name: assets/common/game_res/mm_3000126.dat.jpg
+SHA1-Digest: AUywqZPeDGNFdXpWjVam/aB/6Z4=
+
+Name: assets/common/game_res/mp_graveyard_205_ground.dat.jpg
+SHA1-Digest: 4xQixNBZ3/cjkhbVv722Zz8ml3s=
+
+Name: assets/common/game_res/mm_3100011.dat.jpg
+SHA1-Digest: ljfyEZmp3odbr9LkjmI3qlffGIM=
+
+Name: assets/common/game_res/mm_3003022.dat.jpg
+SHA1-Digest: UogoL+BjsrE8u0c9xbF1v600LKk=
+
+Name: assets/common/game_res/mp_castle_202_ground.dat.jpg
+SHA1-Digest: +vUgnEZzGUQ5jBwkjMnrEh7Tc/I=
+
+Name: assets/common/game_res/mp_icecastle_299_ground.dat.jpg
+SHA1-Digest: RXc+nSdsnmAUbl4VESamBE5Soh4=
+
+Name: assets/common/game_res/mp_town_104_ground.dat.jpg
+SHA1-Digest: pTz4X+QhcAF8TiSLvBZTqZBKiDM=
+
+Name: assets/common/game_res/mp_volcano_299_ground.dat.jpg
+SHA1-Digest: 9EqRQsArOaD1sw788l1nA2Vg5Xc=
+
+Name: assets/common/game_res/mm_3000145.dat.jpg
+SHA1-Digest: 8DrP3AFLYsjM0/QUDrxzhOR9YBk=
+
+Name: assets/common/game_res/mm_3001003.dat.jpg
+SHA1-Digest: 9tSgWQj3sKAeBIV4nUNiF+Z0mjY=
+
+Name: assets/common/game_res/ui_string_res_wc.dat.jpg
+SHA1-Digest: V8qB3R16G28UKi53a6kI24ycJBE=
+
+Name: assets/common/game_res/mm_3001027.dat.jpg
+SHA1-Digest: lxN4/xgupHmfX6GeWEsKTEf0DS0=
+
+Name: assets/common/game_res/mp_icecave_303_ground.dat.jpg
+SHA1-Digest: GwiXymmcTc5R98onJP5rSe7qhsU=
+
+Name: assets/common/game_res/mp_lavatunnel_bg_32.dat.jpg
+SHA1-Digest: nHiqnHzbJNnzqZ/TUJvoWGJmK/4=
+
+Name: assets/common/game_res/mp_deadmine_401_ground.dat.jpg
+SHA1-Digest: ICOVrjLmT2WSuDKk+UpiqboaLVo=
+
+Name: assets/common/game_res/mp_goblincastle_199_ground.dat.jpg
+SHA1-Digest: h0pvrklifZlRNi4ls3zvqMbzVfw=
+
+Name: assets/common/game_res/mp_cave_100_ground.dat.jpg
+SHA1-Digest: O6gBZZniqlEqrSuEev1cFGB7TcI=
+
+Name: assets/common/game_res/mp_alchemist_101_ground.dat.jpg
+SHA1-Digest: CtaMErZIyeW/rgwv2AyvioyCwHY=
+
+Name: assets/common/game_res/mp_mushroom_103_ground.dat.jpg
+SHA1-Digest: PulUcgQ/jY35c7n2yvycYrsTKDI=
+
+Name: assets/common/offerwall/btn_native_X.png
+SHA1-Digest: dPnjaLosMoyfdw7iEJV6MeA7hF8=
+
+Name: assets/common/game_res/mp_goblincastle_103_ground.dat.jpg
+SHA1-Digest: ihaTLMW7dHpuzGDrY9g507601xE=
+
+Name: assets/common/game_res/mm_3000104.dat.jpg
+SHA1-Digest: /lBnM085zPO9p1UJQyW7USahkkA=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: Wx/93xRl4fEGrkADqVPH6ShswfU=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png
+SHA1-Digest: yY8/t0s+QXhpJiUSW/BkWQiYs6A=
+
+Name: assets/common/game_res/mm_3200721.dat.jpg
+SHA1-Digest: Iq07hQW1LK3COP3YcwBpLujcKMc=
+
+Name: assets/common/game_res/mm_3100035.dat.jpg
+SHA1-Digest: pyeJ8/Yi4nM/a6iEvUBn4u65o+4=
+
+Name: assets/common/game_res/dt_st_boss_medusa.dat.jpg
+SHA1-Digest: dEecd3eq6odO8nybGFHA0Uhv0sg=
+
+Name: assets/common/game_res/mp_alchemist_301_ground.dat.jpg
+SHA1-Digest: lPZcQKRa+APrSl/jU2B3aUvN/xE=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: 5yTFZLZtCPpeiVFtQvpG2K4xDdE=
+
+Name: res/drawable/com_facebook_button_check_on.png
+SHA1-Digest: ObcSDxnphDDTROHTniwThtnJVWk=
+
+Name: res/drawable-hdpi-v4/com_facebook_logo.png
+SHA1-Digest: pI4xXskj1ods7E6ysp4+Rr2fh2U=
+
+Name: assets/common/ActiveUserAgreement/1407749993_M8_4.html
+SHA1-Digest: M37KxP1awVYv31q2OxuMEExZ0Xk=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_center_top.png
+SHA1-Digest: 7rk/zBgf8JzsWF7Gr6Qlow8UOfM=
+
+Name: assets/common/game_res/mp_townsnow_104_ground.dat.jpg
+SHA1-Digest: aIZGSo+Uf34G5SMevr6pJojfB8s=
+
+Name: assets/common/game_res/mm_3200500.dat.jpg
+SHA1-Digest: MF/AdTl/IgeRnx0UItIolg564Kk=
+
+Name: assets/common/game_res/mp_goblincastle_bg_31.dat.jpg
+SHA1-Digest: q5BRh1u+oNZV8zIyBlGABLF3DBA=
+
+Name: assets/common/game_res/mp_arena75_103_ground.dat.jpg
+SHA1-Digest: l1Yi/LxqWLrONudmvSSZZb4iExg=
+
+Name: assets/common/game_res/mp_woodland_bg_21.dat.jpg
+SHA1-Digest: q/QWi6XpNTjoUkDEw5LcLw928pw=
+
+Name: assets/common/game_res/mp_volcano_105_ground.dat.jpg
+SHA1-Digest: onsfEWkKtq7uJQvsKiqnITI6EPQ=
+
+Name: assets/common/game_res/mp_devilcastle_200_ground.dat.jpg
+SHA1-Digest: 9Q/OslpDD5Z241t/pzk7k758zmQ=
+
+Name: assets/common/game_res/mm_3100021.dat.jpg
+SHA1-Digest: KJimWUfjRioczphqNn5WAs3XlXQ=
+
+Name: assets/common/game_res/mm_3004003.dat.jpg
+SHA1-Digest: uolu7CFmJz+5ag4bAizeSenWWOo=
+
+Name: assets/common/game_res/mp_goblincastle_302_ground.dat.jpg
+SHA1-Digest: S3zwQ0HfOEVCb3Dz5XmPXqwTVDs=
+
+Name: assets/common/game_res/mp_cliff_202_ground.dat.jpg
+SHA1-Digest: Csm7rLDPlivvfMNWAqqMXuzx9jU=
+
+Name: assets/common/game_res/mp_lavatunnel_bg_31.dat.jpg
+SHA1-Digest: B6xUh+i4zcntaQgNZBK8gPA9S2k=
+
+Name: res/layout/com_facebook_usersettingsfragment.xml
+SHA1-Digest: 9SRSCNr8i+BjKRii25aouveeh+Q=
+
+Name: assets/common/game_res/mp_forest_bg_22.dat.jpg
+SHA1-Digest: 5uzOxKk0lnoa4+WHqho0YMy+grE=
+
+Name: assets/common/game_res/mp_coast_499_ground.dat.jpg
+SHA1-Digest: mXCTlns1GSM568QgHKqNQ2CGcTc=
+
+Name: assets/common/game_res/mp_devilcastle_103_ground.dat.jpg
+SHA1-Digest: GTdaLQtvNnK8Z61X3Q0/WBhJKBI=
+
+Name: assets/common/game_res/mm_3003085.dat.jpg
+SHA1-Digest: 0n2lOu8A4j8LrShSghjS+S6h+nU=
+
+Name: assets/common/game_res/mm_3001066.dat.jpg
+SHA1-Digest: ukW43IAPxpfB5gpgd0QchOlf1fA=
+
+Name: assets/common/game_res/mp_graveyard_102_ground.dat.jpg
+SHA1-Digest: ckfx5zeZPP0B9zYOgBxAVzf2L0Y=
+
+Name: assets/common/game_res/mm_3004085.dat.jpg
+SHA1-Digest: t5TXp1gkmbdx651IhgUMHqKpmvU=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_like_background_select
+ ed.png
+SHA1-Digest: BYDCtKmXbj2aa5lajPLkLWjnkn8=
+
+Name: assets/common/game_res/mp_townsnow_204_ground.dat.jpg
+SHA1-Digest: +oiB+OcrWFtiwF9KIzqt1b16GVg=
+
+Name: assets/common/game_res/mm_3250320.dat.jpg
+SHA1-Digest: kcKsfbkEU/KkgiUrmHUCVmg9lsY=
+
+Name: assets/common/game_res/mm_3002088.dat.jpg
+SHA1-Digest: VILvMxoJ167q9KeWsSlL5G4VxVU=
+
+Name: assets/common/game_res/mm_3004082.dat.jpg
+SHA1-Digest: VTE01oG2rNPj1yGhCQH7s49hOGA=
+
+Name: assets/common/game_res/mm_3001026.dat.jpg
+SHA1-Digest: uRzXXanjy7kQwwhLC2gewh7D6XI=
+
+Name: assets/common/game_res/mp_woodland_103_ground.dat.jpg
+SHA1-Digest: yGAu/ndLPI8Yb8G73ZMb+Zl0t5Q=
+
+Name: assets/common/game_res/mm_3004044.dat.jpg
+SHA1-Digest: 0tasqn5L+l4pO+RiS24O+jmSjU0=
+
+Name: res/layout/com_facebook_picker_checkbox.xml
+SHA1-Digest: TviBpzJIeucz7QNAAcdXwPXMB7k=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png
+SHA1-Digest: GRVPhQjnqMlZsnYF1YFKphQHJm0=
+
+Name: assets/common/game_res/mm_3250021.dat.jpg
+SHA1-Digest: JIQzF8WfFz8S2OAcakoB9V6T5NA=
+
+Name: assets/common/game_res/mm_3003091.dat.jpg
+SHA1-Digest: epouxxa4gbyYgtTab2WLeih1tqo=
+
+Name: assets/common/game_res/mp_ruin2_bg_32.dat.jpg
+SHA1-Digest: ej0SgI3oJt9XkVa2utvoD8tNK3c=
+
+Name: assets/common/game_res/dt_st_boss_ghost.dat.jpg
+SHA1-Digest: 99h6/Brod5V2bHvPa8/CkdRnP8A=
+
+Name: assets/common/game_res/mm_3002067.dat.jpg
+SHA1-Digest: +YP+pKCbiJCXdblzQMTJgn50u0c=
+
+Name: assets/common/game_res/mp_forest_105_ground.dat.jpg
+SHA1-Digest: XduIncPklU6QKnbeQshdawUTfAo=
+
+Name: assets/common/game_res/mm_3000022.dat.jpg
+SHA1-Digest: qMIpxHU5hJ60YySV1SCvi6cPPsA=
+
+Name: assets/common/game_res/mp_icecave_bg_32.dat.jpg
+SHA1-Digest: hMCDrWbi3IxKeCPQmlNAtgn/zlQ=
+
+Name: assets/common/game_res/mp_ruin2_200_ground.dat.jpg
+SHA1-Digest: iaGoZXdY94kT9jmNjGKCNHKqZyg=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: VuHJWuT/6iilvSab3F78/jbS8VQ=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: dF5oQhWFz2szuye4UCQeGH4CFRk=
+
+Name: assets/common/ActiveUserImage/00_board_down_logo.png
+SHA1-Digest: PX7kAdS/n+zmVO4N0gYl6l/znSw=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: QvCsDHmHTCeFtKK23z0HRetpRJI=
+
+Name: assets/common/game_res/mm_3001105.dat.jpg
+SHA1-Digest: rTR7qAZAi0HB3U+RzI+nOn1Dg1A=
+
+Name: assets/common/game_res/mp_townsnow_bg_22.dat.jpg
+SHA1-Digest: pcdGGd9OT2UPySo5DAsUstPrC9M=
+
+Name: assets/common/game_res/mp_townsnow_199_ground.dat.jpg
+SHA1-Digest: /Nm3/D+CP71eHb5JFsV8FzkIRS0=
+
+Name: res/drawable-hdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: SBKgHrI8+WG2Q5nUL763ra3tcmc=
+
+Name: assets/common/game_res/mp_deadmine_100_ground.dat.jpg
+SHA1-Digest: wctvnFENI5W+5VhYdJW2e1cNIVQ=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: oslddavjaxT0f8U4Mn8PG9Z+jNM=
+
+Name: assets/common/game_res/mp_deadmine_bg_21.dat.jpg
+SHA1-Digest: AaU/q85e5bylvff3UgzfYWTeJYM=
+
+Name: assets/common/game_res/mm_3200311.dat.jpg
+SHA1-Digest: DtMMw2LA8TP9/HHE6lbfBEbBcCQ=
+
+Name: assets/common/game_res/mm_3000006.dat.jpg
+SHA1-Digest: TSaMG0sEh2a7Z4qmaxX5WEwI1W8=
+
+Name: assets/common/game_res/mp_volcano_201_ground.dat.jpg
+SHA1-Digest: iuOIbE5HgrmshAMr7Yhlami6oJg=
+
+Name: res/drawable-hdpi-v4/com_facebook_picker_magnifier.png
+SHA1-Digest: nXJW1x0AfiwPV3k/lG07VVTYcN4=
+
+Name: assets/common/game_res/mp_coast_103_ground.dat.jpg
+SHA1-Digest: I8VH1ovc0Xqa19G52oqarlGmvrI=
+
+Name: assets/common/game_res/mp_raid_102_ground.dat.jpg
+SHA1-Digest: zh+pc3dLTDvq23ibjmj6KQeXO7Y=
+
+Name: assets/common/game_res/mp_graveyard_202_ground.dat.jpg
+SHA1-Digest: ZkzaxmkdMlxc3V4ZfqthLvyD0lM=
+
+Name: assets/common/game_res/mp_ruin_bg_32.dat.jpg
+SHA1-Digest: N8HaY4hEFKid6LiFF57PDBIK/f0=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_like_background.png
+SHA1-Digest: bCS0i+L/pj0A+dtiUyrxzLeFPZw=
+
+Name: assets/common/ActiveUserAgreement/1407119995_M3_11.html
+SHA1-Digest: Zn+X6m205DJPWmVpeg/ndSgDC1E=
+
+Name: assets/common/game_res/mp_cliff_103_ground.dat.jpg
+SHA1-Digest: x4M3NSjo5IXXAoj8ctJ8Cbf3rvc=
+
+Name: assets/common/game_res/mp_icecastle_202_ground.dat.jpg
+SHA1-Digest: LnScee9fGnNk2LGAmM3PRKrYCcY=
+
+Name: assets/common/game_res/mm_3200540.dat.jpg
+SHA1-Digest: ARH3fGNK76HQ5JFurC/w8XCIwDw=
+
+Name: assets/common/game_res/mp_lavatunnel_203_ground.dat.jpg
+SHA1-Digest: WYfeL8UAG2F7EGiP2X1Er93pMbc=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_grey_normal.9.png
+SHA1-Digest: lEEkZV10o/fTM2pB5w8MpFSsu+w=
+
+Name: assets/common/game_res/mp_desert_200_ground.dat.jpg
+SHA1-Digest: ApNkmShmk4mnfpJKV1iUc/Z1kZE=
+
+Name: assets/common/game_res/mm_3000051.dat.jpg
+SHA1-Digest: jomuWwvIZlaMNEBCnOELDwiJTAE=
+
+Name: assets/common/game_res/mp_cliff_305_ground.dat.jpg
+SHA1-Digest: 3MpfUsIaGrGUvMtpGGmrxj+HkdU=
+
+Name: assets/common/game_res/mp_alchemist_bg_22.dat.jpg
+SHA1-Digest: hsX3PVX8nRjkRdzVtxt+Njv7njE=
+
+Name: assets/common/game_res/mp_forest_306_ground.dat.jpg
+SHA1-Digest: +Ew0Urw1ssmBSsqGEJaGo6VELHc=
+
+Name: assets/common/game_res/mm_3004022.dat.jpg
+SHA1-Digest: S8dZdrZsr1PUGau8tdGYg6NsAIc=
+
+Name: assets/common/game_res/mp_town_305_ground.dat.jpg
+SHA1-Digest: jQc4KxmsM2cFfJNM/Xk8CRIF+4M=
+
+Name: res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.pn
+ g
+SHA1-Digest: NSlYeM2+QKHBQXTX6bFC/uBEsM4=
+
+Name: assets/common/game_res/mp_mushroom_300_ground.dat.jpg
+SHA1-Digest: 6x83TR70L4TeNMvOapZ3vO792Eg=
+
+Name: assets/common/game_res/mp_townsnow_203_ground.dat.jpg
+SHA1-Digest: 7oh/kcH0QWpG6HLhsoZpYWlaxEA=
+
+Name: assets/common/game_res/mp_woodland_299_ground.dat.jpg
+SHA1-Digest: VFtE3T4A17c+lyNci7O9fyXWAWU=
+
+Name: assets/common/game_res/mp_forest_303_ground.dat.jpg
+SHA1-Digest: YpWou5LaIDzGnOD9MO9V7vAetOg=
+
+Name: assets/common/game_res/mp_icecave_203_ground.dat.jpg
+SHA1-Digest: WEgK8wSj7YK4sRMEo35B6g5vMoU=
+
+Name: assets/common/game_res/mp_mushroom_100_ground.dat.jpg
+SHA1-Digest: ojktJBqtlZFNSsIaqHGkOtAMEV4=
+
+Name: assets/common/game_res/mp_coast_199_ground.dat.jpg
+SHA1-Digest: WJtGj9Ee1KmLIfkTuMfoFtMcbk0=
+
+Name: assets/common/game_res/mp_ruin_304_ground.dat.jpg
+SHA1-Digest: dKeu3sOfj6u1xoyWxsOxg2cArlw=
+
+Name: assets/common/game_res/mp_deadmine_bg_31.dat.jpg
+SHA1-Digest: fn5u5YF3mCZ3otEn6/iGV23xNqY=
+
+Name: assets/common/game_res/mp_venomtemple_200_ground.dat.jpg
+SHA1-Digest: NX2pnKQWZhs1j0TiCIROkIRQPEE=
+
+Name: assets/common/game_res/mp_goblincastle_105_ground.dat.jpg
+SHA1-Digest: lSzJK8sJxSuadIuIh30be3AnI5k=
+
+Name: assets/common/game_res/mp_graveyard_bg_22.dat.jpg
+SHA1-Digest: 37oHBYpLt0HyAOHRuY2x0BmUXbk=
+
+Name: assets/common/game_res/mm_3001088.dat.jpg
+SHA1-Digest: DV2OfqxxoIl2gvTx/GwPmVpQT5E=
+
+Name: assets/common/game_res/mp_goblinwoods_301_ground.dat.jpg
+SHA1-Digest: L8KjbQ+I+qi9aoeXLza6u5O4Fso=
+
+Name: assets/common/game_res/mp_fieldsnow_305_ground.dat.jpg
+SHA1-Digest: WFxr3r93j7aRihqDBqFaokT2EHg=
+
+Name: assets/common/game_res/mp_cliff_201_ground.dat.jpg
+SHA1-Digest: 2IlYPW0YP5K7trv/vyAeMj/2T3s=
+
+Name: assets/common/game_res/mp_ruin_399_ground.dat.jpg
+SHA1-Digest: HBJlUXDlvR2/cF0pCj6qTww/1zU=
+
+Name: assets/common/ActiveUserImage/00_btn_select_l.png
+SHA1-Digest: 4KhKGyOMrGv0dVpN2ccC48it7C8=
+
+Name: assets/common/game_res/mm_3250310.dat.jpg
+SHA1-Digest: pxp8yO0/83NxHtQwxioylZ3NRFo=
+
+Name: assets/common/game_res/mm_3002064.dat.jpg
+SHA1-Digest: 0ZULE/tDJXyUQXiwmS9mkfkEjmI=
+
+Name: assets/common/game_res/mp_deadmine_102_ground.dat.jpg
+SHA1-Digest: 2qFbPXAbbXA3yh4lF4jEzhCOpoA=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png
+SHA1-Digest: catelxgP4Vurpy+V7+L3PNxSwKk=
+
+Name: assets/common/game_res/mp_ghostforest_405_ground.dat.jpg
+SHA1-Digest: R2PqxHXcDwD8jzkxOw4JKBJX9A0=
+
+Name: assets/common/game_res/mp_snowland_203_ground.dat.jpg
+SHA1-Digest: WkW/BRee3tPc7tyPW5RAgeV4uAg=
+
+Name: assets/common/game_res/mm_3002043.dat.jpg
+SHA1-Digest: yxxtoNvR07DdbDGXK3XgdpUCiKU=
+
+Name: assets/common/game_res/mp_icecave_300_ground.dat.jpg
+SHA1-Digest: +msfZzlwBuCvlQcS9M1cVWL6c3I=
+
+Name: res/drawable/com_facebook_button_like_background_selected.png
+SHA1-Digest: RwqHSR17Um8C7eTFB7n2zA6R8YA=
+
+Name: assets/common/game_res/mp_town_103_ground.dat.jpg
+SHA1-Digest: 72q5KMVs5XiXzIbxcofniaPz+5E=
+
+Name: assets/common/game_res/mm_3200620.dat.jpg
+SHA1-Digest: OZ8287OT7YIdVZ0IJcF5MNacSAw=
+
+Name: assets/common/NoticeImage/imgNotice_News_GroundOut@2x.png
+SHA1-Digest: 86/pwUj4p4aTOt3TseX4aQSCE7o=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_edge_3.png
+SHA1-Digest: iKhwcvVkXLvq9D0rod+Sv4RSDMo=
+
+Name: assets/common/game_res/mm_3200001.dat.jpg
+SHA1-Digest: GSMkvMR8KpH25jHFQ2Iqbl2Z5aw=
+
+Name: assets/common/game_res/dt_st_boss_bee.dat.jpg
+SHA1-Digest: o7MxNBhAdxMm6Q0RDqxdqZBdU2w=
+
+Name: assets/common/game_res/mm_3100015.dat.jpg
+SHA1-Digest: AVilwpG4JDFx3YQmHj02x+Wx/2I=
+
+Name: assets/common/game_res/mp_lavatunnel_106_ground.dat.jpg
+SHA1-Digest: W8AqvHSjku9Wq9eEhmDDsQkkkSE=
+
+Name: assets/common/game_res/mm_3000168.dat.jpg
+SHA1-Digest: np2DZLuh70Oi5xKfNXNL0OOrWFo=
+
+Name: assets/common/game_res/mm_3200510.dat.jpg
+SHA1-Digest: Rh6HQZ0aU7wYZe+yUL0ysBpTdZ0=
+
+Name: res/drawable/com_facebook_profile_picture_blank_square.png
+SHA1-Digest: ii3g4mqHjQXtghNZE1cibJA1Jbs=
+
+Name: assets/common/game_res/mp_fieldsnow_301_ground.dat.jpg
+SHA1-Digest: nG2BXF+iJlLJOmALeR6OmtXqOyc=
+
+Name: assets/common/game_res/mm_3200260.dat.jpg
+SHA1-Digest: araRIti8Vw15aMkCx7IS2Hprw9c=
+
+Name: assets/common/game_res/ui_title_pi_gl.dat.jpg
+SHA1-Digest: DaaipClX70pdYBWkL2/oHATBc/k=
+
+Name: assets/common/game_res/mp_cliff_bg_31.dat.jpg
+SHA1-Digest: mJViPV8SJ/RJkdT6TkjK6MsLm+M=
+
+Name: assets/common/game_res/mp_lavatunnel_303_ground.dat.jpg
+SHA1-Digest: M+MzpTIWwmZ/qgAfwHD1a6gbcNE=
+
+Name: assets/common/game_res/mp_mushroom_200_ground.dat.jpg
+SHA1-Digest: l3UOn8bjnsH3yF6Qma4qrBH5XSQ=
+
+Name: assets/common/game_res/mp_town_300_ground.dat.jpg
+SHA1-Digest: 5p4v4CaBtdzD1bTzTLNDLnWqVNw=
+
+Name: assets/common/game_res/mp_desert_bg_32.dat.jpg
+SHA1-Digest: ciOPW3vOQJDDLyW8anpvUBlT1UE=
+
+Name: assets/common/game_res/mp_yellowtower_102_ground.dat.jpg
+SHA1-Digest: G1Tvw0ROps7Ge542mwf6eHEJCFk=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: WqQF3y/vDvl0c3tlpCQMUlAGR90=
+
+Name: assets/common/game_res/mp_cliff_304_ground.dat.jpg
+SHA1-Digest: 841cJrwkscmvPzMeysq9RbkmNI4=
+
+Name: assets/common/game_res/dt_character_140.dat.jpg
+SHA1-Digest: tmri4xnh5LCYHWAxFPAZ7V490J4=
+
+Name: assets/common/game_res/mp_raid_300_ground.dat.jpg
+SHA1-Digest: eb9duJDFe9MxT00Ld71dkMFBxRU=
+
+Name: assets/common/game_res/mm_3200281.dat.jpg
+SHA1-Digest: YZw8hD8r8x+L9ggOqP/ZGtEtR34=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_edge_4.png
+SHA1-Digest: ANgCP1t5i0jq4AVMgIMSlR0OYwg=
+
+Name: assets/common/game_res/mp_hive_102_ground.dat.jpg
+SHA1-Digest: 9Y0WDIVrY/hdbuyZn7hk9V1RIJA=
+
+Name: assets/common/game_res/mp_venomtemple_105_ground.dat.jpg
+SHA1-Digest: 8wqX8hlMzGSJ1U0ala45gfA3/Ww=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png
+SHA1-Digest: 8xf5T2QSgzy/NKnf0KaAztuK+8s=
+
+Name: assets/common/game_res/mp_icecastle_205_ground.dat.jpg
+SHA1-Digest: LWlJKQjNvE3Y9DCyjhgaZZg7eRM=
+
+Name: assets/common/game_res/mm_3000062.dat.jpg
+SHA1-Digest: 2siJ2ATbLSzl3o+01CR/gbwJHZ0=
+
+Name: assets/common/game_res/mm_3004081.dat.jpg
+SHA1-Digest: Oblbcs9L6VI7FP/M95yEyCrkZ8Q=
+
+Name: res/drawable-xxxhdpi-v4/ic_c2s_notification_small_icon.png
+SHA1-Digest: qRqQhQpzbkPd6ZYJ09NTWHRi5Ss=
+
+Name: assets/common/game_res/mp_mushroom_301_ground.dat.jpg
+SHA1-Digest: Pxm8SiUGVx6gIt6Z/VmqHmd9uJg=
+
+Name: assets/common/game_res/mm_3001108.dat.jpg
+SHA1-Digest: 5uzTrRAOtKUmNnP7CTZrf5SKLU0=
+
+Name: assets/common/game_res/mp_graveyard_306_ground.dat.jpg
+SHA1-Digest: mzTLgdUlcoXoOK8jCgHzVrQYhqs=
+
+Name: assets/common/game_res/mp_volcano_bg_31.dat.jpg
+SHA1-Digest: 46WGfEwMDEzVKgWlpGGUTk6Qsbk=
+
+Name: assets/common/game_res/mm_3003086.dat.jpg
+SHA1-Digest: wwKt3oco+BYrBJGBUPEa02qZUUk=
+
+Name: assets/common/game_res/mm_3004061.dat.jpg
+SHA1-Digest: 9kMLFBpTQa8y0DzilEiDJBMA06A=
+
+Name: assets/common/game_res/mp_ruin2_301_ground.dat.jpg
+SHA1-Digest: WvPdEHcvwjj/Nkyb7IPBTnH2ce4=
+
+Name: assets/common/game_res/mp_townsnow_202_ground.dat.jpg
+SHA1-Digest: 80f+rWKH92ditEHJ9mfwe7MoZRM=
+
+Name: assets/common/game_res/mp_arena75_101_ground.dat.jpg
+SHA1-Digest: 1JZ1m5Z92sN+11kJX5T7YgnCFFU=
+
+Name: res/drawable-hdpi-v4/com2us_en_800x480.png
+SHA1-Digest: OlVXf/HYkeRGOuv4/yqGyHkonxU=
+
+Name: res/drawable-mdpi-v4/com_facebook_button_blue_normal.9.png
+SHA1-Digest: qxtCfCywN4Q8vxg2cKsJq3qyrpI=
+
+Name: assets/common/game_res/mp_icecastle_bg_22.dat.jpg
+SHA1-Digest: G9/p+0EageKh54rfAdOj0EcboDo=
+
+Name: assets/common/game_res/mp_snowland_301_ground.dat.jpg
+SHA1-Digest: xnJhR2mtQBba2ASpRvNdU2OANqA=
+
+Name: assets/common/game_res/mp_cliff_199_ground.dat.jpg
+SHA1-Digest: A640MXuRq1Ml0GhwL4GECnWc+oo=
+
+Name: assets/common/game_res/mp_desert_304_ground.dat.jpg
+SHA1-Digest: Hv+IKRNRRYbfhnf8Uq50pYfJCYQ=
+
+Name: assets/common/game_res/mp_cave_bg_11.dat.jpg
+SHA1-Digest: /WYeFSGwQA8SHz7/QRPAnkhMQAU=
+
+Name: assets/common/ActiveUserImage/00_board_top_logo.png
+SHA1-Digest: qOI+ORX6fQVHPM4/fywA+uRZrsA=
+
+Name: assets/common/game_res/mp_coast_305_ground.dat.jpg
+SHA1-Digest: yATYOTUG1mYA9PoulgRBdlvqCCQ=
+
+Name: assets/common/game_res/mp_goblincastle_303_ground.dat.jpg
+SHA1-Digest: bUQxDltjqF0B7DuvOWn35jbLHDU=
+
+Name: assets/common/game_res/mp_icecave_bg_31.dat.jpg
+SHA1-Digest: E/9YSIc6mvFBlY/ELzA8bx7pOq8=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png
+SHA1-Digest: +DxTpyUKpT11iz68MG1Q0iB2EvA=
+
+Name: assets/common/game_res/mp_cave_106_ground.dat.jpg
+SHA1-Digest: kyNVZYmDybSEwjwa/jkq+1qgVss=
+
+Name: assets/common/game_res/mp_volcano_106_ground.dat.jpg
+SHA1-Digest: IxYj6NeYmmNXBgAlxqBpzyX+SM8=
+
+Name: assets/common/game_res/mp_forest_199_ground.dat.jpg
+SHA1-Digest: 5ctark982SHYTrMGvvTzXhAdpys=
+
+Name: assets/common/game_res/mm_3100040.dat.jpg
+SHA1-Digest: WbDMCHBTPqdn9KdGax0vFuYJyc8=
+
+Name: assets/common/game_res/mp_forest_bg_21.dat.jpg
+SHA1-Digest: ifGjq0Bat3mj3IZAegcGGQOyPeE=
+
+Name: assets/common/game_res/mp_mushroom_bg_12.dat.jpg
+SHA1-Digest: oicFBUJLRx6KKpdF7IaNRmvbdG4=
+
+Name: assets/common/game_res/mp_cliff_299_ground.dat.jpg
+SHA1-Digest: Ky1chwHwkcQOT0uJpOAbk15dEIE=
+
+Name: assets/common/game_res/dt_st_raid_medusa.dat.jpg
+SHA1-Digest: H1jygClJTnEJ+WlqqR7P+mpuag0=
+
+Name: assets/common/game_res/mm_3200261.dat.jpg
+SHA1-Digest: ZkDfGUAFKg+qxX+FAQFu/ZnJ3Rc=
+
+Name: assets/common/game_res/mp_hive_199_ground.dat.jpg
+SHA1-Digest: wUg6FnwzeQTN3Q1d6Zr0R2Btaso=
+
+Name: assets/common/game_res/mm_3002004.dat.jpg
+SHA1-Digest: ATFGi9ptBO4ToCTm2h4707SK44U=
+
+Name: assets/common/game_res/mp_ghostforest_203_ground.dat.jpg
+SHA1-Digest: TgqlPAiIspE3Dcr3RIrQGpo5a9w=
+
+Name: assets/common/game_res/dt_st_raid_mummy.dat.jpg
+SHA1-Digest: U/MKHVQp+jvHPwx/x1cJ/OBiF0Q=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_dark.9.pn
+ g
+SHA1-Digest: 2Zfa+F80lrkHKDHQCM2OErZr3Cg=
+
+Name: assets/common/game_res/mm_3000121.dat.jpg
+SHA1-Digest: 1pf6bhP3rY6nLQnvP+IE2cErlIA=
+
+Name: assets/common/game_res/mp_ruin_199_ground.dat.jpg
+SHA1-Digest: +sPaoRCndGa4KYWrHO6UNlhVQNg=
+
+Name: assets/common/game_res/mp_graveyard_400_ground.dat.jpg
+SHA1-Digest: jH+7ApO5kI6JtIRgBv5FFBginVA=
+
+Name: res/layout/com_facebook_picker_image.xml
+SHA1-Digest: TMOJ2ZlufKSAGS3qWF+GkQ+Tz9E=
+
+Name: assets/common/game_res/mp_woodland_205_ground.dat.jpg
+SHA1-Digest: W6xpVK4HS65TpfMJnEOIurO23I8=
+
+Name: assets/common/game_res/mm_3250200.dat.jpg
+SHA1-Digest: j85Iusrf2TlUzJlHYHmSICPL5wM=
+
+Name: assets/common/game_res/mp_goblincastle_206_ground.dat.jpg
+SHA1-Digest: 8QuVcdkzpZzMA56rRUr6C6Bf4m4=
+
+Name: assets/common/game_res/mm_3004042.dat.jpg
+SHA1-Digest: ckbDEmXTBevMbEFYb8U0Nf3s1GM=
+
+Name: res/drawable/com_facebook_profile_default_icon.png
+SHA1-Digest: hnc7R7K+VpzIWKki/iGEw6AlfPw=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: sHSqOkfbtaf1NnvLx543yn2dsDc=
+
+Name: assets/common/game_res/mp_fieldsnow_200_ground.dat.jpg
+SHA1-Digest: XSMBC8vSVquR+k5U16cMW39Mcmc=
+
+Name: assets/common/game_res/dt_loading_140.dat.jpg
+SHA1-Digest: N3xSjkijtDFFzMUZHqolT0dtJN4=
+
+Name: assets/common/game_res/mp_fieldsnow_203_ground.dat.jpg
+SHA1-Digest: MMEZg+qD8++x1Vh3gw08iVUMZOk=
+
+Name: assets/common/game_res/mp_forest_299_ground.dat.jpg
+SHA1-Digest: 5E45WqFV27S+MCTwAMU23NyBTBg=
+
+Name: assets/common/game_res/mp_woodland_bg_31.dat.jpg
+SHA1-Digest: kP83v3wehM0W/fNrGPe8BqlHx1o=
+
+Name: assets/common/game_res/mp_lavatunnel_206_ground.dat.jpg
+SHA1-Digest: fwOQty2gBSikn6WpMUWWUiI28a0=
+
+Name: assets/common/NoticeImage/imgNotice_News_GroundOut.png
+SHA1-Digest: bXrSMPbvlOCcjfJ7027D92oaRag=
+
+Name: res/drawable/com_facebook_inverse_icon.png
+SHA1-Digest: F87dFjM8iCRCeWSfrxkG/jcMtZY=
+
+Name: assets/common/game_res/mp_cliff_102_ground.dat.jpg
+SHA1-Digest: 7jsTwhD2n09w/T2zBrkgHfitZQM=
+
+Name: assets/common/game_res/mm_3003023.dat.jpg
+SHA1-Digest: Oiw2PH6WBT/Gf4JTymx/sgRFD/s=
+
+Name: res/drawable-mdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: 5mRZ2sFLI0LRLV8zEdkzMhgnR9I=
+
+Name: assets/common/game_res/mp_desert_bg_12.dat.jpg
+SHA1-Digest: nSAxhpTW2kwfRYRSwsQ1CMJSgrc=
+
+Name: assets/common/game_res/mm_3001101.dat.jpg
+SHA1-Digest: tkDKJx14SK0FrciXxHKPqMvPCPo=
+
+Name: assets/common/game_res/mm_3002083.dat.jpg
+SHA1-Digest: FoNwzMYXL5ov6YqA/fB4KF+W5f4=
+
+Name: assets/common/game_res/mm_3002045.dat.jpg
+SHA1-Digest: 4MW0xB6dVhdGG6B9erkWVa7HCZk=
+
+Name: assets/common/game_res/mp_volcano_103_ground.dat.jpg
+SHA1-Digest: 2DXGplbksLzR8sAwl2uUqOoAEqE=
+
+Name: assets/common/game_res/dt_fellowtalk_pkg_140.dat.jpg
+SHA1-Digest: NwUQ7pHl9W+m9g4VStfe1rSiGmU=
+
+Name: assets/common/game_res/mm_3001006.dat.jpg
+SHA1-Digest: m+vBvJzEq8+W5Pditqvzs4S49x8=
+
+Name: assets/common/game_res/mp_ghostforest_202_ground.dat.jpg
+SHA1-Digest: PFv7X826qmnYrfSnfF8DmBhq+tA=
+
+Name: assets/common/game_res/mp_icecave_200_ground.dat.jpg
+SHA1-Digest: nWgHumqFzEzP/U6QhGgB7eMpVJc=
+
+Name: res/drawable-hdpi-v4/googleplay_800x480.png
+SHA1-Digest: 5oToGaA1nrSzEZFHjjnV5Bp8Sdg=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png
+SHA1-Digest: mQ3CAtvuslifIzCG9WBbt2IEob8=
+
+Name: assets/common/game_res/mm_3004043.dat.jpg
+SHA1-Digest: qRbdAu7LTfUj/QztX6dqmTX9fIM=
+
+Name: assets/common/game_res/mp_deadmine_399_ground.dat.jpg
+SHA1-Digest: 2tZveTcvMuwoYP0E0YBxndhZ3hM=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_blue_normal.9.png
+SHA1-Digest: gZjHdyUbkxHGTwTTyhzU7ZhhoUs=
+
+Name: assets/common/game_res/mp_ghostforest_404_ground.dat.jpg
+SHA1-Digest: E9OVArTvv44NsqPB/MVi3jmSrqw=
+
+Name: assets/common/game_res/mm_3200320.dat.jpg
+SHA1-Digest: fj42JAD9FYut9gtOflsj/kOtjHE=
+
+Name: assets/common/game_res/mp_ghostforest_402_ground.dat.jpg
+SHA1-Digest: K5vEajer1cYQO333fS/f6aJNYNg=
+
+Name: assets/common/game_res/mp_castle_206_ground.dat.jpg
+SHA1-Digest: X0XqNDjcjL/iNYrOJaKvQPqpUSw=
+
+Name: assets/common/game_res/mp_castle_bg_22.dat.jpg
+SHA1-Digest: dX7chcET3PNBN613bFas6Gpw2P8=
+
+Name: res/drawable-mdpi-v4/ic_c2s_notification_small_icon.png
+SHA1-Digest: qRqQhQpzbkPd6ZYJ09NTWHRi5Ss=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_light.9.pn
+ g
+SHA1-Digest: 3McbND4RRGV4vpt6LNxDafkdK4A=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: RPxZZl2KTv+ezg7bPKsZ2SRDH1Y=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png
+SHA1-Digest: he4dRICJIQSRqHSi4hNgp4sPlxg=
+
+Name: assets/common/game_res/mm_3002005.dat.jpg
+SHA1-Digest: fqldD53ZtKq3JDn2o6TqoXey9aE=
+
+Name: assets/common/game_res/mp_icecave_299_ground.dat.jpg
+SHA1-Digest: f9a2edEwtkVqIjBe6jquM/z6glo=
+
+Name: res/layout/com_facebook_picker_activity_circle_row.xml
+SHA1-Digest: 8SwPJM7Y9uplWvjG/LkVSNI9vSI=
+
+Name: assets/common/game_res/mp_cave_101_ground.dat.jpg
+SHA1-Digest: fmNJfcKaU4ci2GGl0f/IlReuTtY=
+
+Name: assets/common/game_res/mp_goblincastle_301_ground.dat.jpg
+SHA1-Digest: kQZaRl0oLibvMMEfpu2r603EL6w=
+
+Name: assets/common/game_res/mp_icecave_305_ground.dat.jpg
+SHA1-Digest: jNKGqLpEL2BF2SHXdG18fakUiUE=
+
+Name: assets/common/game_res/mm_3002001.dat.jpg
+SHA1-Digest: YjD+XHtX7KA7LlRvqTM7sXW2RtA=
+
+Name: assets/common/game_res/mp_alchemist_bg_32.dat.jpg
+SHA1-Digest: vb8BTLwm1USmYl/lfteiVo2cs4g=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_like_pressed.png
+SHA1-Digest: uk68l9vWfqVav3OXwieSqnM18u0=
+
+Name: assets/common/game_res/mm_3303083.dat.jpg
+SHA1-Digest: HWMPBmmkyfWIDl7H7p6r6+8gI78=
+
+Name: assets/common/game_res/mp_raid_399_ground.dat.jpg
+SHA1-Digest: dsn9SX/mDxU6+I6gDcYeI2P6wKY=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_focus_ligh
+ t.9.png
+SHA1-Digest: 5te3wznPBVYtZMjVj49FYN5YlRA=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: VBdIt82ioiZO0Qmr7/J+8sPnop8=
+
+Name: assets/common/game_res/mp_goblinwoods_bg_22.dat.jpg
+SHA1-Digest: b9VWGnN3uZlFRvvO1OhmkigKvEs=
+
+Name: assets/common/game_res/mp_deadmine_299_ground.dat.jpg
+SHA1-Digest: pfB2rxmPJGFKi888kGfJ6HIKhfQ=
+
+Name: assets/common/ActiveUserImage/00_board_top_logo_com2us.png
+SHA1-Digest: Gz9Ws3Fv4pu4binNW23QViQf+9w=
+
+Name: assets/common/game_res/mm_3000087.dat.jpg
+SHA1-Digest: PL1CW5moVMFYz3YPeq7CWIEH2zw=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: w/L+nKDDWadDlwiDybC+JmpbqaI=
+
+Name: assets/common/game_res/mp_graveyard_405_ground.dat.jpg
+SHA1-Digest: mq5PX5NwO1JgUu3JjNFd5f6utJg=
+
+Name: assets/common/game_res/mm_3000086.dat.jpg
+SHA1-Digest: XmRY8YHsQOh1XwNmza3Gh4PXJF4=
+
+Name: assets/common/game_res/mm_3001022.dat.jpg
+SHA1-Digest: GmFn9DjjC6vNFy6azqIYD4WtbH0=
+
+Name: assets/common/game_res/mp_mushroom_bg_32.dat.jpg
+SHA1-Digest: kBE9ekqr4tcf6v3hdAPaYA/5zNo=
+
+Name: assets/common/game_res/dt_st_boss_dragon.dat.jpg
+SHA1-Digest: TIQR+o19iEA4AnzimgU1FkQpq4U=
+
+Name: assets/common/game_res/mp_goblinwoods_202_ground.dat.jpg
+SHA1-Digest: oCFQgUdNSZBj2PyiDIkMKArTxiA=
+
+Name: assets/common/game_res/mp_woodland_199_ground.dat.jpg
+SHA1-Digest: h4XUEhqgmJXa+WDN3s5okB9ebWU=
+
+Name: assets/common/game_res/mp_deadmine_402_ground.dat.jpg
+SHA1-Digest: dB9pt4sFV1lpvQ/6wLzgPW9/oLM=
+
+Name: assets/common/game_res/mm_3250201.dat.jpg
+SHA1-Digest: Jjq5Du5jWeAu1R/h5k31bo7HVGY=
+
+Name: assets/common/game_res/mp_devilcastle_105_ground.dat.jpg
+SHA1-Digest: 2SC+CB6MLikOfjeokJxIxyplEZE=
+
+Name: assets/common/game_res/mp_ghostforest_300_ground.dat.jpg
+SHA1-Digest: FbKXnUx6wXdh/sYocNnlRS7Inrc=
+
+Name: assets/common/game_res/mp_ruin_202_ground.dat.jpg
+SHA1-Digest: k1XTu7h9PAsxWd7J+okoiQ0LaUw=
+
+Name: assets/common/game_res/mm_3001061.dat.jpg
+SHA1-Digest: t5MowTo2gSjsT0JpeO1esnRbUnA=
+
+Name: assets/common/game_res/mp_volcano_102_ground.dat.jpg
+SHA1-Digest: f92qZCcWnyMIDTbWFc1Ab8U0BzA=
+
+Name: assets/common/game_res/dt_st_boss_goblin.dat.jpg
+SHA1-Digest: UPHF/G2ket/YlA64CoBvDohriec=
+
+Name: res/drawable-xxxhdpi-v4/googleplay_800x480.png
+SHA1-Digest: 5oToGaA1nrSzEZFHjjnV5Bp8Sdg=
+
+Name: assets/common/game_res/mm_3003101.dat.jpg
+SHA1-Digest: BUdZV29xM6CgdNriKzoH/QJOQ3E=
+
+Name: assets/common/game_res/mp_ruin_101_ground.dat.jpg
+SHA1-Digest: i1VsT7KLkhmMnOfutyA42jiCcPY=
+
+Name: assets/common/game_res/mp_goblincastle_bg_12.dat.jpg
+SHA1-Digest: mCCNB2LaVrYAeTs74uZyonWtG8U=
+
+Name: assets/common/game_res/mp_mushroom_201_ground.dat.jpg
+SHA1-Digest: DMR2K6oljZLLVrPDvcEkDHhTlO4=
+
+Name: assets/common/game_res/mm_3200002.dat.jpg
+SHA1-Digest: 17BFMW6FCk5vQelRUVWikN0uaNQ=
+
+Name: assets/common/game_res/mm_3003046.dat.jpg
+SHA1-Digest: dR1kgkv6Z8+1wipc/epFYSVxdqY=
+
+Name: assets/common/NoticeImage/imgNotice_News_GroundIn@2x.png
+SHA1-Digest: BV0JDj5oKLmuzt1Ors+BmV0hodY=
+
+Name: assets/common/game_res/dt_st_raid_spider.dat.jpg
+SHA1-Digest: dgTUxu7WMb6IvDPoYuXfYVM53xs=
+
+Name: assets/common/game_res/mp_volcano_203_ground.dat.jpg
+SHA1-Digest: zrVhZ3n1HF96q2+6lrrhFhVE3Mc=
+
+Name: assets/common/game_res/mm_3200411.dat.jpg
+SHA1-Digest: dPAa9qVEUZKKBxnaimTTDMK2RfU=
+
+Name: res/drawable-hdpi-v4/com_facebook_inverse_icon.png
+SHA1-Digest: dhL1KUuhev6DQVcnYYCm2Qa+oCk=
+
+Name: assets/common/game_res/mm_3001083.dat.jpg
+SHA1-Digest: mRN0lKCxXX5/goTuhEX8dt6j3qM=
+
+Name: res/drawable-mdpi-v4/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: CSWs+/gmAz2rkuEMtOQ/ZTY3/Kc=
+
+Name: assets/common/game_res/mp_townsnow_101_ground.dat.jpg
+SHA1-Digest: v7dfHyQ9u7hKMLP/Wml+YcXiJe8=
+
+Name: assets/common/game_res/mp_deadmine_204_ground.dat.jpg
+SHA1-Digest: +CCYaKtyzjtyClfsPz33ZPOyn+Y=
+
+Name: assets/common/game_res/mp_forest_202_ground.dat.jpg
+SHA1-Digest: idAyztEDqTXiMfcXuAkag07x8pE=
+
+Name: assets/common/game_res/mm_3001102.dat.jpg
+SHA1-Digest: 6Z85MFDxy6OO0LYn3kpj5cBp87s=
+
+Name: res/drawable-hdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: iP8qRXkY+XNmRoVEr+A6b2fLfF4=
+
+Name: assets/common/game_res/mm_3001087.dat.jpg
+SHA1-Digest: mqI5esZDH13xnEKi7lbpriNexL0=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png
+SHA1-Digest: uxEQ5CeVdDLdVI/wV2UpqEvNpQ4=
+
+Name: assets/common/game_res/mp_venomtemple_199_ground.dat.jpg
+SHA1-Digest: sOEqPtGbnlJVW+vWyPKzWeZxB/o=
+
+Name: assets/common/game_res/mm_3004027.dat.jpg
+SHA1-Digest: gH+FEGuxCi2UewlUjyMswngoxkk=
+
+Name: assets/common/game_res/mm_3000046.dat.jpg
+SHA1-Digest: ZhnJs1nosIoN0ZBvmbCLyv2xoLM=
+
+Name: assets/common/game_res/mp_townsnow_103_ground.dat.jpg
+SHA1-Digest: Ru/ELiclcPYZco4uGz69D6CJWwI=
+
+Name: assets/common/game_res/mm_3200250.dat.jpg
+SHA1-Digest: Kp0Je2bVWo0Y+BZRjRyPSperZXc=
+
+Name: assets/common/game_res/mp_snowland_103_ground.dat.jpg
+SHA1-Digest: e8UgHuT7PrYJUGdDxnqB6F+rru4=
+
+Name: res/drawable/com_facebook_button_like_selected.xml
+SHA1-Digest: McCFj3lSPSiZM0AIigwxoMpqtLU=
+
+Name: assets/common/game_res/mp_cliff_bg_11.dat.jpg
+SHA1-Digest: xg4hZFrtKtGen2teNYRHamAz5mw=
+
+Name: assets/common/game_res/mp_icecastle_204_ground.dat.jpg
+SHA1-Digest: FxNoDR85h7MRy2hCateKwofzuV4=
+
+Name: assets/common/game_res/mp_ruin_303_ground.dat.jpg
+SHA1-Digest: oeMyVnyTVrHJ/RdCpLS8kaQwFpk=
+
+Name: assets/common/game_res/mp_forest_bg_12.dat.jpg
+SHA1-Digest: zH9/4hPIqjj+/E63M84Cp3/c/VQ=
+
+Name: assets/common/game_res/mp_coast_402_ground.dat.jpg
+SHA1-Digest: ObSEVDeSClUeQwjmeSkz9mgcfK0=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: rRjIC9V51TgZe2Muk+QxNRxDB4k=
+
+Name: assets/common/game_res/mp_alchemist_bg_11.dat.jpg
+SHA1-Digest: 75KMAN4pDa3dsUwpJOhCQmWgjjo=
+
+Name: assets/common/game_res/mm_3200270.dat.jpg
+SHA1-Digest: BImNmrUzwa72ZCWFIYvY07j8dCU=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png
+SHA1-Digest: ewmojyQLbwcPjW/HwZL3ryTwxZQ=
+
+Name: assets/common/game_res/mp_graveyard_101_ground.dat.jpg
+SHA1-Digest: EVKAcuHPUbxEd2NGPTjPoX0WmuA=
+
+Name: assets/common/game_res/mp_coast_bg_41.dat.jpg
+SHA1-Digest: SUYrA3P6bVxmx84WXvBUV8X0PPE=
+
+Name: assets/common/game_res/mp_graveyard_303_ground.dat.jpg
+SHA1-Digest: QwM+5VrgeowSHBEWRnIqqfQS01M=
+
+Name: assets/common/game_res/mm_3003045.dat.jpg
+SHA1-Digest: hVoPWXhZAP5X529gCIpC4p2VIgQ=
+
+Name: assets/common/game_res/mp_mushroom_206_ground.dat.jpg
+SHA1-Digest: 79cGiUpj8SnOEDd6JcdlvZgf9qA=
+
+Name: assets/common/game_res/mp_mushroom_bg_21.dat.jpg
+SHA1-Digest: NbKk0YAIhofT6AM2DCKT2cLbZVU=
+
+Name: res/drawable-xhdpi-v4/ic_c2s_notification_small_icon.png
+SHA1-Digest: qRqQhQpzbkPd6ZYJ09NTWHRi5Ss=
+
+Name: assets/common/game_res/mp_forest_bg_11.dat.jpg
+SHA1-Digest: LmzXwYYS0iqrpR6+T/GyGpu1UTA=
+
+Name: assets/common/game_res/mm_3100031.dat.jpg
+SHA1-Digest: e6jeaAtIwar/0PhsoRFr2XxQztM=
+
+Name: assets/common/game_res/mp_ghostforest_205_ground.dat.jpg
+SHA1-Digest: PVcqgmLt6xRKt+VvkmZ0lOxG8p4=
+
+Name: assets/common/game_res/mm_3250520.dat.jpg
+SHA1-Digest: xmfmHTfBWsUbh2KvoETTc/a+uxc=
+
+Name: assets/common/game_res/mm_3002006.dat.jpg
+SHA1-Digest: caszQ1mRh4T42lNiW5pQFs4mPcE=
+
+Name: assets/common/game_res/mp_goblincastle_202_ground.dat.jpg
+SHA1-Digest: f8cZTf9aACBYpG9ygZ0Z2Pdmssc=
+
+Name: assets/common/game_res/dt_st_boss_darkelf.dat.jpg
+SHA1-Digest: qcvNH8kmOFc9yiWIwVOjv/sjvFE=
+
+Name: assets/common/game_res/mm_3200350.dat.jpg
+SHA1-Digest: zIy/uOPFLZ3Zrg6yq5FJZAH4XqQ=
+
+Name: assets/common/ActiveUserImage/activeuser_close_button.png
+SHA1-Digest: RVJLWqH8WNTmo6g9o7WkEGF/sEg=
+
+Name: assets/common/game_res/mp_fieldsnow_306_ground.dat.jpg
+SHA1-Digest: 4J29pQ4F9D14lEfEHzl6JSorzYo=
+
+Name: assets/common/game_res/mm_3001104.dat.jpg
+SHA1-Digest: xegD2tC9vkFB0DNeJwqdK0iIJjg=
+
+Name: assets/common/game_res/mp_lavatunnel_399_ground.dat.jpg
+SHA1-Digest: yx+Kubx+CJD6BqTpp6Xz+u+RClw=
+
+Name: assets/common/game_res/mm_3303091.dat.jpg
+SHA1-Digest: Hcnq4E7A63KCFI4fbT8kY501Oiw=
+
+Name: assets/common/game_res/mp_deadmine_202_ground.dat.jpg
+SHA1-Digest: jaiS2GoFA73PqlQx0MaGPz077I4=
+
+Name: assets/common/game_res/mp_castle_101_ground.dat.jpg
+SHA1-Digest: EvpRYOVRGfxDhL92zPISZv0ZbkU=
+
+Name: assets/common/game_res/mp_raid_203_ground.dat.jpg
+SHA1-Digest: 4U7tnQog7vWjhGxGyu0VDXaosgA=
+
+Name: assets/common/game_res/mp_goblinwoods_200_ground.dat.jpg
+SHA1-Digest: 0TQdxDNImLc1a1pfsp3XlC1xMTc=
+
+Name: assets/common/game_res/mp_raid_101_ground.dat.jpg
+SHA1-Digest: UIcyRMadAD9ijWLcCXMBlG8+70g=
+
+Name: assets/common/game_res/mp_ruin_bg_12.dat.jpg
+SHA1-Digest: 5LzcSvjBldqg+NWlGecBR4sk4lI=
+
+Name: assets/common/game_res/mm_3200511.dat.jpg
+SHA1-Digest: o6OwIcTfOOeU9uivlEIG+VriaPo=
+
+Name: assets/common/game_res/mp_cave_200_ground.dat.jpg
+SHA1-Digest: Ckg3HKEYRaG8oYHuW62EPNeJuRw=
+
+Name: assets/common/game_res/mm_3001005.dat.jpg
+SHA1-Digest: gng/SKgIPW6/K8r9u5FYt7zx+tI=
+
+Name: assets/common/game_res/mm_3000044.dat.jpg
+SHA1-Digest: H9Tu63A7/xagnJtr8LxnfiAkexc=
+
+Name: assets/common/game_res/mp_lavatunnel_bg_12.dat.jpg
+SHA1-Digest: MBMZrUsmIrwxCudO16RtRPN4qEo=
+
+Name: assets/common/game_res/mp_townsnow_bg_12.dat.jpg
+SHA1-Digest: Gy8HEjAbZyDzZhtUQaJrDkC6nV4=
+
+Name: assets/common/ActiveUserAgreement/1409219307_M12_4.html
+SHA1-Digest: 0oQFDDGg5IrW6xHTx9n4lc7ogSI=
+
+Name: res/drawable-ldpi-v4/googleplay_800x480.png
+SHA1-Digest: 5oToGaA1nrSzEZFHjjnV5Bp8Sdg=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: srU1La0aKxKcB1CLvKiSYa09NHU=
+
+Name: assets/common/game_res/mp_goblinwoods_299_ground.dat.jpg
+SHA1-Digest: kB7J/4XUImLoFyneRAwtWF991oU=
+
+Name: res/drawable-mdpi-v4/webview_close_button.png
+SHA1-Digest: a9PrmO7oS2Cm30In+4JL7sBzya8=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: UCzYT6RE8m1+z99KNVBkhnl38jY=
+
+Name: assets/common/game_res/mp_goblincastle_101_ground.dat.jpg
+SHA1-Digest: //ipFGi/99zPQMc8QdhkeB8IEGs=
+
+Name: assets/common/game_res/mm_3100013.dat.jpg
+SHA1-Digest: D4APcJZfKJ38fYdCZ1b14U7pzTA=
+
+Name: assets/common/game_res/mp_snowland_204_ground.dat.jpg
+SHA1-Digest: FWqdrBVzLT/2LYKTZ2uL7lQ+aaQ=
+
+Name: assets/common/game_res/ef_001_pi_gl.dat.jpg
+SHA1-Digest: jfDIRr6SdRxeNohwdMcV58jjbP0=
+
+Name: assets/common/game_res/mm_3100014.dat.jpg
+SHA1-Digest: UjXjdeFgV9OniTh7cIB9oIxFbEU=
+
+Name: assets/common/game_res/mp_graveyard_bg_11.dat.jpg
+SHA1-Digest: F6Qg5hTvSqz+x6L4Jc3UymG2wAE=
+
+Name: assets/common/game_res/mp_cliff_104_ground.dat.jpg
+SHA1-Digest: FJLn7RqXJ7N85GFEQ6LIgIu1KZM=
+
+Name: assets/common/ActiveUserImage/activeuser_logo_gamevil.png
+SHA1-Digest: 87qS65jCJjJgnTwOACTys7WKX3s=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_blue_focused.9.png
+SHA1-Digest: ntXUarP34vPdVwLmlXR16ctIPLo=
+
+Name: assets/common/game_res/mp_coast_306_ground.dat.jpg
+SHA1-Digest: cPN0EEDn1TY+gN54AZ53ToVAzT8=
+
+Name: assets/common/game_res/ui_scene_touch_info_wc.dat.jpg
+SHA1-Digest: H8NAo0+9p/0WfUXbl+E97poTDBE=
+
+Name: assets/common/game_res/mp_raid_303_ground.dat.jpg
+SHA1-Digest: L7plFMQskuDZz1aj5Ka73sd7Y5U=
+
+Name: assets/common/game_res/mp_snowland_302_ground.dat.jpg
+SHA1-Digest: KZ3t4I0uPbYelChiTCKyd8oUzFY=
+
+Name: assets/common/game_res/mm_3003043.dat.jpg
+SHA1-Digest: Crp3/GfnQXrvdg2JHrpcmzavZdo=
+
+Name: assets/common/game_res/mm_3000131.dat.jpg
+SHA1-Digest: Dh7yXtwt7STbRDaxJ35Fshks6Gc=
+
+Name: assets/common/game_res/mp_raid_205_ground.dat.jpg
+SHA1-Digest: NCz5eVuPnM5o7wAgNN/26zUESMs=
+
+Name: assets/common/game_res/mp_desert_204_ground.dat.jpg
+SHA1-Digest: ic0VOxcj7TgyIDNAqZZEu7UFtTY=
+
+Name: assets/common/game_res/mm_3200851.dat.jpg
+SHA1-Digest: wTMyqsmDGrYx5RakiUwVwzhqWtI=
+
+Name: assets/common/game_res/mm_3100020.dat.jpg
+SHA1-Digest: GQO405f25dXo+WAICZY5G5L0RFs=
+
+Name: assets/common/game_res/mm_3000005.dat.jpg
+SHA1-Digest: 6HhxGNODh0DEdKFYe7ckfWY3OeI=
+
+Name: assets/common/game_res/mp_alchemist_202_ground.dat.jpg
+SHA1-Digest: fnQiCHk1CykvORgBoG4eLrwihu0=
+
+Name: assets/common/game_res/mp_alchemist_100_ground.dat.jpg
+SHA1-Digest: p1ZZsSW8Jn1+FUq3LffB1D7BEHI=
+
+Name: assets/common/game_res/mm_3200720.dat.jpg
+SHA1-Digest: eQugIOixi6zd+AVEDVnK9KoAzPQ=
+
+Name: assets/common/game_res/mp_alchemist_206_ground.dat.jpg
+SHA1-Digest: g+mTEeIco0wpvTDNGfXnnsiCkxY=
+
+Name: assets/common/game_res/mp_cave_204_ground.dat.jpg
+SHA1-Digest: CkGSfN7Ubi7Q06HR+MldTCeiBUQ=
+
+Name: assets/common/game_res/mp_town_206_ground.dat.jpg
+SHA1-Digest: TgAXAgQaafnycJRLhIFDAv+Mmx0=
+
+Name: assets/common/game_res/mp_goblinwoods_206_ground.dat.jpg
+SHA1-Digest: yIxkLMHNN3hXlEuUw/Dtvcsi4ag=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: bENWi8ZugwD88Ech+3ZELNcC/Kw=
+
+Name: assets/common/game_res/mp_snowland_200_ground.dat.jpg
+SHA1-Digest: f/QI2yVIITMJgY1id4LT2PenEfI=
+
+Name: res/drawable-hdpi-v4/com_facebook_close.png
+SHA1-Digest: APOib1/odAKIK8vQvQ7RZF7aOSE=
+
+Name: assets/common/game_res/mp_devilcastle_bg_12.dat.jpg
+SHA1-Digest: YGR7LMyP9+9a8CRfgrmA7bpbsiU=
+
+Name: assets/common/game_res/mp_graveyard_299_ground.dat.jpg
+SHA1-Digest: TfQ/ZdiZ/i1shPp3De4E1evRavs=
+
+Name: assets/common/game_res/mp_ruin_302_ground.dat.jpg
+SHA1-Digest: 4DSUV4limkiP47wmyfkgAG+Lnxc=
+
+Name: assets/common/game_res/mp_coast_299_ground.dat.jpg
+SHA1-Digest: QaEpTQoYPvvQf151GfkA1Cvzdio=
+
+Name: assets/common/ActiveUserImage/00_board_top_m.png
+SHA1-Digest: mLOxayJsOo+RzWrguIdkZ3kUxa0=
+
+Name: assets/common/game_res/mp_alchemist_bg_31.dat.jpg
+SHA1-Digest: ul+KsAdSLvR9+DsZgFAG2cXQEoA=
+
+Name: assets/common/game_res/mm_3000107.dat.jpg
+SHA1-Digest: a8ExnJKJbTtTQpeFY88JFixdHXI=
+
+Name: assets/common/game_res/mp_goblinwoods_304_ground.dat.jpg
+SHA1-Digest: Ox8YqtCzrsIO6A8rQNZbEvHyj74=
+
+Name: assets/common/game_res/mm_3200011.dat.jpg
+SHA1-Digest: a04fVBXCSxr4GbIvYPXrxDNXC4c=
+
+Name: assets/common/game_res/mm_3000123.dat.jpg
+SHA1-Digest: go62CA+qqL+A6IyugSGtdDQXo7o=
+
+Name: assets/common/game_res/mp_mushroom_199_ground.dat.jpg
+SHA1-Digest: Yka1JY1RUPyyBMoqcJhF4i1VEMs=
+
+Name: res/drawable-xxhdpi-v4/com2us_en_800x480.png
+SHA1-Digest: OlVXf/HYkeRGOuv4/yqGyHkonxU=
+
+Name: assets/common/game_res/mp_yellowtower_199_ground.dat.jpg
+SHA1-Digest: ydPPUMl24AVfNZy02tflHyaP00s=
+
+Name: assets/common/game_res/mp_coast_399_ground.dat.jpg
+SHA1-Digest: h7oxmeGw2SkNooTGBYNtYXVZQ+o=
+
+Name: assets/common/game_res/mm_3000106.dat.jpg
+SHA1-Digest: 9K9G2eEKJknICe56GqhlsU/GFFs=
+
+Name: res/drawable-xxxhdpi-v4/icon.png
+SHA1-Digest: 98UUMYp5OZ1XUQSjPW9QYXFkePg=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_focus_light
+ .9.png
+SHA1-Digest: 29jlpwaYo8yADFvg53lRNdVbvt0=
+
+Name: assets/common/game_res/mm_3004005.dat.jpg
+SHA1-Digest: DWS23/MH7lLJI+rXfL2heHYyRFo=
+
+Name: assets/common/game_res/mp_volcano_bg_12.dat.jpg
+SHA1-Digest: L3ZoJRXxCS4g7sTzd1aTnF6iV9Y=
+
+Name: assets/common/game_res/mp_desert_301_ground.dat.jpg
+SHA1-Digest: JoHjh9ZrvjV6YrkDfKiHV0a7qow=
+
+Name: assets/common/game_res/mp_ruin2_203_ground.dat.jpg
+SHA1-Digest: T/4bMCACl326LN9VpYJkQVShYoQ=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png
+SHA1-Digest: rxKAStLl/8uIoZskTt6N9AMuG+I=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png
+SHA1-Digest: Yv03+LhA+UZt+z7csDqgVvySQdY=
+
+Name: assets/common/game_res/ef_001_info_wc.dat.jpg
+SHA1-Digest: F9d7XzIcyU52geuMeID7PS0bu6U=
+
+Name: assets/common/game_res/mp_fieldsnow_bg_22.dat.jpg
+SHA1-Digest: 1JxbTGbNpj5u6If+lUPDIMO42IE=
+
+Name: assets/common/game_res/mp_snowland_201_ground.dat.jpg
+SHA1-Digest: EN47b/rCMWpPvJwTz+rZpDI8NpY=
+
+Name: assets/common/game_res/mp_town_bg_11.dat.jpg
+SHA1-Digest: xyS99UBzyUU0WI66cI4bzNSyITM=
+
+Name: assets/common/game_res/mp_castle_205_ground.dat.jpg
+SHA1-Digest: oct06S2yMdsJBWJuEz6MHid+x/4=
+
+Name: assets/common/game_res/mp_icecave_399_ground.dat.jpg
+SHA1-Digest: qCTjP1Cgcz293Q6HqdgkZdk0+6k=
+
+Name: assets/common/ActiveUserImage/00_board_top_r.png
+SHA1-Digest: VheMFu+J5l5lzpbkkkdTflOpd8A=
+
+Name: assets/common/game_res/mm_3200431.dat.jpg
+SHA1-Digest: dO32u3KRqjNr6uX7wXUldLNe7D0=
+
+Name: assets/common/game_res/mp_cliff_300_ground.dat.jpg
+SHA1-Digest: dbOkNIi4N6Ydi7J8Kqd0byyAr6M=
+
+Name: assets/common/game_res/mm_3250410.dat.jpg
+SHA1-Digest: g3mJyPSDqoWuycxo8RjIsXY+aQs=
+
+Name: assets/common/ActiveUserImage/00_btn_default_l.png
+SHA1-Digest: 73P5TV11E8P2VHkSb6c4jq6idNs=
+
+Name: assets/common/game_res/mp_deadmine_301_ground.dat.jpg
+SHA1-Digest: 37issWqItRQUFC28H7UP9jTel8M=
+
+Name: assets/common/game_res/mm_3200740.dat.jpg
+SHA1-Digest: Mz6d/3k1l71TXEB+N3uSjYihaUg=
+
+Name: assets/common/game_res/mp_goblinwoods_bg_11.dat.jpg
+SHA1-Digest: D1Jnyd8xGal7PYAoVfx+cF4rZcs=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: uRAyDpH07H9tazGPj+pquxEo+4U=
+
+Name: assets/common/game_res/mm_3200220.dat.jpg
+SHA1-Digest: +0/rJrcRO5AjMUwmVHZzDZbY/ms=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_focus_dar
+ k.9.png
+SHA1-Digest: AhN8QSMQGVEiuDPw+ArDAL+kX1o=
+
+Name: assets/common/game_res/mp_yellowtower_bg_22.dat.jpg
+SHA1-Digest: CNhBwAMsBGOfPAMQICJENkc0ieM=
+
+Name: assets/common/game_res/mm_3200121.dat.jpg
+SHA1-Digest: TaH70SrEY8Rzf5dtYTNPVhIYlD4=
+
+Name: assets/common/game_res/mp_ghostforest_299_ground.dat.jpg
+SHA1-Digest: TsQqiD/wTU8e2vQ5MrKZq8Exn8M=
+
+Name: assets/common/mercury/1_length_box_check_d.png
+SHA1-Digest: l6ClAOn/dyIOrL24KkWduW6T9iY=
+
+Name: res/drawable/common_signin_btn_text_light.xml
+SHA1-Digest: 3qkRSuRdYOlxZM1rq0jmCZi8ieI=
+
+Name: assets/common/game_res/mm_3200141.dat.jpg
+SHA1-Digest: UlDoUx9hIcf3XVxQ0NsWmzq4GdQ=
+
+Name: res/drawable-xhdpi-v4/com_facebook_logo.png
+SHA1-Digest: eLhmuI8qy69Vxe66/CMns3bXewc=
+
+Name: res/drawable-xhdpi-v4/com_facebook_inverse_icon.png
+SHA1-Digest: JlToIy/BS1SwLA3JoedKEQBE76E=
+
+Name: res/layout/com_facebook_search_bar_layout.xml
+SHA1-Digest: hVtikncWIeKlG+YfyKJgQHWu/QU=
+
+Name: assets/common/game_res/mp_arena_100_ground.dat.jpg
+SHA1-Digest: caeoP273B6ZcuqM59RFbefhdDQU=
+
+Name: assets/common/game_res/mp_yellowtower_103_ground.dat.jpg
+SHA1-Digest: 5sutc0dRc/gOKMwq0HeorqIsBDI=
+
+Name: assets/common/game_res/mp_ghostforest_103_ground.dat.jpg
+SHA1-Digest: SEs9xFDz46M0yMSiP0CrLQsKkNA=
+
+Name: assets/common/game_res/mp_castle_bg_21.dat.jpg
+SHA1-Digest: GF2JnmmGeTW/HPBbYu5QmLNMKiU=
+
+Name: assets/common/game_res/mp_castle_106_ground.dat.jpg
+SHA1-Digest: SMEhAaYTGTFzH8MbvnYEPiayqoQ=
+
+Name: assets/common/game_res/mp_ruin2_199_ground.dat.jpg
+SHA1-Digest: MOgtzoZVIRYkrlJNRw8lJvPgNa4=
+
+Name: assets/common/NoticeImage/imgNotice_News_CeilingIn@2x.png
+SHA1-Digest: rtGyx+czdld115qCncOGIXWlEmE=
+
+Name: assets/common/game_res/mp_townsnow_201_ground.dat.jpg
+SHA1-Digest: AhRDSwfH7yRSlb2SyeNaKWk6D/Q=
+
+Name: assets/common/game_res/mp_town_199_ground.dat.jpg
+SHA1-Digest: UMPEBWH0fPwlvbX7SXWhrXS1w5A=
+
+Name: assets/common/game_res/mm_3002082.dat.jpg
+SHA1-Digest: FSQrb6E7VkcbWXYTIk4V+9P/CSI=
+
+Name: assets/common/game_res/mm_3004067.dat.jpg
+SHA1-Digest: RnuGK+7l1OMOIjir9q8bB2MTK2w=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: BPO7rZUizcNQMnWeRsW2OCnWgH4=
+
+Name: assets/common/game_res/mm_3002025.dat.jpg
+SHA1-Digest: lcb+V6uQ2ue7UOqtu+F45dxoK/0=
+
+Name: assets/common/game_res/mp_venomtemple_205_ground.dat.jpg
+SHA1-Digest: 573j/lrIyjbeuhLkHw8fCRn1aSs=
+
+Name: res/drawable-mdpi-v4/com_facebook_button_blue_focused.9.png
+SHA1-Digest: r/eQ4lVtqUneb1/AXEHu+2WLWDM=
+
+Name: res/drawable/com_facebook_button_blue.xml
+SHA1-Digest: 2rPmhDQhxu0nuYa3h+NAkiGMPoM=
+
+Name: res/layout/splash_com2us_en.xml
+SHA1-Digest: QbafO3OSnDNtYSI1JnK+rURm0KA=
+
+Name: assets/common/game_res/mp_coast_404_ground.dat.jpg
+SHA1-Digest: 9lnYUXAX8CR63TGl9BSoAGAeRCo=
+
+Name: assets/common/game_res/dt_shop_pkg_140.dat.jpg
+SHA1-Digest: M1jJbMa+p+dvMOOeWoii2zokuds=
+
+Name: assets/common/game_res/mp_town_105_ground.dat.jpg
+SHA1-Digest: n6SW+oER5c15ybQxs51A4A3RryI=
+
+Name: assets/common/ActiveUserImage/00_btn_select_m_1.png
+SHA1-Digest: hTnOjDz4PsAtnLApw3jYoxbUczk=
+
+Name: assets/common/game_res/mp_icecastle_206_ground.dat.jpg
+SHA1-Digest: TYgrxnkpdadPxxu2h+La4Syh+cY=
+
+Name: assets/common/game_res/mp_hive_105_ground.dat.jpg
+SHA1-Digest: 6/qGkMK8OsjG5nGLpXkjiNhytNE=
+
+Name: assets/common/game_res/mm_3003007.dat.jpg
+SHA1-Digest: +V32w6lrupjQgxRZZJ28ZsnjuHc=
+
+Name: assets/common/game_res/mp_town_301_ground.dat.jpg
+SHA1-Digest: 11rGbP72W3B5qmVOxtKA7NAk+nk=
+
+Name: assets/common/game_res/mp_town_205_ground.dat.jpg
+SHA1-Digest: n/ZU4JUE9aM15Hth1STlawH7Ldo=
+
+Name: assets/common/game_res/mm_3002031.dat.jpg
+SHA1-Digest: W2nsDhCymJmNvqTAR9BXJ6Vqzbk=
+
+Name: assets/common/game_res/mm_3100018.dat.jpg
+SHA1-Digest: HluVyUra5JCJh4BMMiLCQI5zsCQ=
+
+Name: assets/common/game_res/mp_town_399_ground.dat.jpg
+SHA1-Digest: Dzvfr3jJ5Q2IJKhiN6/SOAT/J+Y=
+
+Name: assets/common/game_res/mp_cliff_306_ground.dat.jpg
+SHA1-Digest: kTtmOdDpC7h3wO+z7LKenXyTXCw=
+
+Name: assets/common/game_res/mp_icecave_101_ground.dat.jpg
+SHA1-Digest: Sz65uiZWkYxCMtTWVEMVdDrbiI4=
+
+Name: assets/common/game_res/mp_snowland_199_ground.dat.jpg
+SHA1-Digest: LT+hMaak5KiIdR2tliW8yKd9o50=
+
+Name: assets/common/game_res/mm_3000023.dat.jpg
+SHA1-Digest: l8tGnjID451CP9hvmcow/UnS+0Q=
+
+Name: assets/common/game_res/mp_goblincastle_306_ground.dat.jpg
+SHA1-Digest: C0lMwDAq4qNYZxeeE+GmiWUwTZE=
+
+Name: assets/common/game_res/mp_town_204_ground.dat.jpg
+SHA1-Digest: fFTlDyJ3d9Bjfho0KSYlC33MhLg=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA1-Digest: SeoRZb8/hN76BDuBG6fH0JbmNI4=
+
+Name: assets/common/game_res/mp_desert_104_ground.dat.jpg
+SHA1-Digest: PV/gMF9CuIpps56ENvTQ3WT7m6g=
+
+Name: assets/common/game_res/mm_3003066.dat.jpg
+SHA1-Digest: NhnKVG56sBoang7E7vG0G9K3k/4=
+
+Name: assets/common/game_res/mp_ruin_203_ground.dat.jpg
+SHA1-Digest: atMxFnUepnT9i73aRLP2xL86pWc=
+
+Name: assets/common/game_res/mm_3004064.dat.jpg
+SHA1-Digest: /+CIBsqHkpk9ahnJ7ShzdNEihyM=
+
+Name: assets/common/game_res/mp_ruin_100_ground.dat.jpg
+SHA1-Digest: usTnyIjueMxBuGBkLqfXofr8lG8=
+
+Name: assets/common/game_res/dt_st_raid_goblin.dat.jpg
+SHA1-Digest: xNsFts/Tu+52FqYOMZ8ScsQCa5A=
+
+Name: assets/common/game_res/mp_yellowtower_201_ground.dat.jpg
+SHA1-Digest: 1JkZ49rgLctOHw3TS3GN9GSuXFk=
+
+Name: assets/common/game_res/mp_town_bg_31.dat.jpg
+SHA1-Digest: 3eqRxPuYLHsRFIBrvJEnaX+ZGW0=
+
+Name: assets/common/game_res/mp_lavatunnel_301_ground.dat.jpg
+SHA1-Digest: xxVzXgajx7PYfwcc/N2j7B9hUfY=
+
+Name: assets/common/game_res/ef_001_p_gl.dat.jpg
+SHA1-Digest: wk6RXz0yLH9iS4M8zurDp2LIcqQ=
+
+Name: assets/common/game_res/mm_3004051.dat.jpg
+SHA1-Digest: WeOANE5tHMUZY+hlOwwFzEufm7I=
+
+Name: assets/common/game_res/mp_desert_201_ground.dat.jpg
+SHA1-Digest: Q7evylk1wUHf1+iUGrg1z7nSLcc=
+
+Name: assets/common/game_res/mm_3000004.dat.jpg
+SHA1-Digest: wtHztACKXQxLSk3u8FAaIDNAzm0=
+
+Name: assets/common/game_res/mm_3004024.dat.jpg
+SHA1-Digest: hZvHs+yuaTMRp/CYyEFC3uv9jrg=
+
+Name: assets/common/game_res/mm_3000211.dat.jpg
+SHA1-Digest: FWtRHB4AzYxYpgMOG9GpbdFPbKU=
+
+Name: assets/common/game_res/mm_3200731.dat.jpg
+SHA1-Digest: LtVLAMJYQlf5o7bX5V/v71OYDAw=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: hMf/FoHQ1ncswR3Ha2oj+rtb3FA=
+
+Name: assets/common/game_res/mm_3000184.dat.jpg
+SHA1-Digest: 1tbvh3sE9tj8zyiPgym3qsSr5NA=
+
+Name: assets/common/game_res/mm_3001021.dat.jpg
+SHA1-Digest: UShjCBnBprocPLlUFwBm8CcQNUs=
+
+Name: assets/common/mercury/1_wide_box_check_d.png
+SHA1-Digest: ystIHY931+C1hnlmgcIJYQ9DdBs=
+
+Name: assets/common/game_res/dt_st_raid_ghost.dat.jpg
+SHA1-Digest: RxNct2o8a5qoxDvsvj3TJ0uK0zc=
+
+Name: assets/common/game_res/mm_3250220.dat.jpg
+SHA1-Digest: YaHmz0u7rypDGrcTk3/HTHogsxE=
+
+Name: assets/common/game_res/mp_graveyard_203_ground.dat.jpg
+SHA1-Digest: 9d6ogUHXsJC5eVeDS3Bf/nLCmzA=
+
+Name: assets/common/game_res/mp_snowland_104_ground.dat.jpg
+SHA1-Digest: d71AMc4amiXo4ODdtjPd68WczFg=
+
+Name: assets/common/game_res/dt_st_normal.dat.jpg
+SHA1-Digest: mnR7g2ZvDwtQn/GElDn3IqKY6gw=
+
+Name: assets/common/game_res/mp_raid_206_ground.dat.jpg
+SHA1-Digest: C0hyMi5vOl8T/lgLNTn7lpwoBM0=
+
+Name: assets/common/game_res/mp_fieldsnow_205_ground.dat.jpg
+SHA1-Digest: wV+ND+xGFZfyHiC9OVIPZ00w3uo=
+
+Name: assets/common/game_res/mm_3200711.dat.jpg
+SHA1-Digest: kgQ+b0rsIOKOU4YpSoM2e0sab20=
+
+Name: assets/common/game_res/mm_3250010.dat.jpg
+SHA1-Digest: LXRGaXLvTxkYNvGB1sV1VGKAEN4=
+
+Name: assets/common/game_res/mp_alchemist_201_ground.dat.jpg
+SHA1-Digest: NwR9u8uKtF/5gIdXvVd0EwU05Eo=
+
+Name: assets/common/game_res/mp_ghostforest_101_ground.dat.jpg
+SHA1-Digest: 4GUAgOzuFMLXFKOCmjqVqLtV5rw=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png
+SHA1-Digest: sC70NtI1TOrQ25tTttVbTOvGpzY=
+
+Name: assets/common/game_res/mp_goblinwoods_302_ground.dat.jpg
+SHA1-Digest: drlnhpadZ/6AJTlQiDv24eYBqd0=
+
+Name: assets/common/game_res/mm_3250331.dat.jpg
+SHA1-Digest: 68wm5S2tji2V3s5XKNWqzHtQxJg=
+
+Name: assets/common/game_res/mp_goblinwoods_204_ground.dat.jpg
+SHA1-Digest: a5DHHptRDJ6qlfYYaGzRr6nc1Ps=
+
+Name: assets/common/game_res/mp_fieldsnow_bg_12.dat.jpg
+SHA1-Digest: gPPayPGtGWx2NXGQ5LXmlMkd6lA=
+
+Name: assets/common/game_res/mm_3200341.dat.jpg
+SHA1-Digest: ZiALp/ztrDYX10DcbyJxmsJ1K1Q=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_focus_light
+ .9.png
+SHA1-Digest: 0ky7hJW6fNsa6m2tmjhllqHXHfg=
+
+Name: assets/common/game_res/mp_venomtemple_106_ground.dat.jpg
+SHA1-Digest: hpLjNKyuX9RhlE7kkbAMtTYsb+A=
+
+Name: assets/common/game_res/mp_yellowtower_106_ground.dat.jpg
+SHA1-Digest: e1hjjJIJtQ+b7tddQMElYLFP598=
+
+Name: assets/common/game_res/mp_yellowtower_200_ground.dat.jpg
+SHA1-Digest: lM2eCS/qZN7iuUq2xgmqTcfX0vc=
+
+Name: assets/common/game_res/mp_ghostforest_401_ground.dat.jpg
+SHA1-Digest: JYj1rWv6YI7XqHdr1m/5e7njDxM=
+
+Name: assets/common/game_res/mm_3002087.dat.jpg
+SHA1-Digest: Oi1ZR5X4VNnlGFWW9miyu/HCDBk=
+
+Name: assets/common/game_res/mm_3250121.dat.jpg
+SHA1-Digest: 6ldqMt70pBefbLb3KXNXr9tdJ/Y=
+
+Name: assets/common/game_res/mp_fieldsnow_bg_31.dat.jpg
+SHA1-Digest: OK6WHD0y5/YLxWJRUyLUwFg6SRw=
+
+Name: assets/common/game_res/mm_3000122.dat.jpg
+SHA1-Digest: Fx7qrysNrEpS8fWYM+1LH3Jo1gI=
+
+Name: assets/common/game_res/nm_res_wc.dat.jpg
+SHA1-Digest: gkFKY8h6VuiShDEbPwfH8tyJZ7w=
+
+Name: assets/common/game_res/mm_3200381.dat.jpg
+SHA1-Digest: QMbPmQ3HhaJtFVmKI7vAxN2zsdk=
+
+Name: assets/common/game_res/mp_snowland_304_ground.dat.jpg
+SHA1-Digest: Scl7RosV7BtRjvbiZGhHi/tAceQ=
+
+Name: assets/common/game_res/mp_volcano_301_ground.dat.jpg
+SHA1-Digest: 7e+LUK4OVJacuFtyaOck4wF0Bzo=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png
+SHA1-Digest: WjFm0tp4nyOULhL2U3mNcNv66H0=
+
+Name: assets/common/game_res/mm_3250101.dat.jpg
+SHA1-Digest: A+tSgBwukI8A8rK2sIjLNWXrr28=
+
+Name: res/drawable/com_facebook_place_default_icon.png
+SHA1-Digest: T6PfkzvzoTErI9HPUHhPTzYuaOw=
+
+Name: assets/common/game_res/dt_st_raid_darkelf.dat.jpg
+SHA1-Digest: CgJEY51kCJYtrrN9e6JV7RMbUV4=
+
+Name: assets/common/game_res/mm_3001111.dat.jpg
+SHA1-Digest: kIb9NaqJgtu/6xvEPsSjPQjeeHs=
+
+Name: assets/common/game_res/dt_monster_lvup_140.dat.jpg
+SHA1-Digest: WFfWwptbrLfZ31jdkcjTkQ9bZYg=
+
+Name: assets/common/game_res/mp_volcano_300_ground.dat.jpg
+SHA1-Digest: UmzJlE2B4EOzg1SBbPKuupnHgZQ=
+
+Name: assets/common/game_res/mp_woodland_bg_12.dat.jpg
+SHA1-Digest: W1ZA9yVT8oXWcn/kY/skGhxsNIA=
+
+Name: assets/common/game_res/mm_3250421.dat.jpg
+SHA1-Digest: FiIYauPaIzL0nfBxyaOBSupUrek=
+
+Name: AndroidManifest.xml
+SHA1-Digest: hdJZJhLDK1s1RLf0b3OVKLbbyW8=
+
+Name: assets/common/game_res/mm_3200710.dat.jpg
+SHA1-Digest: 9RoWrW1Fu3O9ecQnzDgRwr+iJbE=
+
+Name: res/layout/com_facebook_picker_search_box.xml
+SHA1-Digest: 5WtPtf4M1JmAmuElAdgAF3e4c8c=
+
+Name: assets/common/game_res/mp_cave_206_ground.dat.jpg
+SHA1-Digest: ePhFLqTSp38R3bUY4Snl90Ab0yY=
+
+Name: assets/common/mercury/0_length_outline.png
+SHA1-Digest: uYxwo1Hx64Od5zRs10zTEUZnlMs=
+
+Name: assets/common/game_res/mp_deadmine_306_ground.dat.jpg
+SHA1-Digest: 7m2iVY3AsTTmbV92RPnDwWEW11I=
+
+Name: assets/common/game_res/mp_townsnow_106_ground.dat.jpg
+SHA1-Digest: xHBaAi1Mf6+Z1k2TrrMu/WDl4Go=
+
+Name: assets/common/game_res/mp_yellowtower_202_ground.dat.jpg
+SHA1-Digest: IZaKYXoJ/E0E3f/Y+c1QLzusuAc=
+
+Name: assets/common/game_res/mm_3200321.dat.jpg
+SHA1-Digest: 0X3RukHGrYfwdfvrkntEvH/oBh4=
+
+Name: assets/common/game_res/mp_ghostforest_200_ground.dat.jpg
+SHA1-Digest: B17KPRmzTGjUCdbPrL1wCVT/x8E=
+
+Name: assets/common/game_res/mm_3000125.dat.jpg
+SHA1-Digest: vgxWhOo8TCMyj2WjYeMYgUE7F2M=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: 3+x2t/WZmDnWpRsGihxGb1wjfKk=
+
+Name: assets/common/game_res/mp_desert_306_ground.dat.jpg
+SHA1-Digest: 2vviov+vr+ZGokGFa05ZKu1v4B8=
+
+Name: assets/common/game_res/mm_3000147.dat.jpg
+SHA1-Digest: VwR9DbqzxAmGS/SnP6mNGRH1+1E=
+
+Name: assets/common/game_res/mp_hive_101_ground.dat.jpg
+SHA1-Digest: f25BkbdYGyD7CTiYyzfwg+umtOs=
+
+Name: assets/common/game_res/mp_alchemist_299_ground.dat.jpg
+SHA1-Digest: k0tPTUTcf3Ea0tb9jebdTSKliOU=
+
+Name: assets/common/game_res/mm_3003004.dat.jpg
+SHA1-Digest: Dl0PgcwnwB/kYuGAdXrT7ZSVcyY=
+
+Name: assets/common/game_res/dt_sound_pkg_140.dat.jpg
+SHA1-Digest: JhIiFaDmptJgoTDTd7S5pyGpGNw=
+
+Name: assets/common/game_res/fr_fairy_p_gl.dat.jpg
+SHA1-Digest: RGh+DVqCcnpGaCAR0onVQCPKBNw=
+
+Name: assets/common/game_res/mp_coast_204_ground.dat.jpg
+SHA1-Digest: D3FCOc3RGXyy+fFBUI75wMn/lYo=
+
+Name: assets/common/game_res/mp_woodland_399_ground.dat.jpg
+SHA1-Digest: BPNurgpuDSJNZkw5WeUNHje3VBE=
+
+Name: assets/common/game_res/mp_mushroom_299_ground.dat.jpg
+SHA1-Digest: DGNoKKqLH4bPBzWFw9/02N/pZdQ=
+
+Name: assets/common/game_res/mp_arena75_bg_11.dat.jpg
+SHA1-Digest: oTglWFS2g2yg6YqEWmOrDP9yRKk=
+
+Name: assets/common/game_res/mm_3200640.dat.jpg
+SHA1-Digest: NqIgxsRYnRNCnJQtF/e+xrLKnH4=
+
+Name: assets/common/game_res/mp_woodland_200_ground.dat.jpg
+SHA1-Digest: uGFAb9O+OoqcDYmkMkyUfocoAaE=
+
+Name: assets/common/game_res/mp_forest_bg_42.dat.jpg
+SHA1-Digest: 6DVZV70Q7vlkFDlEySlawPrOeZE=
+
+Name: assets/common/game_res/mp_venomtemple_202_ground.dat.jpg
+SHA1-Digest: 6QPcTSQ1pVquIu5YOlkwgZsDQl8=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png
+SHA1-Digest: 9vrWnp1DKsrgj6R4IGYpQU4Q6zQ=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png
+SHA1-Digest: KlhlPq9cEDac9rtf0YM03Bb5OUU=
+
+Name: assets/common/game_res/mp_volcano_304_ground.dat.jpg
+SHA1-Digest: 7egJeOYTpyvvANSlK0EWwrSuU9g=
+
+Name: assets/common/game_res/mp_ghostforest_201_ground.dat.jpg
+SHA1-Digest: XR9Xyiwkoca2N6nphYzyO5xmV7E=
+
+Name: assets/common/game_res/mp_ruin_106_ground.dat.jpg
+SHA1-Digest: jU8YZg1uNzlp6uxkY1wnZQF8NDQ=
+
+Name: assets/common/game_res/mp_snowland_bg_32.dat.jpg
+SHA1-Digest: MDq8R8vv0zQwCGp8TGVAFYnwIt4=
+
+Name: assets/common/game_res/mp_deadmine_bg_12.dat.jpg
+SHA1-Digest: iaBg1r6kAEZSRNjlmuNnLeaHAaQ=
+
+Name: assets/common/game_res/mm_3000162.dat.jpg
+SHA1-Digest: lqAQ8DuGB3eec3QnWmTAemwZYN8=
+
+Name: assets/common/game_res/mp_ghostforest_499_ground.dat.jpg
+SHA1-Digest: MDSrwFMP+c8Fuq1lmKtCF6zYk2g=
+
+Name: res/drawable-xxhdpi-v4/com_facebook_button_like_pressed.png
+SHA1-Digest: kfFHLC5nMeoEjXEAll/73jL1YIo=
+
+Name: assets/common/game_res/mm_3200241.dat.jpg
+SHA1-Digest: Y08QRqN+l3EgOS3C5oRUE7GjY1E=
+
+Name: res/drawable/com_facebook_button_check.xml
+SHA1-Digest: 6ga3ohDAgjszm8vt3QE6o48ucng=
+
+Name: assets/common/game_res/mp_alchemist_bg_12.dat.jpg
+SHA1-Digest: XWYfqy2lMmVG9E677r8IpDmYsOE=
+
+Name: assets/common/game_res/mm_3001084.dat.jpg
+SHA1-Digest: K/12SGlk7YDuUOLlYDCn6W/tbUk=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: 1Hnpvj2UzKDvPZv175SFBfp0Gn8=
+
+Name: assets/common/game_res/mp_coast_bg_32.dat.jpg
+SHA1-Digest: mbhrff2CIgF86qjZaHONxp11KOc=
+
+Name: assets/common/game_res/mp_castle_105_ground.dat.jpg
+SHA1-Digest: 5wuZ65T/tAofrgTDcn0XvUvp/jM=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: zXl4gOYVm22pGbkGC4i82wLIMyg=
+
+Name: assets/common/game_res/mp_deadmine_499_ground.dat.jpg
+SHA1-Digest: OUcC64y8Wh2VKhmmlTpmYveinNw=
+
+Name: assets/common/game_res/mm_3000025.dat.jpg
+SHA1-Digest: gtIFuGX3GqafYnhTuB9dk1Dt1ZM=
+
+Name: assets/common/game_res/mm_3002002.dat.jpg
+SHA1-Digest: /3p5bgRfSj+zH6O78fDMm2eqWxg=
+
+Name: assets/common/game_res/mm_3001044.dat.jpg
+SHA1-Digest: 7l65v5KYafkQMtHTO/CwroSb6K8=
+
+Name: assets/common/game_res/mm_3003062.dat.jpg
+SHA1-Digest: FHPOtiidSD9kONmA62rQ6bCPhkQ=
+
+Name: assets/common/game_res/mp_devilcastle_bg_21.dat.jpg
+SHA1-Digest: uwdeTZaokzEcT4ezrUN25L4XsdY=
+
+Name: assets/common/game_res/mp_fieldsnow_bg_11.dat.jpg
+SHA1-Digest: qLlLUSMVXGNWTZFWUY9VtdWIZzs=
+
+Name: assets/common/game_res/mm_3200370.dat.jpg
+SHA1-Digest: GBW8orQJSOUFOe2zk1dJslMQabM=
+
+Name: res/drawable/com_facebook_button_like_background.png
+SHA1-Digest: mA/rLYQ5jj3/H+r2fDZuzu1Gh9Q=
+
+Name: assets/common/game_res/mp_forest_399_ground.dat.jpg
+SHA1-Digest: Gkt07yNuNyHCSqCitZFXPc/QDLA=
+
+Name: res/drawable-mdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: 5whZWZwuRck5OpUfQtK68/nh9Ac=
+
+Name: assets/common/game_res/mm_3100022.dat.jpg
+SHA1-Digest: oQqoujpDTiKrCScpVa8GtG1xYek=
+
+Name: assets/common/game_res/mp_forest_bg_41.dat.jpg
+SHA1-Digest: 5C03YAses3e6cGHlCeT7+RJW/DY=
+
+Name: assets/common/game_res/mp_arena75_199_ground.dat.jpg
+SHA1-Digest: ahulem1u0gPG2bJ6MMRGsgeOn5E=
+
+Name: res/layout/videoview.xml
+SHA1-Digest: Cqh0s+REeU/8Za6BdAc90FLJOVs=
+
+Name: assets/common/game_res/mp_yellowtower_204_ground.dat.jpg
+SHA1-Digest: LeTYdSniTI7fJl+LvONDyp92rhA=
+
+Name: res/drawable/com_facebook_profile_picture_blank_portrait.png
+SHA1-Digest: 9kGOeq/tVClWE7Lz9AgjtukRZnQ=
+
+Name: assets/common/game_res/mm_3200230.dat.jpg
+SHA1-Digest: W8DJab18PN4I848+kv8G7tpDy/w=
+
+Name: assets/common/game_res/mp_ruin2_bg_12.dat.jpg
+SHA1-Digest: a0MDKYUxDW9Rsq5H7GwNj8YDn5E=
+
+Name: assets/common/game_res/mm_3000101.dat.jpg
+SHA1-Digest: uTcqLCLnV38bPO9rN9on18h2QyY=
+
+Name: assets/common/game_res/mp_lavatunnel_202_ground.dat.jpg
+SHA1-Digest: 4vEVUhJxkuEcUVbmacYwKmshLJ0=
+
+Name: res/drawable-hdpi-v4/powered_by_google_dark.png
+SHA1-Digest: I/G/mu9XuPJTzwp/WdZLjQ6xTfg=
+
+Name: assets/common/game_res/mp_snowland_303_ground.dat.jpg
+SHA1-Digest: /RIfHW2K3g6qeoxd6fyNSmCTd/Y=
+
+Name: assets/common/game_res/mp_goblinwoods_106_ground.dat.jpg
+SHA1-Digest: GeNEjq1Tfml7rimV7T/Owf2ckoE=
+
+Name: assets/common/game_res/mp_cliff_101_ground.dat.jpg
+SHA1-Digest: a7ZYIgJt0A+I9WH8+zCrj17V7yY=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_light.9.p
+ ng
+SHA1-Digest: 2Zfa+F80lrkHKDHQCM2OErZr3Cg=
+
+Name: assets/common/game_res/lg_en_140.dat.jpg
+SHA1-Digest: 6Y6nmnnRgZngls7xNnTjshHcKEA=
+
+Name: assets/common/game_res/mm_3004006.dat.jpg
+SHA1-Digest: 8We3F6/0f6mhO+T5zIYiRdesQRk=
+
+Name: assets/common/game_res/mp_volcano_302_ground.dat.jpg
+SHA1-Digest: WTlprdPGjtFOAUDmiXMTLue80/A=
+
+Name: res/drawable/com_facebook_loginbutton_silver.xml
+SHA1-Digest: pAct/Ukly5ThWXKgWXHkrKbvd1k=
+
+Name: assets/common/game_res/mp_fieldsnow_bg_21.dat.jpg
+SHA1-Digest: b3xYSKZCv2gO4NhaQM1Byi8OVSo=
+
+Name: assets/common/game_res/mp_mushroom_306_ground.dat.jpg
+SHA1-Digest: xWBhS5sRHVKiftzjqNEulxWljbY=
+
+Name: assets/common/game_res/mm_3100012.dat.jpg
+SHA1-Digest: Iso7zfNsQje4y42T0eSCshsoUn4=
+
+Name: res/drawable-xxhdpi-v4/com2us_kr_800x480.png
+SHA1-Digest: gIz6lJyknE+fNJjG9ljt/7x5HnA=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: I3MP0NXnINH3Gb4a/IxI+nMF2mw=
+
+Name: assets/common/game_res/ef_001_res_wc.dat.jpg
+SHA1-Digest: +vrHpb0UfnAOQehKfqbN2JIH0LE=
+
+Name: assets/common/game_res/mp_desert_202_ground.dat.jpg
+SHA1-Digest: CCvPLf1g7ZIdJCxkqnTDcTgme0k=
+
+Name: assets/common/game_res/mp_cave_202_ground.dat.jpg
+SHA1-Digest: xLhZbGo9ZE8yMepqNtJRovNH+HY=
+
+Name: assets/common/game_res/mm_3250401.dat.jpg
+SHA1-Digest: xIiIaCD9eV0wnamc+ODo/y8sVWY=
+
+Name: assets/common/game_res/mp_snowland_105_ground.dat.jpg
+SHA1-Digest: dwJCwmzzCYdge7nD7sK18s1fxjU=
+
+Name: assets/common/game_res/mp_desert_205_ground.dat.jpg
+SHA1-Digest: ImIFl/8CGDbyRcSSYtTcRJRhqbE=
+
+Name: res/drawable-mdpi-v4/com2us_kr_800x480.png
+SHA1-Digest: gIz6lJyknE+fNJjG9ljt/7x5HnA=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: vgTn+pEQhSLa5buaCqjDd3w3UWU=
+
+Name: assets/common/game_res/mp_icecave_bg_22.dat.jpg
+SHA1-Digest: iBHGML1jMtHygWC1/c2qSD84i94=
+
+Name: assets/common/game_res/mp_snowland_202_ground.dat.jpg
+SHA1-Digest: 9IGuVbhF++syF+d+XJ7ogPNRHd8=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_focus_lig
+ ht.9.png
+SHA1-Digest: HzOQHYhhJxxzbZqK40hTgOfRhlo=
+
+Name: assets/common/game_res/mp_venomtemple_103_ground.dat.jpg
+SHA1-Digest: VTJHzjC8ekXk9W11fitFN9DM4Og=
+
+Name: assets/common/game_res/mp_goblincastle_bg_11.dat.jpg
+SHA1-Digest: 1fYg1KQ59zbPtVDXWZm49uWF9k4=
+
+Name: assets/common/game_res/mp_ruin2_399_ground.dat.jpg
+SHA1-Digest: IinRaZ8Ux4TQeRzAzNu6Liv94Y8=
+
+Name: assets/common/game_res/mm_3200520.dat.jpg
+SHA1-Digest: jAQadueg1IMxf+BaoJQmEWO2km8=
+
+Name: assets/common/game_res/mp_coast_100_ground.dat.jpg
+SHA1-Digest: A+BxbDgGSEnxQBnSIhxF2GL7TPs=
+
+Name: assets/common/game_res/mm_3004001.dat.jpg
+SHA1-Digest: /X6eHf7hvnHhhsYZV4AikhyIIm4=
+
+Name: assets/common/game_res/mm_3000105.dat.jpg
+SHA1-Digest: H7GzxjmAnGbeBr8qXRRtcvzGt14=
+
+Name: assets/common/game_res/mp_fieldsnow_204_ground.dat.jpg
+SHA1-Digest: dQGFD9hvnaUKY306VwsTbkkSJO8=
+
+Name: assets/common/game_res/mm_3200012.dat.jpg
+SHA1-Digest: Ovbs5qnOgu+5mO44ReJKMpMmJys=
+
+Name: assets/common/game_res/mm_3002065.dat.jpg
+SHA1-Digest: PfdquY9p0n6ckS1xo6RLr0ITr1o=
+
+Name: assets/common/game_res/mp_icecastle_203_ground.dat.jpg
+SHA1-Digest: hm2K6k69M+UxWEPXzVLLuqidtCU=
+
+Name: assets/common/game_res/mp_lavatunnel_205_ground.dat.jpg
+SHA1-Digest: DlIRZuXl2Sajme6i7j+DVdG4lVM=
+
+Name: assets/common/game_res/mp_forest_bg_31.dat.jpg
+SHA1-Digest: GrwGGKimZY/9t6tlIBlbThJiOd8=
+
+Name: assets/common/game_res/mm_3250400.dat.jpg
+SHA1-Digest: 4zuea2MFmGKLf6FUdEH1q/hRbxA=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png
+SHA1-Digest: TC+NkOcwahA1AJHprbLOuITSC8s=
+
+Name: assets/common/game_res/mm_3200730.dat.jpg
+SHA1-Digest: Yx36YNjof4cB8vTEfuq8qiiBoKo=
+
+Name: assets/common/game_res/mp_lavatunnel_bg_22.dat.jpg
+SHA1-Digest: G9ehEdwr6OvafSUBh1aDyLXwzRQ=
+
+Name: assets/common/game_res/mm_3002022.dat.jpg
+SHA1-Digest: HhxM3Jfaes/HzsBXJsvUOQdCgzc=
+
+Name: assets/common/game_res/mp_ruin2_103_ground.dat.jpg
+SHA1-Digest: zhKpq+REDh5vipGy0uwIytMyTeE=
+
+Name: assets/common/game_res/mm_3250011.dat.jpg
+SHA1-Digest: QuK+jc8GAkzfzSOVppN7k/+U6D4=
+
+Name: assets/common/game_res/mp_woodland_bg_32.dat.jpg
+SHA1-Digest: +XboWIk/cSNa7DH+HulZIQtn6oM=
+
+Name: assets/common/game_res/mm_3000182.dat.jpg
+SHA1-Digest: hd9mKkXkwGn+a7bcMRFoaVc9/lU=
+
+Name: assets/common/game_res/mp_goblinwoods_300_ground.dat.jpg
+SHA1-Digest: 531ZzdsdsAUCm0roZjWTnBT/4x4=
+
+Name: assets/common/game_res/mp_volcano_199_ground.dat.jpg
+SHA1-Digest: gkZArQytsD8CUiKdcpPo354ZIp4=
+
+Name: assets/common/game_res/mp_town_106_ground.dat.jpg
+SHA1-Digest: a7a1Z75/hBShUO4HHX0B6/7Nars=
+
+Name: assets/common/game_res/mp_cliff_bg_21.dat.jpg
+SHA1-Digest: GlVkC7lXwloi0w7AnYrFvHfovG0=
+
+Name: assets/common/game_res/mp_volcano_200_ground.dat.jpg
+SHA1-Digest: IPyCELxrI+LIR9Xh8If48NaVFFw=
+
+Name: res/color/common_signin_btn_text_dark.xml
+SHA1-Digest: Rtut0HT+1m1Q7GYbjgaiEUGKyK0=
+
+Name: assets/common/game_res/mp_raid_204_ground.dat.jpg
+SHA1-Digest: sOAytQAz8Qk/seOlW41TO4F52h8=
+
+Name: assets/common/game_res/mm_3000003.dat.jpg
+SHA1-Digest: wEVjOEmgESVW76ASqlWvurtk0H8=
+
+Name: assets/common/game_res/mp_woodland_104_ground.dat.jpg
+SHA1-Digest: uahQkIRXYGMaHkCHl9cp1TTK9Js=
+
+Name: assets/common/game_res/mp_mushroom_302_ground.dat.jpg
+SHA1-Digest: dd+uJZcNhEvpvjffUD4XtzMUJY0=
+
+Name: res/drawable-mdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: W063SlyrzTvVLq8T+B8TBmOdWCk=
+
+Name: assets/common/game_res/mp_devilcastle_199_ground.dat.jpg
+SHA1-Digest: JCqiGUsrzrfblV4gzHGLOjx7c3I=
+
+Name: assets/common/game_res/mp_raid_200_ground.dat.jpg
+SHA1-Digest: fEwIG6UzHUvEgLUau7qcdm/9rgU=
+
+Name: assets/common/game_res/mp_coast_303_ground.dat.jpg
+SHA1-Digest: uaV0yHQ51y4tozRuF1l1W/m3/QI=
+
+Name: res/layout/com_facebook_login_activity_layout.xml
+SHA1-Digest: IZlHnFEBh4h4K/Vw8JlcipsihaA=
+
+Name: assets/common/game_res/mp_ghostforest_306_ground.dat.jpg
+SHA1-Digest: wmrlFlCZySyh+wd1GUvcfOQCjpM=
+
+Name: assets/common/game_res/mp_cave_205_ground.dat.jpg
+SHA1-Digest: PDEZ9pf7r1btzQT34JN8sDUbdfM=
+
+Name: assets/common/game_res/mp_icecastle_102_ground.dat.jpg
+SHA1-Digest: PzZwov8Tih34VjHJU6kiTFF70+A=
+
+Name: assets/common/game_res/mm_3100017.dat.jpg
+SHA1-Digest: CHUIfNKo3XG4uWs7Xx4DIIr8RnI=
+
+Name: assets/common/game_res/mm_3200130.dat.jpg
+SHA1-Digest: 4lCFPtqjBkVz/PLCs2k+S+2phJE=
+
+Name: assets/common/game_res/mm_3002091.dat.jpg
+SHA1-Digest: ZWNUOoEgBG+3Lxrafruv9+KTQKg=
+
+Name: assets/common/game_res/mm_3003064.dat.jpg
+SHA1-Digest: FbCuEF6G/iaxdBHcbjTUV2EHZlg=
+
+Name: assets/common/game_res/mm_3000000.dat.jpg
+SHA1-Digest: UfPql/m6ohJvX7CxnoXS8PQHDAc=
+
+Name: assets/common/game_res/mp_volcano_205_ground.dat.jpg
+SHA1-Digest: SLkYuGyrzUzUR331WPNzJLchE6s=
+
+Name: res/drawable-mdpi-v4/alert_dialog_icon.png
+SHA1-Digest: F9oU372J/CEicGHuOszme6YbvRs=
+
+Name: assets/common/ActiveUserImage/00_board_down_logo_com2us.png
+SHA1-Digest: OivZ2lZLW50axjX/aqTnGvAHEhw=
+
+Name: assets/common/game_res/mp_ruin2_bg_11.dat.jpg
+SHA1-Digest: hC1nYbTuE8Y9kIlnyV9iuCUfHh8=
+
+Name: assets/common/game_res/lg_zh_hans_140.dat.jpg
+SHA1-Digest: f3vF/WEVhpDQHL7KXa26/NeGRR8=
+
+Name: assets/common/game_res/dt_st_boss_livingarmor.dat.jpg
+SHA1-Digest: ASTy3wR/0wtE5xMHZ0P9NX5uGWM=
+
+Name: assets/common/game_res/mp_volcano_206_ground.dat.jpg
+SHA1-Digest: o2I2+6nDqwoRErGl4xE3nGGqBcM=
+
+Name: assets/common/game_res/mm_3002063.dat.jpg
+SHA1-Digest: LGgxFZ3JqYRsDLy1ME9thZF7gx0=
+
+Name: assets/common/game_res/mm_3250311.dat.jpg
+SHA1-Digest: lEQsFRvmpy4BRI/YVQ1xmEuScsA=
+
+Name: assets/common/game_res/mp_townsnow_200_ground.dat.jpg
+SHA1-Digest: v/QsHHFw0qIDwTxwjij3jdNZt/U=
+
+Name: assets/common/game_res/mp_hive_103_ground.dat.jpg
+SHA1-Digest: no5mwap6UwYeMMI3eyzyFmzAAn0=
+
+Name: assets/common/game_res/mm_3000063.dat.jpg
+SHA1-Digest: Z/MGu4wjVILwvT+UCQGTrv1HAzM=
+
+Name: assets/common/game_res/mp_ghostforest_302_ground.dat.jpg
+SHA1-Digest: t/PwMo3ZDDr7+Ed70GSv2m28PwQ=
+
+Name: assets/common/game_res/mm_3000064.dat.jpg
+SHA1-Digest: C5YIjxWRnZa1dCG7aNyMMyDGaTs=
+
+Name: assets/common/game_res/mp_graveyard_bg_31.dat.jpg
+SHA1-Digest: HHfUnKgiG7IONoWnUK6dT5K3St0=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: EJ6Vqirv8VvnXRyLmOrbw9Y/8Oc=
+
+Name: assets/common/game_res/mp_ruin_103_ground.dat.jpg
+SHA1-Digest: esnwDTivpVV4huKhlN1ad8HusU8=
+
+Name: res/drawable/com_facebook_button_check_off.png
+SHA1-Digest: s2EahmK/sGPkABaloYB+AiJ/3gU=
+
+Name: assets/common/game_res/mp_deadmine_200_ground.dat.jpg
+SHA1-Digest: XN5ayGA91kpi7PUEOVeEiSMFEUg=
+
+Name: assets/common/game_res/mp_icecave_202_ground.dat.jpg
+SHA1-Digest: WGk6sGl/ot85um6PFapcU29HQsg=
+
+Name: res/drawable-hdpi-v4/common_full_open_on_phone.png
+SHA1-Digest: 1fvo1tQADa6Q6ztee4oAocfHrHo=
+
+Name: assets/common/game_res/mp_goblincastle_106_ground.dat.jpg
+SHA1-Digest: syNL4LLhYWJ9DD00nhRTb78P9zY=
+
+Name: assets/common/game_res/mp_icecave_106_ground.dat.jpg
+SHA1-Digest: zn1X8KFYqziRUCYeJAdZYYvj1CQ=
+
+Name: assets/common/game_res/mp_hive_100_ground.dat.jpg
+SHA1-Digest: OZ3aSM31MMZ0GuNJAwDzfRctyjs=
+
+Name: assets/common/game_res/mm_3003063.dat.jpg
+SHA1-Digest: uZEUDBH4bOtGxCsicPHJMi2N16A=
+
+Name: assets/common/game_res/mm_3000041.dat.jpg
+SHA1-Digest: ZRF2fOhaVGmPtbyUJ8GnLdmnZdU=
+
+Name: assets/common/game_res/mm_3004071.dat.jpg
+SHA1-Digest: +7WUEzI2cfpNaqDaAiVFrLDl0R8=
+
+Name: assets/common/game_res/mm_3003006.dat.jpg
+SHA1-Digest: kt5kO/iXpswWSdlEVEtCtgOL/Cg=
+
+Name: res/color/wallet_secondary_text_holo_dark.xml
+SHA1-Digest: CaZpVUmUSM8nlbaDsqCwLHwSQ5M=
+
+Name: assets/common/game_res/mm_3200310.dat.jpg
+SHA1-Digest: iEMb6ZbRq4mF77RpIc6xtPq+wTw=
+
+Name: assets/common/game_res/mm_3004084.dat.jpg
+SHA1-Digest: 3/HZxlUUC9LOHeQI6+42EUcWUyg=
+
+Name: assets/common/game_res/dt_st_raid_lich.dat.jpg
+SHA1-Digest: 1MkCIplYJmSE5AaGfIpM1+WUEEM=
+
+Name: assets/common/game_res/mp_coast_200_ground.dat.jpg
+SHA1-Digest: G8dBekaMICAjskQSlyDtn+/cHY0=
+
+Name: assets/common/game_res/mp_volcano_101_ground.dat.jpg
+SHA1-Digest: aHPgstQqHVnWAr9It35mo+AGIG0=
+
+Name: assets/common/game_res/mp_woodland_202_ground.dat.jpg
+SHA1-Digest: E27blvcbBCxZU4QxH+xLgAgS5tM=
+
+Name: assets/common/game_res/mp_icecave_bg_21.dat.jpg
+SHA1-Digest: MWzuD2+fKKzMgQenmipP7PBJLG0=
+
+Name: assets/common/game_res/mp_woodland_bg_11.dat.jpg
+SHA1-Digest: 96fGa8zYhR6pJNuWg+vcSQvl618=
+
+Name: res/layout/com_facebook_tooltip_bubble.xml
+SHA1-Digest: 1dAaIOgx8+zpZ2J03aRgj2a2xAs=
+
+Name: assets/common/game_res/mp_arena75_106_ground.dat.jpg
+SHA1-Digest: jDWPyVyCC4qlwArpg3Bm0DFXPi0=
+
+Name: assets/common/game_res/mp_cave_199_ground.dat.jpg
+SHA1-Digest: OpQ+mO4Mms5BUUCyNlPFyRvAQdA=
+
+Name: assets/common/game_res/mp_devilcastle_bg_11.dat.jpg
+SHA1-Digest: Yg69VXIm4yOf9eKwQQI0TD6sPwk=
+
+Name: res/drawable/com_facebook_list_section_header_background.9.png
+SHA1-Digest: UlppTzQMf0S8p04nUqt4qCBKRF0=
+
+Name: assets/common/game_res/mp_graveyard_200_ground.dat.jpg
+SHA1-Digest: XqPDoutXVhaIE6GOXcjm7a/TXss=
+
+Name: assets/common/game_res/dt_etc_setting.json.jpg
+SHA1-Digest: lQVpfsmesmwRr5xiuj2XWbkqET8=
+
+Name: assets/common/game_res/mp_forest_204_ground.dat.jpg
+SHA1-Digest: SuLiZZkBLax/YEQ1Wi06aKEBppY=
+
+Name: assets/common/game_res/mp_graveyard_104_ground.dat.jpg
+SHA1-Digest: 1EpZX9LFL/Dwl/tiz5OCgPFYC98=
+
+Name: assets/common/game_res/mm_3000084.dat.jpg
+SHA1-Digest: 2DSAO/4pmn7ITOZpmDEMZRNVf9k=
+
+Name: assets/common/game_res/mp_alchemist_bg_21.dat.jpg
+SHA1-Digest: x7/tWONHEVfEmQplzui/3BO5Gh4=
+
+Name: assets/common/game_res/dt_stage_pkg_140.dat.jpg
+SHA1-Digest: C2CbAMpOxObPo1KAGv7fSXP+yKQ=
+
+Name: assets/common/game_res/mm_3000201.dat.jpg
+SHA1-Digest: ipcXvhhCIlmA6HBQWg1Ddj+elTI=
+
+Name: assets/common/game_res/mm_3003044.dat.jpg
+SHA1-Digest: Xpss8SEn8kZyGMShYymQhA9DFjQ=
+
+Name: assets/common/game_res/mm_3200440.dat.jpg
+SHA1-Digest: N2f7OsAo0oLN1kFdm2m/PJ6dMY4=
+
+Name: assets/common/game_res/mp_cliff_bg_22.dat.jpg
+SHA1-Digest: gm0QSO5+S2qr9pdCxUj9JVn4ILA=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: ox+dpz35Obt4x0bfiE1AVRokddo=
+
+Name: assets/common/game_res/mp_townsnow_206_ground.dat.jpg
+SHA1-Digest: nq9G48zVd8b9qGET9U/u6oxgFYw=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_grey_focused.9.png
+SHA1-Digest: WtZOyqXCecnCw4anwY38VgDyeOE=
+
+Name: assets/common/game_res/mp_raid_bg_12.dat.jpg
+SHA1-Digest: xuWdQyFS1HRblgqyvqbeDm4MPcI=
+
+Name: assets/common/game_res/mp_fieldsnow_304_ground.dat.jpg
+SHA1-Digest: lStl1kP2j74QwCerRyiSDGqgfJ8=
+
+Name: assets/common/game_res/mp_venomtemple_102_ground.dat.jpg
+SHA1-Digest: 9tRbffsEJ8acFuS8RFkkj/JL0MU=
+
+Name: assets/common/ActiveUserAgreement/gamevil/au_terms_meta.json
+SHA1-Digest: J4T+YNwEu2MFltw1C79dGrKj+wA=
+
+Name: assets/common/game_res/mm_3001085.dat.jpg
+SHA1-Digest: atOA5jIQil3BkxABlD7TbVmV0b0=
+
+Name: assets/common/game_res/mp_fieldsnow_302_ground.dat.jpg
+SHA1-Digest: XtcMVS26Mpj4vr64ugCcgvCL2eY=
+
+Name: lib/armeabi/libc2scommon.so
+SHA1-Digest: 9lDKyLdSpwtQ1VM/eiIew8wFGLQ=
+
+Name: res/drawable/hub_btn_close.png
+SHA1-Digest: NMC6FvIIGosJqqFTJn4UUigBUak=
+
+Name: assets/common/game_res/mp_raid_103_ground.dat.jpg
+SHA1-Digest: MZ6sSYGG3iin+LXo3v+jpGH0VBg=
+
+Name: res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: JCchW37ep9rQAe5fTxcGI2f2woY=
+
+Name: assets/common/game_res/mm_3003025.dat.jpg
+SHA1-Digest: OA68G8YP5xkbHFOkHyhzuZIrM6s=
+
+Name: assets/common/game_res/mp_alchemist_204_ground.dat.jpg
+SHA1-Digest: AqnKzrD1emWstXl+ySo9yn7qYAw=
+
+Name: assets/common/game_res/mp_venomtemple_206_ground.dat.jpg
+SHA1-Digest: KZCgWnsdIwEG06qG1V+YbIdIUho=
+
+Name: assets/common/game_res/mm_3200251.dat.jpg
+SHA1-Digest: 7ag1R9lP5u055tHGxlvmRqw0qJw=
+
+Name: assets/common/game_res/mp_ruin2_201_ground.dat.jpg
+SHA1-Digest: 7Un/CbKYrzF4lJs+HCbZEOTdfo0=
+
+Name: assets/common/game_res/mp_yellowtower_100_ground.dat.jpg
+SHA1-Digest: WO0gD1vUvNZFSwuSs+ZX9yhflSw=
+
+Name: assets/common/game_res/mm_3001045.dat.jpg
+SHA1-Digest: DYcbzOWiwPJerUgNlMjC4fPykak=
+
+Name: assets/common/ActiveUserImage/00_board_top_logo_gamevil.png
+SHA1-Digest: FVt+c8HQ/W7AfyqavMuARPwo9H8=
+
+Name: assets/common/game_res/mp_ruin_bg_11.dat.jpg
+SHA1-Digest: DxWkxOTn/y2fbtOtQdEOM/YV4Zk=
+
+Name: res/drawable-hdpi-v4/ic_c2s_notification_small_icon.png
+SHA1-Digest: qRqQhQpzbkPd6ZYJ09NTWHRi5Ss=
+
+Name: assets/common/game_res/mp_volcano_305_ground.dat.jpg
+SHA1-Digest: 2OmqjFsXlzfP2wQF09PxlZ54uMA=
+
+Name: assets/common/game_res/mp_woodland_106_ground.dat.jpg
+SHA1-Digest: j3HasIvrA4QyGxalAZ2+7WR9H0U=
+
+Name: assets/common/game_res/mm_3200211.dat.jpg
+SHA1-Digest: LwgnxJp5mFs8EyjVdaEmrBAZge4=
+
+Name: assets/common/game_res/mm_3003001.dat.jpg
+SHA1-Digest: MCCIT5pCSQtD1A03IZdr/o0nKrc=
+
+Name: res/drawable-mdpi-v4/googleplay_800x480.png
+SHA1-Digest: 5oToGaA1nrSzEZFHjjnV5Bp8Sdg=
+
+Name: assets/common/game_res/mp_icecave_103_ground.dat.jpg
+SHA1-Digest: A5Zn+MPqTGnbU5Suz6z07RCbLew=
+
+Name: assets/common/game_res/mp_snowland_299_ground.dat.jpg
+SHA1-Digest: bkBbk+nAzjlMKM+chffBIUDeafM=
+
+Name: assets/common/game_res/mp_fieldsnow_105_ground.dat.jpg
+SHA1-Digest: 2yZVry6HPKRVL0KairLUT/CYc1Q=
+
+Name: assets/common/game_res/mp_mushroom_303_ground.dat.jpg
+SHA1-Digest: ikegXBZ6hUxv1+I8tfe9bqw76f8=
+
+Name: assets/common/game_res/mp_mushroom_102_ground.dat.jpg
+SHA1-Digest: q80Kvam58uOS62BHK2gUfL8BByI=
+
+Name: assets/common/game_res/mp_icecastle_bg_11.dat.jpg
+SHA1-Digest: 2XzAgPNKaeXyMbtqCXR+THoThLE=
+
+Name: assets/common/game_res/mp_ruin_200_ground.dat.jpg
+SHA1-Digest: cG6XVpPrQM16db5oEHnNbxxOdwU=
+
+Name: assets/common/game_res/mm_3200701.dat.jpg
+SHA1-Digest: 3vzCcHhbuESXNiHL1tU6PgOt4hU=
+
+Name: assets/common/game_res/mp_fieldsnow_199_ground.dat.jpg
+SHA1-Digest: Nq1hhlE6S5OXi0h3MQKE4sPGf/o=
+
+Name: assets/common/game_res/mm_3200600.dat.jpg
+SHA1-Digest: TEJejWYHzS4TEXu6HNxPw6DMP9w=
+
+Name: res/drawable-xxhdpi-v4/powered_by_google_dark.png
+SHA1-Digest: gfHaH8EPI7tPXVeskcJGZH2tiRQ=
+
+Name: res/drawable-xxhdpi-v4/com_facebook_button_like_background_selec
+ ted.png
+SHA1-Digest: gytSweV1KaPN3AUegvzQjjbvfgo=
+
+Name: assets/common/game_res/mp_snowland_102_ground.dat.jpg
+SHA1-Digest: C68iyW0R5XKaSUB9MLOLl4HHSHc=
+
+Name: assets/common/game_res/mm_3004026.dat.jpg
+SHA1-Digest: gyriISbnU4tMmnSVccCdtC26SGU=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: sa6MQEFa8whxq6hug+zvczJa8Ss=
+
+Name: assets/common/game_res/mp_deadmine_303_ground.dat.jpg
+SHA1-Digest: VU+h2NNyCNpUbgVWJoTpgcTa4ps=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: 7vLApczB6mEex3xCchwoPVizP8w=
+
+Name: res/drawable/common_signin_btn_icon_light.xml
+SHA1-Digest: WSxhxF35r3kv4qEMUc0mTHgC1CA=
+
+Name: assets/common/game_res/mm_3250110.dat.jpg
+SHA1-Digest: /z15RGhWgN0wHP9NpIUDt4kbSro=
+
+Name: assets/common/game_res/mm_3200420.dat.jpg
+SHA1-Digest: hyRUqshCBhFVREOHJpUGMmmNCtg=
+
+Name: assets/common/game_res/mm_3200330.dat.jpg
+SHA1-Digest: goeEmiVj7o7C8TH3kQxg/MvF3f8=
+
+Name: res/drawable/com_facebook_button_like_icon_selected.png
+SHA1-Digest: kUmUey5QabQ95BgU5hktOm3ZlMs=
+
+Name: assets/common/game_res/mp_devilcastle_205_ground.dat.jpg
+SHA1-Digest: K1ro6oj/HRqy20hHXwxr88GmQ1k=
+
+Name: res/drawable/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: +tjTExmZ1lk9Ox0aZm5rNcUPoFY=
+
+Name: assets/common/game_res/mp_volcano_bg_21.dat.jpg
+SHA1-Digest: JVoDUQppI7zTGL5lALBmEBwfWYo=
+
+Name: assets/common/game_res/mm_3250120.dat.jpg
+SHA1-Digest: szpO8Rx9qFFZj0k+FsXcgt0K0Mg=
+
+Name: assets/common/game_res/mp_venomtemple_bg_21.dat.jpg
+SHA1-Digest: uTWx8axr8fQXttc/4n+KbetzGS0=
+
+Name: assets/common/game_res/mp_goblincastle_399_ground.dat.jpg
+SHA1-Digest: n2mY6xmx7J1+/Ny2WxniX16VCs4=
+
+Name: res/drawable-xhdpi-v4/com2us_kr_800x480.png
+SHA1-Digest: gIz6lJyknE+fNJjG9ljt/7x5HnA=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: MQsj73rqoxGdFvNYEPkKJZPqXBU=
+
+Name: assets/common/game_res/mp_fieldsnow_101_ground.dat.jpg
+SHA1-Digest: PuNkhoHigIWNnZih04zULnnQqIM=
+
+Name: assets/common/game_res/mp_town_100_ground.dat.jpg
+SHA1-Digest: 8PjOU83pNuYZ1wgLIiPxu+1KGso=
+
+Name: assets/common/NoticeImage/imgNotice_Close.png
+SHA1-Digest: J9j8P0de9u7vhGYqWeN6RJM1tBY=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: sbou7tVApZxop4taBBAzXnQ+0P0=
+
+Name: assets/common/game_res/mp_arena_106_ground.dat.jpg
+SHA1-Digest: yPg9osSqjpPw+8GcU1x5UtGwBbI=
+
+Name: assets/common/ActiveUserAgreement/checked.png
+SHA1-Digest: XKxuTG/kXPPiQLRcChocwv28kr0=
+
+Name: assets/common/game_res/mp_alchemist_302_ground.dat.jpg
+SHA1-Digest: 4ksBJTEo1awiI/boinCehELwMxY=
+
+Name: assets/common/game_res/mm_3001062.dat.jpg
+SHA1-Digest: OG2nrM90JBlejV1llp4fvwO3p8k=
+
+Name: assets/common/game_res/mm_3001106.dat.jpg
+SHA1-Digest: cS72Xh0anLOb8+XGD7dgQytVQ+Q=
+
+Name: assets/common/game_res/mp_deadmine_bg_41.dat.jpg
+SHA1-Digest: M3lWNq/FM9lnFj+q0lKRRWEjuIg=
+
+Name: assets/common/game_res/mp_raid_299_ground.dat.jpg
+SHA1-Digest: 8AUb3Fbwe9rgEHCn4B2R9NNC2YY=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_focus_dar
+ k.9.png
+SHA1-Digest: HzOQHYhhJxxzbZqK40hTgOfRhlo=
+
+Name: assets/common/game_res/mm_3200531.dat.jpg
+SHA1-Digest: vC1y16ASb9YMYxlb6SFhVX8SUts=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_light.9.p
+ ng
+SHA1-Digest: dAIabshO7sf8DA0quqZILhJ5V4A=
+
+Name: assets/common/game_res/mp_raid_bg_11.dat.jpg
+SHA1-Digest: +DMaH3igobc1Xh4ciEN1SIRthXo=
+
+Name: assets/common/game_res/mp_icecastle_100_ground.dat.jpg
+SHA1-Digest: j7Y6R84xwXG9k5JWr9V1ct4F4qo=
+
+Name: assets/common/game_res/mm_3000001.dat.jpg
+SHA1-Digest: txCIq21D/EGlbwzQHTJyaVBP3yY=
+
+Name: assets/common/game_res/mp_castle_203_ground.dat.jpg
+SHA1-Digest: 71Xd6G0f/0A52gXUxBZ650izuvo=
+
+Name: assets/common/game_res/mp_forest_302_ground.dat.jpg
+SHA1-Digest: HyctX8BhxnTXAQoNi0WKcGrlzCU=
+
+Name: assets/common/game_res/mp_town_bg_21.dat.jpg
+SHA1-Digest: EMhZEGbZkMZZF52BJEAOIuNPto0=
+
+Name: assets/common/game_res/mp_deadmine_400_ground.dat.jpg
+SHA1-Digest: UGvhHGCDqJWmg1kCmgdKpNP/uYA=
+
+Name: assets/common/game_res/mp_castle_201_ground.dat.jpg
+SHA1-Digest: c2keRBdj+aGPSLB9g2i1JgaxBoE=
+
+Name: assets/common/game_res/mm_3002026.dat.jpg
+SHA1-Digest: ejfrgICVF2386Iz14W8G7ZjH7VI=
+
+Name: assets/common/game_res/mp_desert_206_ground.dat.jpg
+SHA1-Digest: DGnJ412EqizoTGeHVSr4jMvZctM=
+
+Name: assets/common/game_res/mp_desert_106_ground.dat.jpg
+SHA1-Digest: QAmMit7cirQpieNwAHX8pXaIq9c=
+
+Name: res/drawable-mdpi-v4/com2us_en_800x480.png
+SHA1-Digest: OlVXf/HYkeRGOuv4/yqGyHkonxU=
+
+Name: assets/common/game_res/mm_3004047.dat.jpg
+SHA1-Digest: C8Xq6mnnZx+JotoN2JZ4zqOxGY0=
+
+Name: assets/common/game_res/mp_cliff_100_ground.dat.jpg
+SHA1-Digest: uhf4xYmLE5ltIYw0oiezt+RpPpc=
+
+Name: assets/common/game_res/mm_3200421.dat.jpg
+SHA1-Digest: mPENlE3pgVERfalrhlhPbHsRi8U=
+
+Name: assets/common/game_res/mm_3250221.dat.jpg
+SHA1-Digest: bFFixuxx6JjKCCP7iEPJ+43UhRc=
+
+Name: assets/common/ActiveUserImage/activeuser_logo.png
+SHA1-Digest: 6PggK8fFu2j2JsekeAl6LnkRqaM=
+
+Name: assets/common/game_res/mp_ghostforest_104_ground.dat.jpg
+SHA1-Digest: OujMQR166O3C/e+jum8qPVkHhuE=
+
+Name: assets/common/game_res/mm_3200400.dat.jpg
+SHA1-Digest: QvuJuRmoKCZfO9us7m4lvCjXf70=
+
+Name: assets/common/game_res/mp_arena_bg_11.dat.jpg
+SHA1-Digest: v7ag6X5K/MaVNxays45ZT/GClYI=
+
+Name: assets/common/game_res/mp_goblinwoods_bg_12.dat.jpg
+SHA1-Digest: /OpjHkhctAOXyMdZUc9nCWXfQlY=
+
+Name: assets/common/game_res/mp_icecave_105_ground.dat.jpg
+SHA1-Digest: HvxxbhBsfnevcB221GsGOQwZFK0=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: cyroPBwNNxlz5xXq1uSZsOxhnH0=
+
+Name: assets/common/game_res/mp_townsnow_100_ground.dat.jpg
+SHA1-Digest: 7Egzce+x1SmClozjSG7hGZ+GleU=
+
+Name: assets/common/game_res/mp_deadmine_302_ground.dat.jpg
+SHA1-Digest: LlBbbKNW3tY0J42UeizQZdoTJWA=
+
+Name: assets/common/game_res/ui_scene_touch_pi_gl.dat.jpg
+SHA1-Digest: HXn8IH8yW3BjEDVY+ALoWg8d7lA=
+
+Name: assets/common/game_res/mp_coast_403_ground.dat.jpg
+SHA1-Digest: 2xlTiO7aDd6N2ZKcklBFxmHw0Q4=
+
+Name: assets/common/game_res/mp_snowland_bg_31.dat.jpg
+SHA1-Digest: UYlVV8P5YOkR+ksoIjjj1r44T+Q=
+
+Name: assets/common/game_res/mp_alchemist_102_ground.dat.jpg
+SHA1-Digest: SVkVCx5qFt8d0VBad5vRAQW/G+4=
+
+Name: assets/common/game_res/mp_ruin2_100_ground.dat.jpg
+SHA1-Digest: 8mv/VK5fuH5LuyhPM08hftMdjhM=
+
+Name: assets/common/game_res/mm_3000011.dat.jpg
+SHA1-Digest: kIVddFQ1jBu2t/DQP8mWQtUaoMc=
+
+Name: assets/common/game_res/mm_3000047.dat.jpg
+SHA1-Digest: yLiXRV1dGS1IN2s/3J+sGVUye/U=
+
+Name: assets/common/game_res/mm_3004031.dat.jpg
+SHA1-Digest: VTjB7mW/ztTWirBtpyI5WdyXgPI=
+
+Name: assets/common/game_res/mp_icecave_306_ground.dat.jpg
+SHA1-Digest: 7Wvoz7l73PRXDE9zEw1i3qQSVNQ=
+
+Name: assets/common/game_res/mp_alchemist_106_ground.dat.jpg
+SHA1-Digest: T6PwQbpRUKHIaSmb5X66mjJD86w=
+
+Name: assets/common/game_res/mm_3200631.dat.jpg
+SHA1-Digest: pJupOkmDMQradvH2Bpwak8E5WQ8=
+
+Name: assets/common/game_res/mm_3200331.dat.jpg
+SHA1-Digest: ULB1RoujQwiTzDPbXWaQofg+Io0=
+
+Name: assets/common/game_res/mm_3000191.dat.jpg
+SHA1-Digest: t8aA25BwQ3QlcxxQxT+rQlx9jJ4=
+
+Name: assets/common/game_res/mm_3001081.dat.jpg
+SHA1-Digest: aV2SAqk+eF8geWRBEqfMj1txxbs=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: re+zLFhPUMSpBod/+8AnbiOF95E=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: KUWcrP9v7FORu4ojRjzVSn0JZio=
+
+Name: assets/common/game_res/mp_ruin_105_ground.dat.jpg
+SHA1-Digest: 49oGS8d65lA4+tDsM7WkJ/uQv08=
+
+Name: assets/common/game_res/mm_3003051.dat.jpg
+SHA1-Digest: Yx9LPNh1Ub+tc2gxsdrqPIZoTG0=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: vGictS/UYFmX8tbz7DG/BKWlA1A=
+
+Name: assets/common/game_res/mp_snowland_205_ground.dat.jpg
+SHA1-Digest: AdoYzJ0siCnMT73CycFJdiRE/c4=
+
+Name: assets/common/game_res/fr_fairy_res_wc.dat.jpg
+SHA1-Digest: ozMMYVya1Zb+P+/pKIst2/iuGNA=
+
+Name: res/drawable-ldpi-v4/com2us_en_800x480.png
+SHA1-Digest: OlVXf/HYkeRGOuv4/yqGyHkonxU=
+
+Name: assets/common/game_res/mm_3000031.dat.jpg
+SHA1-Digest: H/RG2EgOeuWK7ne/wEvhBD5W+io=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_like_icon.png
+SHA1-Digest: ++sOw/916EgdnS4iNxu5GVStnL8=
+
+Name: assets/common/game_res/mp_coast_302_ground.dat.jpg
+SHA1-Digest: DTe2pHl4HB0n/Pei/eqsSRVXGZw=
+
+Name: assets/common/game_res/mm_3250420.dat.jpg
+SHA1-Digest: 6Nn6lsqRhrHBg6MbFDWPTh5Zp1w=
+
+Name: assets/common/game_res/mp_graveyard_199_ground.dat.jpg
+SHA1-Digest: zkIk4ccPGaz0OuQxijzRd9+J3WU=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_grey_normal.9.png
+SHA1-Digest: 2+NE/XvdQUVpFKNt+C7seIqax3w=
+
+Name: assets/common/game_res/mm_3002003.dat.jpg
+SHA1-Digest: s+KmaOxmbddQjoNvLkfWujTGAEU=
+
+Name: assets/common/game_res/mp_yellowtower_203_ground.dat.jpg
+SHA1-Digest: LCUgaNMVwnh5cpwMxC8rtRobV0E=
+
+Name: assets/common/game_res/mm_3250300.dat.jpg
+SHA1-Digest: VhRoPpm+bkSc/inprm3GWas5bZk=
+
+Name: assets/common/game_res/mp_devilcastle_bg_22.dat.jpg
+SHA1-Digest: B7BmHF91OZYIjg4x6SxiAhp5aqA=
+
+Name: assets/common/game_res/mp_arena_105_ground.dat.jpg
+SHA1-Digest: w8W9Tz1C0+jjI8p0gaEo6Ou+fpk=
+
+Name: assets/common/game_res/mm_3000002.dat.jpg
+SHA1-Digest: 3my5IyX2A5GAtGIEhF3VVY4ZMGk=
+
+Name: assets/common/game_res/mp_fieldsnow_206_ground.dat.jpg
+SHA1-Digest: T5P1OaLCQN24GhmCxQdMwWjIfVI=
+
+Name: res/drawable-ldpi-v4/com2us_kr_800x480.png
+SHA1-Digest: gIz6lJyknE+fNJjG9ljt/7x5HnA=
+
+Name: assets/common/game_res/mm_3200140.dat.jpg
+SHA1-Digest: d5N8UjnwXAklcDoSUmBmPOOhqc4=
+
+Name: res/layout/splash_com2us_kr.xml
+SHA1-Digest: yLUyzoLmTM+fBMp1qRSNsq17XVQ=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_side_right.png
+SHA1-Digest: 49B1ZNuABfhYdOK5XEA6aPpY4cc=
+
+Name: assets/common/game_res/ui_scene_touch_p_gl.dat.jpg
+SHA1-Digest: OHEToDuPAXUoRV4iJAxdJKFY4ck=
+
+Name: res/drawable/com_facebook_picker_list_pressed.9.png
+SHA1-Digest: ughAWBlhb5fxIgHli8NgEiGGjGY=
+
+Name: assets/common/game_res/mp_graveyard_499_ground.dat.jpg
+SHA1-Digest: zZpeII6bf67XkanKbCj7BtR3g6g=
+
+Name: assets/common/game_res/mm_3000043.dat.jpg
+SHA1-Digest: pJQWaSZ6od+MYdtVJ/lxHIZuHDA=
+
+Name: assets/common/game_res/Avata_02.png.jpg
+SHA1-Digest: A7lVQjXidEmGDEQxPg6APwZ9Rww=
+
+Name: assets/common/game_res/mp_coast_bg_21.dat.jpg
+SHA1-Digest: 9d2rtnBHk6mCTDU2bD4Rqqd93zE=
+
+Name: assets/common/game_res/mp_yellowtower_bg_21.dat.jpg
+SHA1-Digest: 1YHAiwzyYk98jfYtETpWi/MXZwM=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: AvIKUupgrO+uCBiDS6ZrbT37poE=
+
+Name: assets/common/game_res/mp_coast_400_ground.dat.jpg
+SHA1-Digest: DdQDRO7BQSZZDvU5z3u7q3NYrd4=
+
+Name: res/drawable/com_facebook_button_like.xml
+SHA1-Digest: tKLLQyRwVcVFENrbSmdAI5o7oHA=
+
+Name: assets/common/game_res/ui_scene_touch_res_wc.dat.jpg
+SHA1-Digest: OD8D6cgz3sWVjWV5slcCANOZLfo=
+
+Name: assets/common/game_res/mp_volcano_104_ground.dat.jpg
+SHA1-Digest: Atc0BKiBY9Xm08CzClPaPFj/U0w=
+
+Name: assets/common/game_res/mp_cliff_bg_32.dat.jpg
+SHA1-Digest: eRfORMBP1Ju/IaPWFGFV3cbVVaQ=
+
+Name: assets/common/game_res/mp_desert_103_ground.dat.jpg
+SHA1-Digest: r2x+D9qRonUeTwovhf8c+6eSX1Q=
+
+Name: res/drawable-xxhdpi-v4/googleplay_800x480.png
+SHA1-Digest: 5oToGaA1nrSzEZFHjjnV5Bp8Sdg=
+
+Name: assets/common/game_res/mp_snowland_101_ground.dat.jpg
+SHA1-Digest: UeejLsAdPeL4gJTq+GRwqMeGvMo=
+
+Name: res/drawable-xhdpi-v4/googleplay_800x480.png
+SHA1-Digest: 5oToGaA1nrSzEZFHjjnV5Bp8Sdg=
+
+Name: assets/common/game_res/mp_arena75_102_ground.dat.jpg
+SHA1-Digest: HZ2dP676nbBQtKdD80dgCrhtdYA=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_focus_ligh
+ t.9.png
+SHA1-Digest: /ps9lLPOdDdwDt2YyGRRyGkRCMw=
+
+Name: assets/common/game_res/dt_st_raid_ogre.dat.jpg
+SHA1-Digest: ixsr/moBUSxXPOCHBdGJ5EQ2zbM=
+
+Name: assets/common/game_res/mp_forest_206_ground.dat.jpg
+SHA1-Digest: 0JoieltCT5W9l7mxmRLwufKvLAY=
+
+Name: assets/common/game_res/mp_cave_201_ground.dat.jpg
+SHA1-Digest: mwhusKWPCcScLnpAIQc7D0gzYlA=
+
+Name: assets/common/game_res/mm_3200231.dat.jpg
+SHA1-Digest: 3LWAYZcLAB4yONHtwg029zOwVNw=
+
+Name: assets/common/game_res/mm_3200410.dat.jpg
+SHA1-Digest: 1lOn7cLY76oGqjDfGe8V+I6IU5Y=
+
+Name: assets/common/game_res/mp_ruin2_105_ground.dat.jpg
+SHA1-Digest: HHixVJRQT0ezRcHihEz6WPqt7M8=
+
+Name: assets/common/game_res/mp_volcano_100_ground.dat.jpg
+SHA1-Digest: c3I6oCuxyBVW7lEt2D6c0E+948o=
+
+Name: assets/common/game_res/mp_lavatunnel_200_ground.dat.jpg
+SHA1-Digest: pPAdnbPD/aY4yZqv+7+GbDIsrko=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: Zpm+uanjIZounXjdWPevociI0a8=
+
+Name: assets/common/game_res/mp_desert_bg_31.dat.jpg
+SHA1-Digest: rtuZdIWbnGBQBeGSV4xc1nTLemc=
+
+Name: assets/common/game_res/mp_fieldsnow_104_ground.dat.jpg
+SHA1-Digest: y8dqfObCpsq4wK1vA/YoYDl2SLQ=
+
+Name: assets/common/game_res/mp_goblincastle_305_ground.dat.jpg
+SHA1-Digest: pAOH878QNoT/ecbvk4acGpVpvLI=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_focus_dark
+ .9.png
+SHA1-Digest: 5te3wznPBVYtZMjVj49FYN5YlRA=
+
+Name: assets/common/game_res/mm_3000143.dat.jpg
+SHA1-Digest: MnIFS9FOVs0janEheWlbf4y53X4=
+
+Name: assets/common/game_res/mp_desert_300_ground.dat.jpg
+SHA1-Digest: G3BG6WxUs+oUyWdTvZ/uQRYlTjM=
+
+Name: assets/common/game_res/mp_goblinwoods_bg_31.dat.jpg
+SHA1-Digest: BkSPx1Nh279EDj0uAlBTVy+EXFg=
+
+Name: assets/common/game_res/mp_icecave_bg_12.dat.jpg
+SHA1-Digest: u3QGqJn4XS+PcN22jtWVJynEmuw=
+
+Name: assets/common/game_res/mp_ghostforest_102_ground.dat.jpg
+SHA1-Digest: 17cWg6RkCRHCKfT/FPtPmc7Loac=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png
+SHA1-Digest: VpSoMW/6yLkYe65/CO1eWu25/vg=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: AT9w5rSAMWW0uoROEE4O/DyXQj4=
+
+Name: res/layout/com_facebook_placepickerfragment.xml
+SHA1-Digest: 87dXo3YN3XNWO1eWgwgwG/eZq7A=
+
+Name: assets/common/game_res/mm_3200371.dat.jpg
+SHA1-Digest: xqO3Qy5teE55LeSO9qEzYa3cAlI=
+
+Name: assets/common/game_res/mp_ghostforest_bg_11.dat.jpg
+SHA1-Digest: 7/sUO0ESJTFeC0HIeqPVMpmreKo=
+
+Name: assets/common/game_res/mp_devilcastle_203_ground.dat.jpg
+SHA1-Digest: SCEjdS89m/hQrg3VriKLPPTEztw=
+
+Name: assets/common/game_res/mp_coast_bg_22.dat.jpg
+SHA1-Digest: b4e4/wVd5Sk5uxFQFkGLpqAxQKM=
+
+Name: assets/common/game_res/mp_alchemist_305_ground.dat.jpg
+SHA1-Digest: aL6KD42LMh1cMNVwegm2wJJwi+E=
+
+Name: res/drawable/com_facebook_button_blue_normal.9.png
+SHA1-Digest: plzlqLb7elFLaBIIHG8jVWFUnfU=
+
+Name: res/drawable/common_signin_btn_icon_dark.xml
+SHA1-Digest: pEFZONaq4DBctlUlzus2QTK9o8k=
+
+Name: assets/common/game_res/mp_icecave_304_ground.dat.jpg
+SHA1-Digest: gg74OgskDHQ4IWjZ41lV3hR/Q8w=
+
+Name: assets/common/game_res/mm_3001091.dat.jpg
+SHA1-Digest: 5ROH8AC1v7AhjnV6wqbvr8cZi1Y=
+
+Name: res/drawable-xxhdpi-v4/com_facebook_button_like_icon.png
+SHA1-Digest: p7bFOF7rB5pnl5sbpyygQrLzHSU=
+
+Name: assets/common/game_res/dt_st_raid_skeleton.dat.jpg
+SHA1-Digest: +2l4fCXfdWmZHSF+scDzqbi80EE=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: RQ09RDJf3yWYEKYOavo2ED4Yaz0=
+
+Name: assets/common/game_res/mp_mushroom_399_ground.dat.jpg
+SHA1-Digest: dLtGVk7ZEzMbdt3fGuYEwblvAfg=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_dark.9.pn
+ g
+SHA1-Digest: dAIabshO7sf8DA0quqZILhJ5V4A=
+
+Name: assets/common/game_res/mp_town_203_ground.dat.jpg
+SHA1-Digest: KXMSfoB9C/Ygr7a27j8slg7Mfpc=
+
+Name: assets/common/game_res/mm_3003003.dat.jpg
+SHA1-Digest: e5PIXuna0uymeNMW5HgfHtM99vE=
+
+Name: assets/common/game_res/mm_3250000.dat.jpg
+SHA1-Digest: zlSiPmS2LZWd5SphXeAzf0ttubA=
+
+Name: res/drawable-mdpi-v4/com_facebook_inverse_icon.png
+SHA1-Digest: F87dFjM8iCRCeWSfrxkG/jcMtZY=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: DS5PrTsz70UomI8fFnGBLzl5gOc=
+
+Name: assets/common/game_res/mp_ghostforest_301_ground.dat.jpg
+SHA1-Digest: Jv5o7qNFImFt5Yaqrmi+pP+z++Q=
+
+Name: assets/common/game_res/mp_raid_100_ground.dat.jpg
+SHA1-Digest: Z8uWuO2X+mc1mln4wEBfJkAjZnQ=
+
+Name: assets/common/game_res/mp_ruin_102_ground.dat.jpg
+SHA1-Digest: t+PSvXrTW1UgybxBeJHIgKSCU7k=
+
+Name: assets/common/game_res/dt_st_boss_mummy.dat.jpg
+SHA1-Digest: H6yK5eaaL7S+rQt4P4/PdgMwpe0=
+
+Name: assets/common/game_res/mm_3100034.dat.jpg
+SHA1-Digest: cgrFmOH81i7+4/twVgPbH81qLnc=
+
+Name: assets/common/game_res/mm_3004045.dat.jpg
+SHA1-Digest: unyMPuRE/NAJT2fjUTBXmw9dFaY=
+
+Name: assets/common/game_res/mm_3100036.dat.jpg
+SHA1-Digest: kHn7Vj88Aajqp7RDbd18LNlJEh4=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: THnQ9r/oTuPB60ajOYXvK1GrUsE=
+
+Name: assets/common/game_res/mm_3250301.dat.jpg
+SHA1-Digest: EuccPcLcTWVpwQlbseIEZJcMng4=
+
+Name: assets/common/game_res/mp_lavatunnel_199_ground.dat.jpg
+SHA1-Digest: EewEv0hIbj/cy674mAUXfeqHA5o=
+
+Name: assets/common/game_res/mp_raid_306_ground.dat.jpg
+SHA1-Digest: EjPS2PD3lH8zweTp+jyjboOd6cQ=
+
+Name: assets/common/game_res/mm_3000081.dat.jpg
+SHA1-Digest: gEAR2Gib1M67p7tNGinoGGRSD/M=
+
+Name: assets/common/game_res/mp_goblinwoods_305_ground.dat.jpg
+SHA1-Digest: Vy6ebQdIyiUK0Sqcc8UnBXISmqA=
+
+Name: assets/common/game_res/mm_3303081.dat.jpg
+SHA1-Digest: /5nzimVnOp13YAE+WNflAwN6hZA=
+
+Name: assets/common/game_res/mp_venomtemple_100_ground.dat.jpg
+SHA1-Digest: /XBLtES+p+4L7sfMD07jQMOnyAE=
+
+Name: assets/common/game_res/mp_townsnow_105_ground.dat.jpg
+SHA1-Digest: zsJYhjKVIQfjbys06Mi1YXGiBPY=
+
+Name: assets/common/game_res/mp_goblinwoods_303_ground.dat.jpg
+SHA1-Digest: 1XF+uygXNR3jJe8EErP9cVxjtdE=
+
+Name: assets/common/game_res/nm_info_wc.dat.jpg
+SHA1-Digest: iySHOZdrAbTgdG0/Bx5Dk75PzDI=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_light.9.pn
+ g
+SHA1-Digest: UbXqMwM30HBljuHn+la04UPzB1Y=
+
+Name: assets/common/game_res/mm_3000085.dat.jpg
+SHA1-Digest: LMEaTR7MKRM/1RLqz0y5jqtpqN0=
+
+Name: assets/common/game_res/mm_3003011.dat.jpg
+SHA1-Digest: x/EPGU9byoDxb4vxnuoaun6vdWw=
+
+Name: res/drawable-mdpi-v4/com_facebook_picker_magnifier.png
+SHA1-Digest: 1goyp8kAwtOgOyzxYWcSC6HHhLI=
+
+Name: assets/common/game_res/mm_3200850.dat.jpg
+SHA1-Digest: /XA/b17D/LqXnai1/5FoYLItGrc=
+
+Name: assets/common/game_res/mm_3100032.dat.jpg
+SHA1-Digest: D4JRQdPTygaM+gIHL77NfPad8eU=
+
+Name: assets/common/game_res/mm_3002086.dat.jpg
+SHA1-Digest: KCG3gQxpORL+wlP+/PILpZkmhmY=
+
+Name: assets/common/game_res/mp_lavatunnel_bg_11.dat.jpg
+SHA1-Digest: DdSD6UW6W6CNTr1UH9Zk3OcHGNM=
+
+Name: assets/common/game_res/mm_3001042.dat.jpg
+SHA1-Digest: prsUGhwyKNTM1BkU5Oymkxzd7Ww=
+
+Name: assets/common/game_res/mp_graveyard_201_ground.dat.jpg
+SHA1-Digest: nD2YDiT0XGmxOV/+gOR2i4NXRUQ=
+
+Name: assets/common/game_res/mp_fieldsnow_102_ground.dat.jpg
+SHA1-Digest: VvMrtIQNTQUiPsJpD0Fo60WkBzY=
+
+Name: assets/common/game_res/mp_ruin2_299_ground.dat.jpg
+SHA1-Digest: xBN+XXN7MuY2Nc6CwWAPyu6aep0=
+
+Name: assets/common/game_res/mp_forest_300_ground.dat.jpg
+SHA1-Digest: yvIkircTwG5QLJGuZpcGPU/yFxY=
+
+Name: assets/common/game_res/mp_ghostforest_400_ground.dat.jpg
+SHA1-Digest: NKFiaYqcgpctuP0twKqc3xphgbI=
+
+Name: lib/armeabi/libCom2uSAndroid.so
+SHA1-Digest: NIRlUxFFJEJHUGcOEla5nIm8OoU=
+
+Name: assets/common/game_res/mm_3200110.dat.jpg
+SHA1-Digest: ya6oyTNVFdFs7B1zSBmCt4mLDrE=
+
+Name: assets/common/game_res/mp_woodland_305_ground.dat.jpg
+SHA1-Digest: uoyNO6OITR7NSk8wIzUUVxFzhl0=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_grey_pressed.9.png
+SHA1-Digest: v6VGjmirliRdl2QuBQHgyJr4Z8s=
+
+Name: assets/common/ActiveUserImage/00_board_down_m.png
+SHA1-Digest: 5OcuwHE43uN4rUHdx19q0bCIvdk=
+
+Name: assets/common/game_res/mm_3001041.dat.jpg
+SHA1-Digest: +87X4kL4XLJebJI3pspm7btoxi4=
+
+Name: assets/common/game_res/mm_3001002.dat.jpg
+SHA1-Digest: Nh2ljSaVmhM9fh2v+1qQCBcjRLs=
+
+Name: assets/common/game_res/mp_ghostforest_199_ground.dat.jpg
+SHA1-Digest: HKnGYgA634MXukXjAo7++eb5reo=
+
+Name: assets/common/game_res/mp_arena75_100_ground.dat.jpg
+SHA1-Digest: JdQmw7vuoU6W7S/U3E8vrh0WTAA=
+
+Name: assets/common/game_res/mp_lavatunnel_302_ground.dat.jpg
+SHA1-Digest: t3G7HIrTBKgT0ljEY+wOxWX7/PY=
+
+Name: assets/common/game_res/mp_raid_bg_21.dat.jpg
+SHA1-Digest: ykUfbISnW7H+4bM72xJJHRQAzsE=
+
+Name: assets/common/game_res/mp_desert_199_ground.dat.jpg
+SHA1-Digest: 1KPhh4bz+OYTIY5Q/Qwrh2614Bc=
+
+Name: assets/common/game_res/mp_lavatunnel_104_ground.dat.jpg
+SHA1-Digest: FUgwuZPeEhlufFoT2mWbyQQNKVI=
+
+Name: assets/common/game_res/mm_3250100.dat.jpg
+SHA1-Digest: dx2152nLVO2E0+xxoyYXdS6Wi3Y=
+
+Name: assets/common/game_res/mm_3001001.dat.jpg
+SHA1-Digest: XeffYoAaGEH03cUCPDdRHPO+Aw0=
+
+Name: assets/common/game_res/mm_3004046.dat.jpg
+SHA1-Digest: GW0GMvjH+WBaHhnmwHzYihqWP7o=
+
+Name: assets/common/game_res/mp_town_302_ground.dat.jpg
+SHA1-Digest: 63On7Hg3NQcnHx/DL7IGpI3nFlY=
+
+Name: assets/common/game_res/dt_st_boss_golem.dat.jpg
+SHA1-Digest: riY+p39TqjGx0ISGmW6Ps56+aSo=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png
+SHA1-Digest: 9OR68UmIYlhlkWt56QGdFVj0nR0=
+
+Name: assets/common/game_res/mp_forest_201_ground.dat.jpg
+SHA1-Digest: o7th08hl2BpzKkkmTd/zbuw9vvk=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: FkxxTiMZkZMXGXmeMfd02TtKL64=
+
+Name: assets/common/game_res/mm_3200741.dat.jpg
+SHA1-Digest: e6VOEnyKYJrpWLZPbgF/PzFZdeo=
+
+Name: assets/common/game_res/mp_desert_100_ground.dat.jpg
+SHA1-Digest: vGMWb9He8wQm7gaW+g3NH2XXwH4=
+
+Name: res/raw/se_com_push.wav
+SHA1-Digest: uwx2temX7CXCOBjpCoBhnarfn3Y=
+
+Name: assets/common/game_res/mp_castle_299_ground.dat.jpg
+SHA1-Digest: aJ0JCowjwHItDJf07VciUoRnUgo=
+
+Name: assets/common/game_res/mp_snowland_206_ground.dat.jpg
+SHA1-Digest: Wo2BAXse8A12WEH7wsVt/aAu1Gs=
+
+Name: assets/common/game_res/mp_graveyard_106_ground.dat.jpg
+SHA1-Digest: iK+NxoiyW3wr+8G72YmQAop8+FQ=
+
+Name: assets/common/game_res/mp_alchemist_303_ground.dat.jpg
+SHA1-Digest: PMIJx/lKhCv0FoWRwJfqc8hBlF8=
+
+Name: assets/common/game_res/mp_deadmine_405_ground.dat.jpg
+SHA1-Digest: hcGdSbmh/omPKXA0MgitpIeBGwU=
+
+Name: assets/common/game_res/mm_3000124.dat.jpg
+SHA1-Digest: Wsms2kG/Yen2zfNJkGexQ8fcKss=
+
+Name: assets/common/game_res/mp_ruin_204_ground.dat.jpg
+SHA1-Digest: PM7OK4mrQnNVtqN0TrilxrRD2bg=
+
+Name: assets/common/game_res/mp_graveyard_103_ground.dat.jpg
+SHA1-Digest: 9N4CRLFRrunjQDckD4TwyCQ88qo=
+
+Name: assets/common/game_res/mp_goblinwoods_101_ground.dat.jpg
+SHA1-Digest: +FCzBojEuMtjIh2ho3xu88XTwks=
+
+Name: assets/common/game_res/ui_title_p_gl.dat.jpg
+SHA1-Digest: d/9trFg8urM3vWDvALTqaCcIUBQ=
+
+Name: assets/common/game_res/mm_3250330.dat.jpg
+SHA1-Digest: bR0Rmzjzd8foYHlBUGGmOzFE+60=
+
+Name: assets/common/game_res/mp_devilcastle_206_ground.dat.jpg
+SHA1-Digest: uoexzYbeXb6OW7JbwUAjCrH2g9w=
+
+Name: assets/common/game_res/mp_goblinwoods_bg_21.dat.jpg
+SHA1-Digest: n4XOSrLSmgr7da72aJcV1Ey/Xq8=
+
+Name: assets/common/game_res/mp_desert_399_ground.dat.jpg
+SHA1-Digest: 1JTm5UbYVleEPNTJL7oGiUt3JXs=
+
+Name: assets/common/game_res/mm_3004066.dat.jpg
+SHA1-Digest: vfbMHQmg0aQIKssx0nMEqZ6uDyc=
+
+Name: assets/common/game_res/mp_castle_103_ground.dat.jpg
+SHA1-Digest: dxS2PEPciItWZR5Tiyk73lm+qTE=
+
+Name: assets/common/game_res/mp_fieldsnow_106_ground.dat.jpg
+SHA1-Digest: GDRm8P4gFtXozEdbaCspIQM4wp4=
+
+Name: assets/common/game_res/mp_forest_103_ground.dat.jpg
+SHA1-Digest: fSEQDiHyQfuF7oA5EScFZMPn8xQ=
+
+Name: assets/common/game_res/mp_town_200_ground.dat.jpg
+SHA1-Digest: aeWGYGw+tcIM+DEYydnEjqDK0dU=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_grey_pressed.9.png
+SHA1-Digest: nAUaue7LFT4Y8UIpIa2lrh8kmlA=
+
+Name: assets/common/game_res/mp_icecave_bg_11.dat.jpg
+SHA1-Digest: SMH1UVFO2rpdjDNuUoM4+jhUn1c=
+
+Name: assets/common/game_res/dt_item_pkg_140.dat.jpg
+SHA1-Digest: LMxLa/rygoa/9bojawVjldf8Bp8=
+
+Name: assets/common/game_res/mm_3002051.dat.jpg
+SHA1-Digest: R5j8ReT5sM/5HQP99PdzWoLLs+A=
+
+Name: assets/common/game_res/mp_icecastle_200_ground.dat.jpg
+SHA1-Digest: Q3qBJPmGvAyaqQOWRtAdVhD6fJ4=
+
+Name: assets/common/game_res/mp_goblincastle_104_ground.dat.jpg
+SHA1-Digest: vdthscnX5AwAwA8SGN+wFgbipNU=
+
+Name: assets/common/game_res/mm_3000151.dat.jpg
+SHA1-Digest: 0f0S6Ks4l/46qvCUENfVDxJlIiA=
+
+Name: assets/common/game_res/mp_arena75_104_ground.dat.jpg
+SHA1-Digest: h1cznOoHD1eYL0jxMe5YaYfmhso=
+
+Name: assets/common/game_res/mp_ruin_bg_31.dat.jpg
+SHA1-Digest: u9oWWMb4IZm2tm0Kzy2SkCfdZ1w=
+
+Name: res/drawable/com_facebook_picker_list_focused.9.png
+SHA1-Digest: wq1XBihYEP7fT9hT55vx2S7+KDQ=
+
+Name: assets/common/game_res/mp_devilcastle_204_ground.dat.jpg
+SHA1-Digest: PgQMzmx5Eev3j0DeL4iIac/z7T0=
+
+Name: assets/common/game_res/ui_title_res_wc.dat.jpg
+SHA1-Digest: URVMWE0rfgR2tj2McLBKkQ3ZBOw=
+
+Name: assets/common/game_res/Avata_03.png.jpg
+SHA1-Digest: vFJH9znVV8Tw+dHCWHSEnRrgBWI=
+
+Name: assets/common/game_res/mp_hive_bg_12.dat.jpg
+SHA1-Digest: sbKCBkOGV5oj382MJ5poSd5QnHA=
+
+Name: assets/common/game_res/mp_icecave_204_ground.dat.jpg
+SHA1-Digest: 8v36BoNB1Jk0S5OmMehtZagvh74=
+
+Name: assets/common/game_res/mp_raid_bg_31.dat.jpg
+SHA1-Digest: bW1RnizMBY57IqwqsvFFX2Lw1ik=
+
+Name: assets/common/game_res/mp_town_202_ground.dat.jpg
+SHA1-Digest: SFBJmD7yKaIa9I0L4HdMADIBv60=
+
+Name: assets/common/game_res/mp_volcano_202_ground.dat.jpg
+SHA1-Digest: 5CnV9Gsc2RRV6YQz+WMtw41Abrg=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_focus_light
+ .9.png
+SHA1-Digest: YmWnuLFTsxsuwRBtvQiQ6Y6KnsI=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png
+SHA1-Digest: CKHzLZgwqxRHlq7CjCoPJAt9oVI=
+
+Name: res/drawable-ldpi-v4/ic_c2s_notification_small_icon.png
+SHA1-Digest: qRqQhQpzbkPd6ZYJ09NTWHRi5Ss=
+
+Name: assets/common/game_res/ui_game_new_res_wc.dat.jpg
+SHA1-Digest: dgYYti1mlBsaUebSz5g42g5Y3L8=
+
+Name: assets/common/game_res/mp_ruin_299_ground.dat.jpg
+SHA1-Digest: 37L1NIBGAMPywerrWc/Guoc+qMs=
+
+Name: assets/common/game_res/mm_3001086.dat.jpg
+SHA1-Digest: HKl48NesCf8mAJfo5bNd4NP7r4E=
+
+Name: assets/common/game_res/lg_zh_hant_140.dat.jpg
+SHA1-Digest: YUiyYonrtroDRMyx+pts1rygjsY=
+
+Name: assets/common/game_res/mp_arena_104_ground.dat.jpg
+SHA1-Digest: oFENoTbi/dzhe2IriWTh3u0hCV0=
+
+Name: assets/common/game_res/mm_3200360.dat.jpg
+SHA1-Digest: /feE0O9iqu4EXrrvUp5kKZF9bqk=
+
+Name: assets/common/game_res/mm_3001025.dat.jpg
+SHA1-Digest: mziHhkpEnFJnv23F1Ac+ITWo8KY=
+
+Name: assets/common/game_res/mp_lavatunnel_305_ground.dat.jpg
+SHA1-Digest: tBrCxqgtqMIIwJFl4HqeUx6APBU=
+
+Name: res/drawable-xxxhdpi-v4/com2us_kr_800x480.png
+SHA1-Digest: gIz6lJyknE+fNJjG9ljt/7x5HnA=
+
+Name: assets/common/game_res/mp_alchemist_203_ground.dat.jpg
+SHA1-Digest: QL5G5MCjoH7zyU7S/dhtHpwrJt4=
+
+Name: assets/common/game_res/mm_3200530.dat.jpg
+SHA1-Digest: vaYu4B5hTBvhf54HVeAMYPQHRqI=
+
+Name: assets/common/ActiveUserImage/00_board_down_logo_gamevil.png
+SHA1-Digest: lQ6fBqFEsUBn+YkczvXCCOe5tZM=
+
+Name: assets/common/game_res/lg_ko_140.dat.jpg
+SHA1-Digest: Eq0oYEAqjjXfsDadJhJRkS4lCOA=
+
+Name: assets/common/game_res/mm_3000045.dat.jpg
+SHA1-Digest: Vs+mSAjIocavnZwuDK1P8Tulqcg=
+
+Name: assets/common/game_res/mp_ruin2_305_ground.dat.jpg
+SHA1-Digest: PIdTdw248JlHIX/5p/UXpC6A4yg=
+
+Name: assets/common/game_res/mp_venomtemple_101_ground.dat.jpg
+SHA1-Digest: uiacSjo+Efzlj99PTbJEjQM+MZc=
+
+Name: assets/common/game_res/mm_3001071.dat.jpg
+SHA1-Digest: hyv3q7P9Phkhas0RIY6980tuykc=
+
+Name: assets/common/game_res/mp_cave_104_ground.dat.jpg
+SHA1-Digest: 2iabWH0U9UHbh2rY0V59o0XqfHY=
+
+Name: assets/common/game_res/mp_cliff_205_ground.dat.jpg
+SHA1-Digest: jq+nH2L/C98tWOXEywJ17msPl6M=
+
+Name: assets/common/game_res/mm_3200950.dat.jpg
+SHA1-Digest: kF2K9D3tJTHGxyxtf+sW/oa3oSw=
+
+Name: assets/common/game_res/mm_3000165.dat.jpg
+SHA1-Digest: fc1sRPQ/8o8mKk/TpAYxpkyuT9I=
+
+Name: assets/common/game_res/mm_3200271.dat.jpg
+SHA1-Digest: TLM635ZbrRMCQ6fHwS4PhDoWM20=
+
+Name: assets/common/ActiveUserImage/00_btn_select_r.png
+SHA1-Digest: z5/aZFV36+x49yIpn95K61cfco4=
+
+Name: assets/common/game_res/mp_deadmine_199_ground.dat.jpg
+SHA1-Digest: E4JJC80HJ53ZRGcGw0rdKCuStUk=
+
+Name: assets/common/game_res/mm_3000181.dat.jpg
+SHA1-Digest: Fb0Xqs6+Vb3/fj4S+DFoDbbIiPU=
+
+Name: assets/common/game_res/mm_3004091.dat.jpg
+SHA1-Digest: IaAmgdB+4dmqF9xLhDs6PdOLCUw=
+
+Name: assets/common/game_res/mm_3004011.dat.jpg
+SHA1-Digest: kis+Q7/Cp0fYiLweaAtplNZxPa8=
+
+Name: res/drawable-xxhdpi-v4/icon.png
+SHA1-Digest: LqdBY7OWHscnUnQgFCKzhIJbwBc=
+
+Name: assets/common/game_res/mp_coast_405_ground.dat.jpg
+SHA1-Digest: gBbio52vgjsuIWDuwk0+S0xNWac=
+
+Name: assets/common/game_res/mp_lavatunnel_100_ground.dat.jpg
+SHA1-Digest: um7/tOW/iCdQQjQOWO05K3t8Jmw=
+
+Name: assets/common/game_res/mp_icecave_104_ground.dat.jpg
+SHA1-Digest: niz0JaMm5kGe1pNg4JIjxMNTt2c=
+
+Name: assets/common/NoticeImage/imgNotice_Close@2x.png
+SHA1-Digest: t1YFtsdaYnj16oEFUARBc+Hzcr4=
+
+Name: assets/common/game_res/mm_3001007.dat.jpg
+SHA1-Digest: d51e9Q2st0cPWNE1ZaSlZsSQ0iA=
+
+Name: assets/common/game_res/mp_ruin_205_ground.dat.jpg
+SHA1-Digest: 7xdEDceR+tNXVKRvg8RXXLTJfSI=
+
+Name: assets/common/game_res/mp_alchemist_105_ground.dat.jpg
+SHA1-Digest: ve+2OpAfJoEU/QUsmlO/owwyhkw=
+
+Name: assets/common/game_res/mp_graveyard_bg_21.dat.jpg
+SHA1-Digest: 20/WfUpyZhyH/TAcN1XYB8lSDH8=
+
+Name: assets/common/game_res/mp_mushroom_bg_31.dat.jpg
+SHA1-Digest: RC0/O0zLeM8IUHFuazcRUO3oVLU=
+
+Name: res/drawable/com_facebook_button_like_pressed.png
+SHA1-Digest: AIaP242IZwhQCLLgajVq5yK1p3g=
+
+Name: assets/common/game_res/mm_3003042.dat.jpg
+SHA1-Digest: A+tS0myNLEb4Grmpf7tcmH1u9Gc=
+
+Name: assets/common/game_res/mp_cliff_105_ground.dat.jpg
+SHA1-Digest: ZOsm3dQRSsxBUr7M/ef2oNULlHU=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: UUeGKfmWgJl/rutroPXP57LpkoU=
+
+Name: res/drawable/com_facebook_button_grey_focused.9.png
+SHA1-Digest: oegkN07TNc6Ko8z3qqCgUGgnvRw=
+
+Name: assets/common/game_res/mp_ghostforest_bg_32.dat.jpg
+SHA1-Digest: A5WVzfImpe9mBPe/XRu7oudJiKs=
+
+Name: assets/common/game_res/mp_venomtemple_bg_11.dat.jpg
+SHA1-Digest: KdLZ2lXEpQd6z6Zz2zXeon4U154=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_light.9.pn
+ g
+SHA1-Digest: 1Hnpvj2UzKDvPZv175SFBfp0Gn8=
+
+Name: assets/common/game_res/mp_coast_bg_11.dat.jpg
+SHA1-Digest: xdCa+jYtWzd5B9M7dXhVMOH1gfU=
+
+Name: assets/common/game_res/mm_3002071.dat.jpg
+SHA1-Digest: GO6sgxYisumSBpK8QhqlreYw7ac=
+
+Name: assets/common/game_res/mm_3003024.dat.jpg
+SHA1-Digest: 2cle72NeQ/8FR3EW9kHcIcDAkp8=
+
+Name: assets/common/game_res/mm_3004065.dat.jpg
+SHA1-Digest: +Yf2nPckudcHfRuTuBsf0dSufpA=
+
+Name: assets/common/game_res/mp_graveyard_204_ground.dat.jpg
+SHA1-Digest: DCDiZnT4Vwn02Rb/xd5NzEIXjYA=
+
+Name: assets/common/game_res/mm_3303080.dat.jpg
+SHA1-Digest: y97OO/WX2138ihgLJc1RG3Th+MA=
+
+Name: assets/common/game_res/mp_ruin2_bg_21.dat.jpg
+SHA1-Digest: /o+5XPz35c+jf+V60oRvQ24ltLQ=
+
+Name: assets/common/game_res/mm_3001067.dat.jpg
+SHA1-Digest: gGunmZykQB25cgLKCgvXbmgkdVw=
+
+Name: res/drawable/com_facebook_button_like_icon.png
+SHA1-Digest: dXnEKr4KU5992xWhw0vc4vtFQF4=
+
+Name: assets/common/game_res/mp_cave_bg_21.dat.jpg
+SHA1-Digest: HXNqNGn8B8/7uvlnXZkhLLmKhQY=
+
+Name: assets/common/game_res/mm_3250510.dat.jpg
+SHA1-Digest: eoLcqLfygUpYgOyrWLrohq1JSA0=
+
+Name: assets/common/game_res/mp_woodland_102_ground.dat.jpg
+SHA1-Digest: lLPj/obVlJE6tZEyk5n2ORbhdZc=
+
+Name: assets/common/game_res/mp_yellowtower_206_ground.dat.jpg
+SHA1-Digest: UVZ4Dj3rWeNv0XfGuOiCMQTqh58=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: vBwm0ihe3tJu932F0b7IvAec1Ho=
+
+Name: assets/common/game_res/mm_3250111.dat.jpg
+SHA1-Digest: syktL9nevelS2fjN6FXFwTG3iOE=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: meTbFvJL0s3oA4sDj2GzpobVb3Q=
+
+Name: assets/common/game_res/mm_3200380.dat.jpg
+SHA1-Digest: wKWd1T4/qdIh28vmuoToGr94UeA=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_focus_dark.
+ 9.png
+SHA1-Digest: YmWnuLFTsxsuwRBtvQiQ6Y6KnsI=
+
+Name: assets/common/game_res/mp_raid_301_ground.dat.jpg
+SHA1-Digest: n2fAu1B2lwMkwLnoCPtO/0ZD7dY=
+
+Name: assets/common/offerwall/btn_native_X_tablet.png
+SHA1-Digest: LZVFnUcgTBFZyhfmTJe6+BsTzjg=
+
+Name: assets/common/game_res/mm_3200401.dat.jpg
+SHA1-Digest: 2cVSiFryi+c/KWv4w9w8M8v4Xjw=
+
+Name: assets/common/game_res/mp_ruin2_202_ground.dat.jpg
+SHA1-Digest: g3iykuIi+wwVtxzP1Mfr6j9T07Y=
+
+Name: assets/common/game_res/mm_3000065.dat.jpg
+SHA1-Digest: vVPFSq/f1uAawwhgVaOCN9RnsVE=
+
+Name: res/drawable-hdpi-v4/common_ic_googleplayservices.png
+SHA1-Digest: VI4dX5B2Y48SEkB7kbHeKlBvZ4s=
+
+Name: assets/common/game_res/mp_desert_bg_22.dat.jpg
+SHA1-Digest: uuBOW0u4WoeyL3jQLlCymv4B18E=
+
+Name: assets/common/game_res/mp_mushroom_106_ground.dat.jpg
+SHA1-Digest: n9PvD2RDKwVGlCozwG1dhTETqhA=
+
+Name: assets/common/game_res/mp_ruin2_302_ground.dat.jpg
+SHA1-Digest: AFcugcikIVLj8hppb4CeAJsBY3U=
+
+Name: assets/common/game_res/mp_deadmine_305_ground.dat.jpg
+SHA1-Digest: kI9BKqKGv/z40WzM9XubwfiiRcw=
+
+Name: assets/common/game_res/mm_3200521.dat.jpg
+SHA1-Digest: R8QQu5ycurk0WyHdYxrtnTnrGFs=
+
+Name: assets/common/mercury/0_wide_outline.png
+SHA1-Digest: kiKwwc6S0zgl5jIlY5NegP0yXbc=
+
+Name: assets/common/game_res/mp_goblinwoods_100_ground.dat.jpg
+SHA1-Digest: proeiGyISL8v1QbezK3HwRRfMqc=
+
+Name: assets/common/game_res/mm_3250001.dat.jpg
+SHA1-Digest: 4L94PeaxDAhMpYsWBHpfy2Mq+2s=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png
+SHA1-Digest: AI82AcgbBGuUm0saKN6cW1HPv+w=
+
+Name: assets/common/game_res/mp_desert_101_ground.dat.jpg
+SHA1-Digest: j8tjUmn5Y7b90WWIvaEb+O/+JPU=
+
+Name: assets/common/game_res/dt_st_special.dat.jpg
+SHA1-Digest: mljF5ujTvJJJ1usMvsJzngcwGDo=
+
+Name: assets/common/game_res/mp_mushroom_204_ground.dat.jpg
+SHA1-Digest: hjj2Ikjl45IuRtc9aWmLoxV77mo=
+
+Name: assets/common/game_res/mp_venomtemple_104_ground.dat.jpg
+SHA1-Digest: FYsizbMrVmInwXiPGDNDLwy5mhQ=
+
+Name: assets/common/game_res/mp_forest_205_ground.dat.jpg
+SHA1-Digest: bWJSuhnBG7nq/DAMIzyzJ+wsRmM=
+
+Name: assets/common/game_res/mp_deadmine_300_ground.dat.jpg
+SHA1-Digest: HCumFv7OhkeQQgmvfxV0nNlVV24=
+
+Name: assets/common/game_res/mp_volcano_bg_11.dat.jpg
+SHA1-Digest: o0cXq6CIasQsvL+jAMcd+ikf5UY=
+
+Name: assets/common/game_res/mp_townsnow_102_ground.dat.jpg
+SHA1-Digest: 0L+CYrtzyGV22Lj5suO9dEBiyZY=
+
+Name: assets/common/game_res/mm_3000144.dat.jpg
+SHA1-Digest: +3gEr9+p0x+OM3kdk9Ym4pQ0H1M=
+
+Name: assets/common/game_res/mp_yellowtower_bg_11.dat.jpg
+SHA1-Digest: BbHp6WLlqNO5XqxWOfA4bqtCZzA=
+
+Name: assets/common/game_res/mm_3200501.dat.jpg
+SHA1-Digest: 02cZmuI5v6VNaQA5ABuTL2JlwdY=
+
+Name: assets/common/game_res/mp_ghostforest_100_ground.dat.jpg
+SHA1-Digest: SxEsiQK0aQ6jgrnqEHsxHkCKFQw=
+
+Name: assets/common/game_res/mp_icecastle_101_ground.dat.jpg
+SHA1-Digest: BKzYXLaR4xSQISJgN/fbeLXFTcs=
+
+Name: assets/common/game_res/mp_graveyard_bg_42.dat.jpg
+SHA1-Digest: D2mtgt4ZLW1hOyhJRbECAdcixm8=
+
+Name: assets/common/game_res/mp_lavatunnel_102_ground.dat.jpg
+SHA1-Digest: iLYxIszwHpbE0pRvCYRUvhXQTKo=
+
+Name: assets/common/game_res/mp_raid_105_ground.dat.jpg
+SHA1-Digest: EVfxL7a8VhubcFCWVl59XSZZoo8=
+
+Name: res/drawable-mdpi-v4/powered_by_google_light.png
+SHA1-Digest: ZTHLPZe63ATwVGAlXju4hnecsME=
+
+Name: assets/common/game_res/mp_coast_bg_31.dat.jpg
+SHA1-Digest: HSfZu21c8VIrl6HFCfrfTGJahAo=
+
+Name: assets/common/game_res/mm_3000083.dat.jpg
+SHA1-Digest: QXSzUNc2jWoqgBVp8s/4tWe0Jc0=
+
+Name: assets/common/game_res/mm_3000164.dat.jpg
+SHA1-Digest: 3+ZU2V9apcD3/TUS+CYo8NdMmV8=
+
+Name: assets/common/game_res/mm_3004023.dat.jpg
+SHA1-Digest: LtknvhlgJ/KeJBLZF0e8uC1Fm7M=
+
+Name: assets/common/game_res/mm_3003081.dat.jpg
+SHA1-Digest: NhS/YyQP5Vc6dVbew/bgocwUQ6E=
+
+Name: assets/common/game_res/mm_3002041.dat.jpg
+SHA1-Digest: sQjIyCIvjjZrYjJgT+FAIoxfmDg=
+
+Name: assets/common/game_res/mp_fieldsnow_201_ground.dat.jpg
+SHA1-Digest: auCo2VshkOpleevGY31hOVQmKp8=
+
+Name: assets/common/game_res/mm_3001082.dat.jpg
+SHA1-Digest: 8exxAmWqIadSepQdr22HlF86K/Q=
+
+Name: assets/common/game_res/mm_3002081.dat.jpg
+SHA1-Digest: HTZxdLHS9066m23T9ZWC6xbKqLY=
+
+Name: assets/common/game_res/mp_icecave_100_ground.dat.jpg
+SHA1-Digest: 53xd9IhHllAkjsgsMmq9Nb1e93c=
+
+Name: assets/common/game_res/mm_3001064.dat.jpg
+SHA1-Digest: jnh4bQ1b/kaY+ZiAZ+z1wWgu3ME=
+
+Name: assets/common/game_res/mp_cliff_203_ground.dat.jpg
+SHA1-Digest: LamqiMdNfNUMx2sEbaEdIMYlNmI=
+
+Name: assets/common/game_res/mm_3002011.dat.jpg
+SHA1-Digest: 8LMHLp4PrCVxJ1LwOIO6ni67F7k=
+
+Name: assets/common/game_res/dt_st_boss_lich.dat.jpg
+SHA1-Digest: FCdzLDUS9ysnADhEUUQaTxOXPn4=
+
+Name: assets/common/game_res/mm_3200120.dat.jpg
+SHA1-Digest: bBRoDGtiJCaYJuCBUuIu4u7jDxw=
+
+Name: res/drawable-ldpi-v4/com_facebook_close.png
+SHA1-Digest: kTtEL++729cJQKWaJ8H4hFXPMJo=
+
+Name: res/layout/com_facebook_picker_list_section_header.xml
+SHA1-Digest: cYBlv30JN1mYEf1F5S3ZrzcjJ9g=
+
+Name: assets/common/game_res/mp_lavatunnel_299_ground.dat.jpg
+SHA1-Digest: k4dODK+95LJSNYLD7mLxN3JzUq8=
+
+Name: assets/common/game_res/mp_woodland_201_ground.dat.jpg
+SHA1-Digest: woQIs7CT64qS0A3Lm80kSIAvGNU=
+
+Name: assets/common/game_res/mp_ghostforest_304_ground.dat.jpg
+SHA1-Digest: gHUpQ1UKCCsEQ13A+oZw4B0zzBs=
+
+Name: assets/common/game_res/mp_venomtemple_204_ground.dat.jpg
+SHA1-Digest: AWKjfWJr50aHfmMTBisM9gbqpN8=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: 41iWauf4UejxOhQ9Xo4YElujATg=
+
+Name: assets/common/game_res/mp_icecave_302_ground.dat.jpg
+SHA1-Digest: q6v0Ja4TbN/vWOqHxNzigNq2pJk=
+
+Name: assets/common/mercury/2_length_box_close.png
+SHA1-Digest: m5Rc0mva8FSIExZVHh2mHu52Yu4=
+
+Name: assets/common/game_res/mp_goblincastle_200_ground.dat.jpg
+SHA1-Digest: 9MU9oBCIaVfD8c7K2QKILBSzNOI=
+
+Name: res/layout/com_facebook_picker_title_bar.xml
+SHA1-Digest: gIInwtCSBeKoEwT387UXR3L1B1I=
+
+Name: assets/common/game_res/fr_fairy_info_wc.dat.jpg
+SHA1-Digest: SOPEQj7gKKEVWnAuCCvpChW8oL8=
+
+Name: assets/common/game_res/mp_town_303_ground.dat.jpg
+SHA1-Digest: GX6beW4thRQGxLmBeL5Z5yIH9fs=
+
+Name: assets/common/game_res/mm_3000082.dat.jpg
+SHA1-Digest: X2uQATW1c/EOSe5F7bQrT9j4hUY=
+
+Name: assets/common/game_res/mp_mushroom_104_ground.dat.jpg
+SHA1-Digest: u30tuOK+bKERn2BXOo3fo/bT380=
+
+Name: assets/common/game_res/mp_goblincastle_100_ground.dat.jpg
+SHA1-Digest: I/LIUBSo+MCgLZN2Sxe8HDU2ySs=
+
+Name: assets/common/game_res/mp_coast_304_ground.dat.jpg
+SHA1-Digest: u+2b3RQTAa8U2b/sNBBCRLRLHOk=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: CdS2JYcO2aYMRPs8uE6z0+hK3SA=
+
+Name: assets/common/game_res/mm_3003031.dat.jpg
+SHA1-Digest: tHNpdUgfg8LSxFhKMHsYS/TtfQE=
+
+Name: assets/common/game_res/mp_cliff_106_ground.dat.jpg
+SHA1-Digest: p/QptEDWeVodrKbVHxV/+vWF4cA=
+
+Name: assets/common/game_res/mp_coast_206_ground.dat.jpg
+SHA1-Digest: 5E5treHYdh7UQp9P7q/TILKOsl8=
+
+Name: assets/common/ActiveUserImage/00_board_down_r.png
+SHA1-Digest: 7CQKvVNmNZ0hIGdAkIEP4xyr1Lk=
+
+Name: assets/common/game_res/mm_3003071.dat.jpg
+SHA1-Digest: dgjCriNh/zf89p6A/l9kGDkhcSU=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: dV3F0Sz7MxTs+Trhe4uXp7Q7aSs=
+
+Name: assets/common/game_res/mm_3200361.dat.jpg
+SHA1-Digest: lAPGxILy8R7DENNwMVmzLOPT/rI=
+
+Name: assets/common/game_res/mp_castle_bg_12.dat.jpg
+SHA1-Digest: Yv/rU2HnhDttr9vF4Y8OKoAWSGs=
+
+Name: assets/common/game_res/mp_raid_201_ground.dat.jpg
+SHA1-Digest: BhE1e4+422g67LAJur9iewSlFiM=
+
+Name: assets/common/game_res/mp_devilcastle_101_ground.dat.jpg
+SHA1-Digest: P3L0ZTj4yv+r3cq2dngyNJIOHUo=
+
+Name: assets/common/game_res/mm_3200201.dat.jpg
+SHA1-Digest: 3h+MhTQhir8M2cVPm3S31r0Gjkg=
+
+Name: assets/common/game_res/mp_fieldsnow_103_ground.dat.jpg
+SHA1-Digest: n32C1cKy6qGDlC5n9jB6x/MI5dU=
+
+Name: assets/common/game_res/mp_ruin2_306_ground.dat.jpg
+SHA1-Digest: KD8DNGVJZ4izZubPivEGxLvYqMA=
+
+Name: res/drawable/com_facebook_picker_item_background.xml
+SHA1-Digest: difc2km569No1ApOqttt4kKhLzE=
+
+Name: assets/common/game_res/mp_alchemist_104_ground.dat.jpg
+SHA1-Digest: CqK1bgf9eo64BihTGD4T7CA3jyg=
+
+Name: assets/common/game_res/mp_town_101_ground.dat.jpg
+SHA1-Digest: pLBHK898Ye009lHar5I1Ai2kvqc=
+
+Name: res/drawable-xhdpi-v4/com2us_en_800x480.png
+SHA1-Digest: OlVXf/HYkeRGOuv4/yqGyHkonxU=
+
+Name: assets/common/game_res/mm_3200601.dat.jpg
+SHA1-Digest: wjlRnvJ+Fxwu2R6Skl6CqSe0RLY=
+
+Name: assets/common/game_res/mp_woodland_303_ground.dat.jpg
+SHA1-Digest: yl8gXnPB3jfkgMqn72pgszht6iU=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png
+SHA1-Digest: gidiAUAJjJias1MRTuSOr4/2dvI=
+
+Name: assets/common/game_res/mp_woodland_100_ground.dat.jpg
+SHA1-Digest: gFxf+Ql3ABML9lcX6gYDUVZhnBg=
+
+Name: assets/common/game_res/dt_st_boss.dat.jpg
+SHA1-Digest: FIHXKFOcnQghT4ikAAQ4W2wAqbI=
+
+Name: assets/common/game_res/mm_3001063.dat.jpg
+SHA1-Digest: U3b0nZx/N0WYAvGqnhIaJLxaaYg=
+
+Name: assets/common/game_res/mp_cliff_200_ground.dat.jpg
+SHA1-Digest: w5TMAnQpXm64a9YXmTV6LXnLPD0=
+
+Name: assets/common/game_res/mm_3004007.dat.jpg
+SHA1-Digest: 7spSKq/a9qpP3bD7Hcui6CF0ph0=
+
+Name: assets/common/ActiveUserImage/00_btn_default_m_1.png
+SHA1-Digest: OdRQlyus2gnYZshUQMcbFaQVkNA=
+
+Name: assets/common/game_res/mp_graveyard_100_ground.dat.jpg
+SHA1-Digest: Ya3mhuneL8DQTNEbfdTp5Kuxjgs=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: vo5IER5aYP04fs9WVhNf8ZG8h6g=
+
+Name: assets/common/game_res/mm_3250321.dat.jpg
+SHA1-Digest: bjC7/zgMshFlGrILsmo2a/9xsJk=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_pressed_light.9.pn
+ g
+SHA1-Digest: HlSxw8q2TxVN28UussUGRFFbn8k=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: +YXDOKcowsglHKYLvgWRriKCdQI=
+
+Name: assets/common/game_res/mp_ruin2_102_ground.dat.jpg
+SHA1-Digest: FpIwanj8ETBARy9p8GqFUi3OJqM=
+
+Name: lib/armeabi/libgame.so
+SHA1-Digest: ocve+IQumwmzDLlvKoEyxefgkiE=
+
+Name: assets/common/game_res/mp_snowland_306_ground.dat.jpg
+SHA1-Digest: neh5izQth9auiX26IElWvq+ooS0=
+
+Name: assets/common/game_res/mp_snowland_100_ground.dat.jpg
+SHA1-Digest: oWO5aVqro9lCjWLIKv5b2FjL3wM=
+
+Name: assets/common/game_res/lg_index_140.dat.jpg
+SHA1-Digest: LlHer+Gv6Jw8WTW30OSHLf0dBYo=
+
+Name: assets/common/ActiveUserAgreement/com2us/au_terms_meta.json
+SHA1-Digest: sykghhv54krnKr+GONMuGNGB0jM=
+
+Name: assets/common/game_res/mm_3002085.dat.jpg
+SHA1-Digest: VSyNNokfNeARRQvIxDkOojdGyNA=
+
+Name: assets/common/game_res/mm_3002007.dat.jpg
+SHA1-Digest: vuapfLdaCQDxEe+ilc9XP9gGqXE=
+
+Name: assets/common/game_res/mp_deadmine_bg_22.dat.jpg
+SHA1-Digest: KDc3x9OXO3mlFkXiSwg+1YIfHj8=
+
+Name: assets/common/game_res/mp_ghostforest_204_ground.dat.jpg
+SHA1-Digest: vFJKYFqW2An5JlFmme0J9x4FKwk=
+
+Name: assets/common/game_res/mm_3000174.dat.jpg
+SHA1-Digest: V1C6YC05qHpQ0TNP68AeFiGwm7U=
+
+Name: res/layout/com_facebook_picker_title_bar_stub.xml
+SHA1-Digest: DqL9dzYaEJEl0nvs72B/e3sAFjk=
+
+Name: res/menu/activity_main.xml
+SHA1-Digest: 6aNitzfyfnZQvpH62MJePISavpc=
+
+Name: assets/common/game_res/mp_hive_bg_11.dat.jpg
+SHA1-Digest: txwb2G3SVcuSWPyvJ2XjNtoWSBE=
+
+Name: assets/common/game_res/mp_deadmine_206_ground.dat.jpg
+SHA1-Digest: xTBtf+WURazqpI2r5KjUqLPJJd0=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: UUeGKfmWgJl/rutroPXP57LpkoU=
+
+Name: assets/common/game_res/mm_3004086.dat.jpg
+SHA1-Digest: NIXfCSdmw9/erpm94SXQ1arwLAY=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_side_left.png
+SHA1-Digest: ZzT+3WYpT7MnEmnzCJalu/+srwA=
+
+Name: assets/common/game_res/mp_forest_304_ground.dat.jpg
+SHA1-Digest: Vw5co+1pY/kCA8WmZrcvAgt+Op0=
+
+Name: assets/common/game_res/mp_ruin_201_ground.dat.jpg
+SHA1-Digest: jx5sisY4TDXFCoRXwmu5FHGVI9M=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: nvg7KMKsHZx5cXiXMrsOUZ1pQs8=
+
+Name: assets/common/game_res/mp_goblinwoods_203_ground.dat.jpg
+SHA1-Digest: ppq7sg+eeO2mH6TQqpf42S8uork=
+
+Name: assets/common/game_res/mm_3000066.dat.jpg
+SHA1-Digest: 4NKyotJeKowH2TAJuc3mArfAqc0=
+
+Name: assets/common/game_res/dt_fellow_pkg_140.dat.jpg
+SHA1-Digest: F03YvpozO1fwo/wOuhKGAwzLc/Y=
+
+Name: assets/common/game_res/mm_3250020.dat.jpg
+SHA1-Digest: 8CNhleaM6wd18M60E+4AJYuKLwA=
+
+Name: res/drawable-tvdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: oJkL4xtlN87pNrCzPgueqqvY2nU=
+
+Name: assets/common/game_res/mm_3000185.dat.jpg
+SHA1-Digest: FDiZnPvptpYkng5IYHtHsNyEVVg=
+
+Name: assets/common/game_res/mp_cliff_301_ground.dat.jpg
+SHA1-Digest: P4nRmFA6tLxqYFRe7UOJ+eITSVI=
+
+Name: assets/common/game_res/mp_icecastle_103_ground.dat.jpg
+SHA1-Digest: aNHqWBSnVybmotp4ZZnc2TKZ9Xw=
+
+Name: assets/common/game_res/mp_goblincastle_102_ground.dat.jpg
+SHA1-Digest: 6RI/K9Jqz9+kRoLSK+d2Ws3n72o=
+
+Name: assets/common/game_res/mm_3004087.dat.jpg
+SHA1-Digest: NOBZKGikpG1UVgvsV9z/Shj5kQc=
+
+Name: assets/common/game_res/mp_alchemist_306_ground.dat.jpg
+SHA1-Digest: qGOe69vIn41S8Yf5G+O8opXFG8Q=
+
+Name: assets/common/game_res/mm_3003026.dat.jpg
+SHA1-Digest: FkebHpQNP/ULWu3i447aurGVLyw=
+
+Name: assets/common/game_res/mp_snowland_bg_12.dat.jpg
+SHA1-Digest: FlbnplDlbwdkpwf0cXeFBI3htVs=
+
+Name: assets/common/game_res/mp_icecastle_104_ground.dat.jpg
+SHA1-Digest: C9FC7YNFPg9RLrHtaxRlCaM7puk=
+
+Name: assets/common/game_res/mp_cave_299_ground.dat.jpg
+SHA1-Digest: o2ZJ+8xbc6ZZKnnQ75jCxWM4Yk0=
+
+Name: assets/common/game_res/mm_3003002.dat.jpg
+SHA1-Digest: tr5aKFW4pzbtHMnMjhgrc2E0neg=
+
+Name: assets/common/game_res/mp_arena_102_ground.dat.jpg
+SHA1-Digest: UduoG9c50fgeoQmWmQ2s3IbbIjM=
+
+Name: assets/common/ActiveUserImage/activeuser_confirm_button.png
+SHA1-Digest: oeIZZGy5xG75mm8njrFqJhTW+vQ=
+
+Name: assets/common/game_res/mp_cliff_206_ground.dat.jpg
+SHA1-Digest: gSMKehz6OLUDxAlgmgcDkmn76jo=
+
+Name: assets/common/game_res/mp_forest_301_ground.dat.jpg
+SHA1-Digest: RS9R32PYtHZZJ+ckYYwPM/bDZzw=
+
+Name: assets/common/game_res/mp_forest_100_ground.dat.jpg
+SHA1-Digest: UXDUpPjZukRxOiGW02N7dMuujLo=
+
+Name: assets/common/game_res/mp_raid_bg_22.dat.jpg
+SHA1-Digest: ZU8oAf1sebyT1HI1L6L2KNxhsSk=
+
+Name: assets/common/game_res/mm_3200340.dat.jpg
+SHA1-Digest: FTakUSfZhiqIm9Bhk57eA3uAhtE=
+
+Name: assets/common/game_res/mp_townsnow_205_ground.dat.jpg
+SHA1-Digest: rB1yPOSCkuHVcs+5OrcHO83zt14=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_edge_2.png
+SHA1-Digest: 2aFL4HGaYQ64fIdArmptN1M6SJw=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: eAdVXtk/TEzSgB4P3wNlpGbfp5g=
+
+Name: assets/common/game_res/mp_ghostforest_406_ground.dat.jpg
+SHA1-Digest: C+TsmjaFOhFlGhrhKBaAwdHSEus=
+
+Name: assets/common/game_res/mp_ruin2_bg_31.dat.jpg
+SHA1-Digest: BMjvHvgIf4eq1l8YCx1kJr23mrI=
+
+Name: assets/common/game_res/dt_st_boss_knight.dat.jpg
+SHA1-Digest: exXY5DpGS6DDPz5uaJKnb9mjga4=
+
+Name: assets/common/game_res/mm_3002044.dat.jpg
+SHA1-Digest: Qob7XAWYYUSPhl0lHzMDMveEQkA=
+
+Name: assets/common/game_res/mp_fieldsnow_299_ground.dat.jpg
+SHA1-Digest: NuSCpYpeWvdACcpKIcr+9oQ0nRU=
+
+Name: assets/common/game_res/mp_mushroom_101_ground.dat.jpg
+SHA1-Digest: z1ZuVt6V1nSXdNmkxXv7326UMMw=
+
+Name: assets/common/game_res/mp_deadmine_101_ground.dat.jpg
+SHA1-Digest: LAYEwIHzfdp84H8jxjVLDzlWvCs=
+
+Name: assets/common/game_res/mp_deadmine_201_ground.dat.jpg
+SHA1-Digest: v/UYGw1LwmvCwOiI1R8B4FmhoQQ=
+
+Name: res/drawable/com_facebook_picker_list_selector_disabled.9.png
+SHA1-Digest: cKGQg8jgT0IkOi1RPo5Y+TSnQb4=
+
+Name: assets/common/game_res/mm_3002047.dat.jpg
+SHA1-Digest: kZGqwZLaSKh70dUOOvPt6PzAli4=
+
+Name: assets/common/game_res/mp_coast_202_ground.dat.jpg
+SHA1-Digest: oW70pisWdIy03G3LUmMBLdIlOcE=
+
+Name: assets/common/game_res/mp_arena_101_ground.dat.jpg
+SHA1-Digest: zGXykEHPlTkT8SOH/Hl5J0b+XWU=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_focus_dark.
+ 9.png
+SHA1-Digest: 29jlpwaYo8yADFvg53lRNdVbvt0=
+
+Name: assets/common/game_res/mp_deadmine_104_ground.dat.jpg
+SHA1-Digest: MzVRdZmD7ZR8MsLxMF0GCbkKCrg=
+
+Name: assets/common/game_res/mp_goblincastle_205_ground.dat.jpg
+SHA1-Digest: YUHbF1JButaH73oSm3crWZaZdZs=
+
+Name: assets/common/game_res/mp_coast_401_ground.dat.jpg
+SHA1-Digest: pOwh4V2stc4eqcfp+iQdw7MVSKk=
+
+Name: assets/common/game_res/mp_alchemist_399_ground.dat.jpg
+SHA1-Digest: 61EzJD1e6rsZBySLV4B3sfz/jEY=
+
+Name: assets/common/game_res/mm_3002042.dat.jpg
+SHA1-Digest: M61X/TD7njPcFxnqnzrceoQtjhE=
+
+Name: assets/common/game_res/mp_volcano_bg_22.dat.jpg
+SHA1-Digest: KD1hr/4ZukGaoJY9vtyH02Fbgao=
+
+Name: assets/common/game_res/dt_st_raid_imp.dat.jpg
+SHA1-Digest: m+D9UL4xVMepoz4nfgP0PVeSeT8=
+
+Name: assets/common/game_res/mp_lavatunnel_103_ground.dat.jpg
+SHA1-Digest: ETR/Xq2VWYqitZLewe8bCJsjXgU=
+
+Name: assets/common/game_res/mp_castle_102_ground.dat.jpg
+SHA1-Digest: BeYArMpsObp/y1n38Z4FcWkBfF0=
+
+Name: assets/common/game_res/mp_deadmine_103_ground.dat.jpg
+SHA1-Digest: Xtx6Nt44HhRYUa1HwP9RzsFJJA8=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: 1nB29gilkMG21U2c1UzWz5vtjpc=
+
+Name: res/layout/main.xml
+SHA1-Digest: CpTUB6rAbNtThIF+ys+wOCH0rIk=
+
+Name: assets/common/game_res/mp_ruin_bg_22.dat.jpg
+SHA1-Digest: f9KjENyAvac32fSYf/Ojdn7b/OM=
+
+Name: assets/common/game_res/mp_ghostforest_106_ground.dat.jpg
+SHA1-Digest: aCgW5tML3uqLzMfhek2m9eU6gD8=
+
+Name: assets/common/game_res/mp_coast_bg_42.dat.jpg
+SHA1-Digest: Qjoqv93+K+fS2XogMGo1Oy87dvE=
+
+Name: assets/common/game_res/mm_3000042.dat.jpg
+SHA1-Digest: pIX+s2+7cDKG2St5lFisEWjO4/M=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_focus_dark.
+ 9.png
+SHA1-Digest: IXqmYG4624bef7DnPxFG+Uwx1ak=
+
+Name: assets/common/game_res/mp_goblincastle_bg_22.dat.jpg
+SHA1-Digest: KgEgOXjmeyfZ3GUxjF4XjqGZXqg=
+
+Name: res/drawable-xhdpi-v4/com_facebook_close.png
+SHA1-Digest: OGFKQ7QhUQCfytXd5dfPsaUil0w=
+
+Name: assets/common/game_res/mm_3000021.dat.jpg
+SHA1-Digest: lbrUmoNaPHa3v5BMxLwcp80lxMA=
+
+Name: assets/common/game_res/dt_st_hard.dat.jpg
+SHA1-Digest: ojrM+tdHGIjMxN0npt6ALds+iww=
+
+Name: res/layout/com_facebook_placepickerfragment_list_row.xml
+SHA1-Digest: G7CYimQ2/hFzFUZ9KCFJ/A4wtKw=
+
+Name: assets/common/game_res/mp_goblinwoods_105_ground.dat.jpg
+SHA1-Digest: bKiTvitS56MOv2Kt0SZVG0cmsrc=
+
+Name: assets/common/game_res/ui_game_new_p_gl.dat.jpg
+SHA1-Digest: QVtxFWonM2om6+yzRrZnrGZE7LM=
+
+Name: assets/common/game_res/mp_townsnow_299_ground.dat.jpg
+SHA1-Digest: lqE80EkZfsm8P65OG+DxHXWkvXU=
+
+Name: res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png
+SHA1-Digest: bkx9QZs8aYlH6Bbt1aDDs/ZXWws=
+
+Name: assets/common/game_res/mp_ghostforest_bg_42.dat.jpg
+SHA1-Digest: l4wGt96+TxLsfjcRGPp67zj2AHM=
+
+Name: assets/common/game_res/mp_goblinwoods_bg_32.dat.jpg
+SHA1-Digest: tjjrGJ2L4F4kV/rtvb3KtTqDhbw=
+
+Name: assets/common/game_res/mp_ruin2_101_ground.dat.jpg
+SHA1-Digest: yO6rQhBDs5shy7qCJpRW5mg1bfE=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: Bdyi8PRk2107rc0T/q6Ek8orFjU=
+
+Name: assets/common/game_res/mm_3000172.dat.jpg
+SHA1-Digest: dz1aYw4bD3mis/ibE9CitNjnyY4=
+
+Name: assets/common/game_res/example.tmx.dat.jpg
+SHA1-Digest: rDTFcM9/wvw4GR4DMk8IXKlmsOA=
+
+Name: res/drawable-xhdpi-v4/powered_by_google_light.png
+SHA1-Digest: 1PCeD4X7eVLdr2+EB4poVTq1PZw=
+
+Name: assets/common/game_res/mp_castle_100_ground.dat.jpg
+SHA1-Digest: 8hY+oooF48PvvAeJZBMZse/Ar2M=
+
+Name: assets/common/game_res/mp_woodland_204_ground.dat.jpg
+SHA1-Digest: sACQlwX4zXn1u2fy+0/vK+Qy2Lk=
+
+Name: assets/common/game_res/mp_goblincastle_203_ground.dat.jpg
+SHA1-Digest: dh5DNSGyEfuChSo/SJMPM8gNS4E=
+
+Name: assets/common/game_res/mp_goblinwoods_399_ground.dat.jpg
+SHA1-Digest: d1aoaeSw1GznOyGi8VjXrldHfVg=
+
+Name: assets/common/game_res/mp_town_102_ground.dat.jpg
+SHA1-Digest: nKH+fZyAPhKFrFTehUjhxYZp2e0=
+
+Name: assets/common/game_res/mp_venomtemple_299_ground.dat.jpg
+SHA1-Digest: wMwbUYPMktpayDU+NEQiDTIoabk=
+
+Name: res/layout/splash_dummy.xml
+SHA1-Digest: hrGJGwZxtZpzDfW+USnCFKQuuIU=
+
+Name: assets/common/game_res/mp_hive_106_ground.dat.jpg
+SHA1-Digest: hpfnE0oMQI6140HRjHORrfYW64k=
+
+Name: assets/common/game_res/mm_3003082.dat.jpg
+SHA1-Digest: c8k2iM4O1RePzqPQK7SQnIowlwg=
+
+Name: assets/common/game_res/mp_mushroom_105_ground.dat.jpg
+SHA1-Digest: LteTGpiDKADRDVtEX6fBRlVRtpc=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_focus_light
+ .9.png
+SHA1-Digest: IXqmYG4624bef7DnPxFG+Uwx1ak=
+
+Name: assets/common/game_res/mm_3100038.dat.jpg
+SHA1-Digest: UkfB40r0COX5u2Gzls7wXm31NqM=
+
+Name: assets/common/game_res/mp_woodland_206_ground.dat.jpg
+SHA1-Digest: gKm473Gf5SDOiWdYx2y70DNaBis=
+
+Name: assets/common/game_res/mp_ruin_306_ground.dat.jpg
+SHA1-Digest: fUvTC+KxyY+wCwIfuIzGYiinQgw=
+
+Name: assets/common/game_res/mp_woodland_300_ground.dat.jpg
+SHA1-Digest: NZjlRafN2P6lVRMBwRe4f3xRzHU=
+
+Name: assets/common/game_res/mp_woodland_105_ground.dat.jpg
+SHA1-Digest: LYOX0tJgv0+QDe8p9Ymnw7Ffywg=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: ZDogSdlgVekmFIAbKguvig7+XGg=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_focus_lig
+ ht.9.png
+SHA1-Digest: AhN8QSMQGVEiuDPw+ArDAL+kX1o=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: xU1/PAMBwttiSnTFn14OqOMMcm0=
+
+Name: assets/common/game_res/mp_devilcastle_106_ground.dat.jpg
+SHA1-Digest: ljzVl0G2uCvfLhxtO1nLJgBMcJ4=
+
+Name: assets/common/game_res/mp_graveyard_bg_32.dat.jpg
+SHA1-Digest: 40VgdDlYRHVW5x/Hu0gQMzxDtuk=
+
+Name: assets/common/game_res/mm_3200111.dat.jpg
+SHA1-Digest: Pk7iB2ADofvxjAN988tqouMqwGA=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: he0SlIYzLlZChBg6d38hheLzBns=
+
+Name: assets/common/game_res/Avata_04.png.jpg
+SHA1-Digest: Ap1UfEafe2DUZ/47/rg26qnmKwI=
+
+Name: assets/common/game_res/mp_coast_406_ground.dat.jpg
+SHA1-Digest: jVJjbkEcw82GQDBKrPmuMJNJlIA=
+
+Name: assets/common/game_res/mm_3250210.dat.jpg
+SHA1-Digest: yPlxX3V2JRU0IK0i0iVa6NZZX+c=
+
+Name: assets/common/game_res/mp_forest_200_ground.dat.jpg
+SHA1-Digest: sRZrEFEj6LoOBUOcUKl/+Efeou0=
+
+Name: assets/common/game_res/mp_woodland_bg_22.dat.jpg
+SHA1-Digest: mHhh/dm2vZxomeLs4SZPJI5BW1s=
+
+Name: assets/common/game_res/mm_3000173.dat.jpg
+SHA1-Digest: 8A3xVSVFbGJCecBoBjUp9fbQEWI=
+
+Name: assets/common/game_res/mp_cave_103_ground.dat.jpg
+SHA1-Digest: VU3I5biG1eeR6GDDSPmm4vdiooM=
+
+Name: assets/common/game_res/mp_ghostforest_bg_21.dat.jpg
+SHA1-Digest: gPynRQwhlW0nS7yS3lXWtlUMpto=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_like_icon.png
+SHA1-Digest: NGY0vczL+gmSadSmWZVch+0t7C0=
+
+Name: assets/common/game_res/mp_ruin2_206_ground.dat.jpg
+SHA1-Digest: 03f3dQprTKGtAv9h0icf0k1783Q=
+
+Name: assets/common/game_res/mp_cliff_303_ground.dat.jpg
+SHA1-Digest: paRZULv19RV7LJ9HmdjvqQVuNFI=
+
+Name: assets/common/game_res/mp_icecave_199_ground.dat.jpg
+SHA1-Digest: gNUOSLTVkEn07HZ4EYZqqkbKTP4=
+
+Name: assets/common/game_res/dt_chat_pkg_131.dat.jpg
+SHA1-Digest: 5guUTGy+BiuRFDH+21rnE41cnEo=
+
+Name: assets/common/game_res/mp_goblincastle_bg_21.dat.jpg
+SHA1-Digest: QGSfthzp/stWZWT3+r8wNVSCPiY=
+
+Name: assets/common/game_res/mm_3001011.dat.jpg
+SHA1-Digest: qwkHP9ErOTc1yzskH4fvtKNyBRY=
+
+Name: assets/common/game_res/mm_3001047.dat.jpg
+SHA1-Digest: 3xQMKsi5RmZO4ZzOw8fnBIZNbxs=
+
+Name: assets/common/game_res/mp_yellowtower_205_ground.dat.jpg
+SHA1-Digest: PZ4nhxeH1hzlWOoh5fjvllCyvu8=
+
+Name: assets/common/game_res/mp_icecave_205_ground.dat.jpg
+SHA1-Digest: TY1Lx+KctGpc/x4x1Hl3Vk1DiRE=
+
+Name: assets/common/game_res/mp_goblincastle_300_ground.dat.jpg
+SHA1-Digest: hNpb+zZpVXM3bSYJfKdG/g/7vZs=
+
+Name: assets/common/game_res/mp_icecave_201_ground.dat.jpg
+SHA1-Digest: WOvOJLzc4WvvTaAhIfwlzBfnzWg=
+
+Name: assets/common/game_res/mp_graveyard_401_ground.dat.jpg
+SHA1-Digest: FkA6Ha2LBT39yJOTcyFhdKH/OeQ=
+
+Name: assets/common/game_res/mm_3200801.dat.jpg
+SHA1-Digest: UNbZ21O6T19SPngKeugPxG+5J+Q=
+
+Name: assets/common/game_res/mp_castle_204_ground.dat.jpg
+SHA1-Digest: ASdAqQpXmgQXgkHlO6Ja9vQA6z8=
+
+Name: assets/common/game_res/mm_3002062.dat.jpg
+SHA1-Digest: K5/iey24DlbBlYX5PwcrpcTtxUs=
+
+Name: assets/common/game_res/mp_cave_203_ground.dat.jpg
+SHA1-Digest: vqDy2+dFs76I4r8w3bQAaKY4m0c=
+
+Name: assets/common/game_res/mp_fieldsnow_bg_32.dat.jpg
+SHA1-Digest: t8H9eCzuhU2GpwGPN8gBC9AlcGM=
+
+Name: res/drawable/com_facebook_logo.png
+SHA1-Digest: TIvVq8m1g3ekhFefO/gFHs7fueU=
+
+Name: assets/common/game_res/dt_st_normal_eventmob.dat.jpg
+SHA1-Digest: LLfB8SzTV7V8/sCFp+adQ6X56OE=
+
+Name: assets/common/game_res/mp_woodland_101_ground.dat.jpg
+SHA1-Digest: C2Pe6WNcA3nZFXmtGo5iwqk/oJ0=
+
+Name: assets/common/game_res/mp_desert_302_ground.dat.jpg
+SHA1-Digest: dByLN1Hm0YrnHA/5fsx39ojwm70=
+
+Name: assets/common/game_res/mp_venomtemple_bg_12.dat.jpg
+SHA1-Digest: iGA9RvdvqKj1L85k3dOHwqtuWF8=
+
+Name: assets/common/ActiveUserImage/00_board_down_l.png
+SHA1-Digest: CRLS8yOXKdkd2uRLdkPBuoCPnXM=
+
+Name: assets/common/game_res/dt_story_pkg_131.dat.jpg
+SHA1-Digest: GXFfSH/krzjbWLQB5s8WYAUvSfY=
+
+Name: assets/common/game_res/mp_lavatunnel_101_ground.dat.jpg
+SHA1-Digest: 2uDNTSNJBcnTP8WgHVgNnc9pDko=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: UsY+c7jSRS1f1aEh0HgE8187rLI=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: nSc+L5W+ATRTgOid8E+Z5Q2l7yE=
+
+Name: assets/common/game_res/mp_volcano_303_ground.dat.jpg
+SHA1-Digest: uIO1++JeCvLi72AMrk9t2t3azj4=
+
+Name: res/layout/splash_google.xml
+SHA1-Digest: NRc4KH0sUX1o9rQzPWk0kVlsVtY=
+
+Name: assets/common/game_res/mm_3004062.dat.jpg
+SHA1-Digest: unZIrJmMuLhz90WulN9pgGW0U3Q=
+
+Name: assets/common/game_res/mp_goblinwoods_306_ground.dat.jpg
+SHA1-Digest: JAabNuWI2bTqK9h/74dyrFgZcfo=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_like_background_selecte
+ d.png
+SHA1-Digest: u4tNjKnKlD22DVMv5srJxxaGipo=
+
+Name: assets/common/game_res/mp_graveyard_406_ground.dat.jpg
+SHA1-Digest: bXn0XXr4SaA3jaB0nXyTpzGJgyg=
+
+Name: assets/common/game_res/mp_ruin2_205_ground.dat.jpg
+SHA1-Digest: HRtHDKbc7JKfIut12IaVnLw1br0=
+
+Name: assets/common/game_res/mm_3000103.dat.jpg
+SHA1-Digest: QX4Qod2CmxW5JeJ/NvGEqV+oZtc=
+
+Name: assets/common/game_res/mm_3100033.dat.jpg
+SHA1-Digest: LSKOrWen1E0tbnpjgZlVoh3NlQI=
+
+Name: assets/common/game_res/mm_3000146.dat.jpg
+SHA1-Digest: cL4mI7Payj7I82UOd6q42gBcY40=
+
+Name: assets/common/game_res/mp_coast_102_ground.dat.jpg
+SHA1-Digest: S/Q9fwHtwIXNxFfs7rK+umGEJvg=
+
+Name: assets/common/game_res/mp_woodland_304_ground.dat.jpg
+SHA1-Digest: BhxyFSaXWayniEeHMsrhJsk1fz4=
+
+Name: assets/common/game_res/mm_3001103.dat.jpg
+SHA1-Digest: gDwkASocnZXXPOymTP6LOY+GHlM=
+
+Name: assets/common/game_res/mp_deadmine_404_ground.dat.jpg
+SHA1-Digest: vsLe3sqhVldaik/KVu7MCaU5ut4=
+
+Name: assets/common/game_res/mp_graveyard_403_ground.dat.jpg
+SHA1-Digest: VbVgket0L+wI5/5apAyMwMVBzYg=
+
+Name: assets/common/game_res/mm_3004063.dat.jpg
+SHA1-Digest: Jnd8QJN3bKchfIeULSKP4Dmgnqg=
+
+Name: res/drawable-hdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: zYEVoFXucmJpZuzXxsGneYWIlNU=
+
+Name: assets/common/game_res/mp_alchemist_300_ground.dat.jpg
+SHA1-Digest: Q/0BL+krYp0h5m/nbjROL0tAkXI=
+
+Name: assets/common/game_res/dt_userinfo_pkg_131.dat.jpg
+SHA1-Digest: x/sOsmHnp+FqYiHlb6lZMiw4tUI=
+
+Name: res/drawable/com_facebook_picker_list_selector_background_transi
+ tion.xml
+SHA1-Digest: LdUKFYtZUUDbbonIEliRyBKR/zo=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_focus_dark.
+ 9.png
+SHA1-Digest: 0ky7hJW6fNsa6m2tmjhllqHXHfg=
+
+Name: assets/common/game_res/mm_3000148.dat.jpg
+SHA1-Digest: c2FaDkKn8zMz3+8TIMVhLMYjw00=
+
+Name: assets/common/game_res/mm_3001051.dat.jpg
+SHA1-Digest: jN713BQ8CiFjec/nMDtnV32XBHU=
+
+Name: assets/common/game_res/mp_deadmine_406_ground.dat.jpg
+SHA1-Digest: uayUTMm9YIlcWTe6pHr8WcYnn8U=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png
+SHA1-Digest: +NOQmfBahK9wgyl14UEHXrBM1lQ=
+
+Name: assets/common/game_res/mp_ruin2_204_ground.dat.jpg
+SHA1-Digest: Ot/UfATcGz0B1mcJTfv3CKIAUs8=
+
+Name: assets/common/game_res/mp_yellowtower_105_ground.dat.jpg
+SHA1-Digest: zbcO3x595OiSwYc9ZmjsOQOC8zo=
+
+Name: assets/common/game_res/mm_3000163.dat.jpg
+SHA1-Digest: JyMZJUGualWQwK3uXcHOpHS8S+o=
+
+Name: assets/common/game_res/mp_alchemist_200_ground.dat.jpg
+SHA1-Digest: YRVqJCCE4Dt/+xc+yO98jZ/buSo=
+
+Name: assets/common/game_res/mp_lavatunnel_201_ground.dat.jpg
+SHA1-Digest: pLwHdplNIyLkwxO9obqM7x4fGNI=
+
+Name: assets/common/game_res/mm_3003021.dat.jpg
+SHA1-Digest: YQuzGNeQ/95yg6HxPqFRMkjmmxw=
+
+Name: assets/common/game_res/mp_desert_305_ground.dat.jpg
+SHA1-Digest: TnSaUXFrxzs6OZnDRZF8aESJCqc=
+
+Name: assets/common/game_res/mp_desert_bg_21.dat.jpg
+SHA1-Digest: GKoa/IIJz4rOO6sCj5PeI3IH9UY=
+
+Name: assets/common/game_res/mp_castle_200_ground.dat.jpg
+SHA1-Digest: P5GhT0ybSkzzg/OZEHdRut+zkCw=
+
+Name: assets/common/game_res/mp_town_304_ground.dat.jpg
+SHA1-Digest: Qhlm9qatrHYmOQDGD2ZAm6hbvb0=
+
+Name: assets/common/game_res/mm_3001107.dat.jpg
+SHA1-Digest: IpiO2ew+34/wvRWvldhh/8wEbPA=
+
+Name: res/drawable-xxhdpi-v4/com_facebook_button_like_background.png
+SHA1-Digest: SgfxDAFdrbaCdeSUjnMvqhy6oHg=
+
+Name: assets/common/game_res/ui_game_new_info_wc.dat.jpg
+SHA1-Digest: kplHTDb0TjILdXmXdDhTHg0PGoI=
+
+Name: assets/common/game_res/mm_3200630.dat.jpg
+SHA1-Digest: GQmDmjxNwX3GXT1Vu/RhAlUbU9c=
+
+Name: assets/common/game_res/mp_devilcastle_100_ground.dat.jpg
+SHA1-Digest: 1MtkB7jHwX79oQagHSTDOvyOZII=
+
+Name: assets/common/game_res/mp_fieldsnow_202_ground.dat.jpg
+SHA1-Digest: 1btx0ZU3t6oERVLFyjWugeAY+tA=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: ppRAUb4e8AfMY+hiTgUxYeX8bDw=
+
+Name: assets/common/game_res/Avata_01.png.jpg
+SHA1-Digest: 25XHiPzVe8B8ukR9c7up7ERp8EQ=
+
+Name: assets/common/game_res/mm_3000108.dat.jpg
+SHA1-Digest: qUeSEMjz1uyuckpsYElVE2SLET0=
+
+Name: assets/common/game_res/mp_town_201_ground.dat.jpg
+SHA1-Digest: rvVHjwZ4E09AD1m8FxPpOLrPmys=
+
+Name: assets/common/game_res/mm_3000091.dat.jpg
+SHA1-Digest: 91WZbZ3OCaO0BhmGTqb0TV0r1Nc=
+
+Name: assets/common/game_res/mp_goblincastle_201_ground.dat.jpg
+SHA1-Digest: /UPZPJStIkusVQzRDMUgm0tpvQY=
+
+Name: assets/common/game_res/mm_3100019.dat.jpg
+SHA1-Digest: 8kkUSYKxKvdqrOPGxU5equRAKFU=
+
+Name: assets/common/game_res/dt_st_boss_garlentiss.dat.jpg
+SHA1-Digest: BEIoGE09hg1bS6XcoczbwoMmOVI=
+
+Name: assets/common/game_res/mp_lavatunnel_bg_21.dat.jpg
+SHA1-Digest: Du1LSU9LCJOGPHYaCnbfHF6TF+k=
+
+Name: assets/common/game_res/mp_ruin2_300_ground.dat.jpg
+SHA1-Digest: yDaimRU588Kn7eFH7QJ0GAR5iDY=
+
+Name: assets/common/game_res/mp_snowland_305_ground.dat.jpg
+SHA1-Digest: d+UR+2BgaXiKyu6iLvpqMDXbPnY=
+
+Name: assets/common/game_res/mp_ruin2_303_ground.dat.jpg
+SHA1-Digest: qGgZ6VCB582fA8Y0HsMGCf9J0oQ=
+
+Name: assets/common/game_res/mp_coast_106_ground.dat.jpg
+SHA1-Digest: AVtEZeOI5cYb9V66mYCkO04kltQ=
+
+Name: assets/common/game_res/mp_ghostforest_399_ground.dat.jpg
+SHA1-Digest: WY5l29J8lA/lYocIKVcwas4vsGo=
+
+Name: assets/common/game_res/mp_forest_305_ground.dat.jpg
+SHA1-Digest: f9O64AF96QrRj7nwRhLoMFIR+jI=
+
+Name: assets/common/game_res/mp_fieldsnow_100_ground.dat.jpg
+SHA1-Digest: DQJiv2fElpKcIdHh083IUP4l8sQ=
+
+Name: assets/common/game_res/mp_ghostforest_206_ground.dat.jpg
+SHA1-Digest: cREZ/z0R6YUohcDGUdfbdlFCbPU=
+
+Name: assets/common/game_res/mp_ghostforest_105_ground.dat.jpg
+SHA1-Digest: 5PSVi5Sc4sp6nU5s2QOTJz+2cfc=
+
+Name: assets/common/game_res/fr_fairy_pi_gl.dat.jpg
+SHA1-Digest: YtlRzjDG6xIIRrvWyEaGyPnM9mg=
+
+Name: assets/common/game_res/mm_3200611.dat.jpg
+SHA1-Digest: 5kqIVUzqZ6ebJsASWhRLYo1oKb0=
+
+Name: assets/common/game_res/mp_town_299_ground.dat.jpg
+SHA1-Digest: r/GoTY/p/zahbhWQpblenKSikUs=
+
+Name: assets/common/game_res/mp_ruin_300_ground.dat.jpg
+SHA1-Digest: XaR7ybQ3T4YGVA3dNG7wMHgrA5g=
+
+Name: assets/common/game_res/mp_castle_199_ground.dat.jpg
+SHA1-Digest: mKPCvjKretV4IHNMyXNR2PFAx7c=
+
+Name: assets/common/game_res/mp_cave_102_ground.dat.jpg
+SHA1-Digest: fR3BBHLkNUkr6wAD2bazhE5qee0=
+
+Name: assets/common/game_res/mm_3100039.dat.jpg
+SHA1-Digest: xifqnY9NTdSHJiqw/V/vcwExj24=
+
+Name: assets/common/game_res/mm_3200221.dat.jpg
+SHA1-Digest: 6xUCsOt+Dx0aLJoen0I7KNw9J4M=
+
+Name: assets/common/game_res/mp_lavatunnel_304_ground.dat.jpg
+SHA1-Digest: 1RKZkyPyaTw9/UZTPx6KO0GpAIc=
+
+Name: assets/common/game_res/mp_coast_201_ground.dat.jpg
+SHA1-Digest: Jii0dQm8IQrR/QoMnxD0TtSTauQ=
+
+Name: res/drawable-xxxhdpi-v4/ic_launcher.png
+SHA1-Digest: UCzYT6RE8m1+z99KNVBkhnl38jY=
+
+Name: res/layout/com_facebook_friendpickerfragment.xml
+SHA1-Digest: edoqY52s4xpIgfzP2ySzat1Hie4=
+
+Name: assets/common/game_res/mp_snowland_bg_11.dat.jpg
+SHA1-Digest: whBY2om9TKZUu88HqXr3EaB2KPA=
+
+Name: assets/common/game_res/mp_snowland_bg_22.dat.jpg
+SHA1-Digest: iq5TxWdTLTuRKH4UrdhtoW3ddtU=
+
+Name: assets/common/game_res/mp_desert_105_ground.dat.jpg
+SHA1-Digest: oRRasYIgWIpcv9iJCK0uVBIu7V0=
+
+Name: assets/common/game_res/mm_3100016.dat.jpg
+SHA1-Digest: zILxaHI/bS3Bh+ghl0yMhaV8x8Q=
+
+Name: assets/common/game_res/mp_arena75_bg_12.dat.jpg
+SHA1-Digest: ex/XJra1MjzHg7CIFZOTMSIAzuY=
+
+Name: assets/common/game_res/mp_mushroom_bg_11.dat.jpg
+SHA1-Digest: UptkJossvJ43jALyBylWgHZSE4g=
+
+Name: assets/common/game_res/dt_reward_pkg_140.dat.jpg
+SHA1-Digest: TbWU9aeEzhWeFVbRa27+eqmqQH4=
+
+Name: res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png
+SHA1-Digest: 5SQuqZIQRsYoN4TBMlAnsPgKzLU=
+
+Name: assets/common/game_res/mp_icecastle_106_ground.dat.jpg
+SHA1-Digest: wl3NdzV0OFPa9LjGYZZKgvvLOIk=
+
+Name: assets/common/game_res/mp_ghostforest_bg_22.dat.jpg
+SHA1-Digest: Cn22EZ/DI4diqP5XMJ3uucooCwc=
+
+Name: assets/common/game_res/mp_snowland_bg_21.dat.jpg
+SHA1-Digest: e1UYLZeX4PoYhstuM9QaG2scdAY=
+
+Name: assets/common/ActiveUserImage/activeuser_logo_com2us.png
+SHA1-Digest: bbWZq3SQ+35Na2X4AFeQoGjNBx8=
+
+Name: assets/common/game_res/mp_volcano_204_ground.dat.jpg
+SHA1-Digest: pHLHkmODglWAXm94TlWh1muudfk=
+
+Name: assets/common/game_res/mp_town_bg_12.dat.jpg
+SHA1-Digest: vcn8a/qrvq1EGmmcV2XdZZ1OWLk=
+
+Name: assets/common/game_res/mp_devilcastle_202_ground.dat.jpg
+SHA1-Digest: rSK97ucfkY5Fe9O7gnWNatky7Ls=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: UbXqMwM30HBljuHn+la04UPzB1Y=
+
+Name: assets/common/game_res/mp_icecave_301_ground.dat.jpg
+SHA1-Digest: fQH2oYBhYmurvazFqeTXwb1vDBw=
+
+Name: assets/common/ActiveUserAgreement/1415076927_M11_4.html
+SHA1-Digest: US/4BnFFvKr+E8TBc3OP9qcX9BA=
+
+Name: assets/common/game_res/mp_deadmine_203_ground.dat.jpg
+SHA1-Digest: s8UZmRYhTmFYk0MR0X9H+738YvQ=
+
+Name: assets/common/game_res/mp_townsnow_bg_11.dat.jpg
+SHA1-Digest: jf/Z7UV5LDFWqpHYi3pt1S8tju0=
+
+Name: assets/common/game_res/mm_3003065.dat.jpg
+SHA1-Digest: Mfl7fMQ5rkjRIgA42Bcdl1tQOjw=
+
+Name: assets/common/game_res/mp_ghostforest_303_ground.dat.jpg
+SHA1-Digest: z+zvKKMtqayhTFLu6xMHq0gTQkM=
+
+Name: assets/common/game_res/dt_itemoption_pkg_140.dat.jpg
+SHA1-Digest: okDgvEUC3RcD3IM4DclWQ0rIMPg=
+
+Name: assets/common/game_res/mp_raid_199_ground.dat.jpg
+SHA1-Digest: wW9EM7c72iynui91uUGUI4OywLc=
+
+Name: assets/common/game_res/mm_3002046.dat.jpg
+SHA1-Digest: stDcCJzn/5mq4ddaJ+Xw/mziSSo=
+
+Name: assets/common/game_res/mp_volcano_306_ground.dat.jpg
+SHA1-Digest: J7YGdD+htD5fD9NOYELr9Qb0pd0=
+
+Name: assets/common/game_res/mp_volcano_bg_32.dat.jpg
+SHA1-Digest: oxa5KvgrR4r9vbiioOIxZAkufHs=
+
+Name: assets/common/game_res/mp_goblinwoods_102_ground.dat.jpg
+SHA1-Digest: X4hCnuT53oc9INjLarZnQ9QBDEY=
+
+Name: assets/common/game_res/ui_title_info_wc.dat.jpg
+SHA1-Digest: 0BcI8x2NWZSjtRyVOjJcmYi//uE=
+
+Name: res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png
+SHA1-Digest: EQjyUui+aWxwq+rwMQeRNG8lJd0=
+
+Name: res/layout/com_facebook_picker_list_row.xml
+SHA1-Digest: eqjCogyqwMXRfIcVY+3n7ACxlbc=
+
+Name: assets/common/game_res/mp_fieldsnow_303_ground.dat.jpg
+SHA1-Digest: OE4K7FUTPZE3ltqaR3CSZ+9qRCQ=
+
+Name: assets/common/game_res/mp_woodland_302_ground.dat.jpg
+SHA1-Digest: eBeNRo2ZL2GSTBUKtLhu0ukR88E=
+
+Name: assets/common/game_res/mp_mushroom_bg_22.dat.jpg
+SHA1-Digest: bQA0ASN21/0HL8WTXHCo5Wy6JpQ=
+
+Name: assets/common/game_res/mp_coast_105_ground.dat.jpg
+SHA1-Digest: qv/bJSlXZXJqURYD/Y6zFFohm18=
+
+Name: assets/common/game_res/mm_3001023.dat.jpg
+SHA1-Digest: Jf8uexDLZaBuf9VDrFS2wdbtfaQ=
+
+Name: assets/common/game_res/mp_goblincastle_bg_32.dat.jpg
+SHA1-Digest: ni8KnfUe3YpeID1LmenNJ/waBY8=
+
+Name: assets/common/game_res/mp_graveyard_304_ground.dat.jpg
+SHA1-Digest: pUDD1BgH/XLBiolhY7oAbpmpl50=
+
+Name: assets/common/game_res/mp_lavatunnel_105_ground.dat.jpg
+SHA1-Digest: bR5nBoo2ozBAGPO21s62JoUVkYo=
+
+Name: assets/common/game_res/mp_cliff_204_ground.dat.jpg
+SHA1-Digest: uaTmyDN38DBqdAzAd8pJkMxkP1w=
+
+Name: res/color/common_signin_btn_text_light.xml
+SHA1-Digest: gEhH3DZfLdDeUea9TpRCUt+oPGQ=
+
+Name: assets/common/game_res/mp_graveyard_302_ground.dat.jpg
+SHA1-Digest: +EfoIg8WZPzkf+QQx4M1VZurg/E=
+
+Name: assets/common/game_res/mp_alchemist_199_ground.dat.jpg
+SHA1-Digest: EulPLuBxcqMY6VzIQOKsho5tQ5A=
+
+Name: assets/common/game_res/ui_string_pi_gl.dat.jpg
+SHA1-Digest: 6QwJONmiCOObI0ok0YhOk66z4sc=
+
+Name: assets/common/game_res/ui_string_p_gl.dat.jpg
+SHA1-Digest: TQNoYMycrXjc1luuxjTV5F2ThA0=
+
+Name: assets/common/game_res/mp_deadmine_bg_32.dat.jpg
+SHA1-Digest: BQ76H9D3OG/dlrYkS2kPIS2bPbY=
+
+Name: assets/common/game_res/mm_3002068.dat.jpg
+SHA1-Digest: Ea/1EOHIFGrGM18OnWq4H+EdqeU=
+
+Name: assets/common/game_res/mm_3200200.dat.jpg
+SHA1-Digest: fcZSI8LWNtaAlsgtQQ1PHwRdT00=
+
+Name: classes.dex
+SHA1-Digest: iqZZyD7vZ7NKvxH6m0HxQaOFWe4=
+
+Name: assets/common/game_res/mp_cliff_302_ground.dat.jpg
+SHA1-Digest: b1ckVUMLrLN1uEqshtOKvWsH0xI=
+
+Name: assets/common/game_res/mm_3004004.dat.jpg
+SHA1-Digest: fnKmlxzXd0Mf8erERkVNEl+1wJI=
+
+Name: assets/common/game_res/mp_mushroom_202_ground.dat.jpg
+SHA1-Digest: Ao3ataIQ75WxFOwhJy4VOI3O0oY=
+
+Name: assets/common/game_res/mp_alchemist_205_ground.dat.jpg
+SHA1-Digest: NCFq38BPVlyJMVNKDARJgqDuWtY=
+
+Name: res/drawable-xxhdpi-v4/powered_by_google_light.png
+SHA1-Digest: i1ZTqep+pgKdIhB18Xwu3c7KrFI=
+
+Name: res/drawable-xxxhdpi-v4/com2us_en_800x480.png
+SHA1-Digest: OlVXf/HYkeRGOuv4/yqGyHkonxU=
+
+Name: assets/common/game_res/mm_3001046.dat.jpg
+SHA1-Digest: GV49GNRziFAwcYyd12BrqlrBxho=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: vgTn+pEQhSLa5buaCqjDd3w3UWU=
+
+Name: assets/common/mercury/1_wide_box_check_s.png
+SHA1-Digest: qBCQN1sSCDETNx7aJ0I/COOUZG0=
+
+Name: assets/common/game_res/dt_st_boss_skeleton.dat.jpg
+SHA1-Digest: aqeRurN5CxC5qwpeUyp1Y4t95Jw=
+
+Name: assets/common/game_res/mp_raid_bg_32.dat.jpg
+SHA1-Digest: AfqhXyXqP9c2178AjLA489UKObQ=
+
+Name: assets/common/game_res/mp_mushroom_305_ground.dat.jpg
+SHA1-Digest: jGE4030OYFeu3jWtd3/8nEJOw84=
+
+Name: assets/common/game_res/mp_woodland_306_ground.dat.jpg
+SHA1-Digest: SERrqxcuBo4HRfZtXoV7k8OKif4=
+
+Name: assets/common/game_res/mp_alchemist_103_ground.dat.jpg
+SHA1-Digest: XbbyD3QuGrE07gNtK5JWWYTeIoQ=
+
+Name: assets/common/game_res/mm_3000183.dat.jpg
+SHA1-Digest: TT6QLSZDDgdSlNGDC4Z/qEa79WI=
+
+Name: assets/common/game_res/mp_venomtemple_203_ground.dat.jpg
+SHA1-Digest: +UgqT+SDl61SJ+mI9ABzKCwKvzk=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: CFcKGCNCXdElgRyG3GU1cR7Lpck=
+
+Name: assets/common/game_res/mp_coast_203_ground.dat.jpg
+SHA1-Digest: +Q1FcUCGZYTie+P3BpRdLbp669s=
+
+Name: assets/common/game_res/mm_3000175.dat.jpg
+SHA1-Digest: vr6ppYXFE4kKGNOiDI/ElLA7vww=
+
+Name: assets/common/game_res/mm_3200210.dat.jpg
+SHA1-Digest: WsMDF40tdduM7/R/O9hwAkf49VY=
+
+Name: assets/common/game_res/mp_icecastle_bg_12.dat.jpg
+SHA1-Digest: zR/YSvVh7zMiL6hchglb7s3jCec=
+
+Name: assets/common/game_res/mm_3001031.dat.jpg
+SHA1-Digest: OdrVclSV0ysdh0IQXz00TUA8ogU=
+
+Name: res/drawable-hdpi-v4/com2us_kr_800x480.png
+SHA1-Digest: gIz6lJyknE+fNJjG9ljt/7x5HnA=
+
+Name: assets/common/game_res/mp_coast_205_ground.dat.jpg
+SHA1-Digest: Pvk0iASPcvXBl49c0gflD5kU3j4=
+
+Name: assets/common/game_res/dt_dailyquest_131.dat.jpg
+SHA1-Digest: XRleXgMIpLtRF4k4fttQR/ADALs=
+
+Name: assets/common/game_res/mp_venomtemple_bg_22.dat.jpg
+SHA1-Digest: vMvY1o2+mCDNaIBX4e2XPDY51HQ=
+
+Name: assets/common/game_res/mm_3000111.dat.jpg
+SHA1-Digest: N7s5YpzPJk+inG25AVKeC9vtIJs=
+
+Name: assets/common/game_res/mp_forest_203_ground.dat.jpg
+SHA1-Digest: ucvgr1+xHfrfHnqlY1NkMgKRe8s=
+
+Name: assets/common/game_res/mp_mushroom_205_ground.dat.jpg
+SHA1-Digest: Q7KsFQtlgvOoE+h78U1tec1ckmY=
+
+Name: assets/common/game_res/mp_arena_199_ground.dat.jpg
+SHA1-Digest: ZjbBnIqQMqGj5mrOjGHNWh/pzFM=
+
+Name: assets/common/game_res/mm_3004083.dat.jpg
+SHA1-Digest: nNMiWC3+g0CRPghHcU7b+NeMp5Q=
+
+Name: assets/common/game_res/mm_3000102.dat.jpg
+SHA1-Digest: 2QrIgBdhPKcuZsf2VKhaMmLI2hA=
+
+Name: res/drawable/com_facebook_picker_top_button.xml
+SHA1-Digest: FpCN68q2eV+3WjoqLCPZ0C/7pGQ=
+
+Name: assets/common/ActiveUserImage/00_btn_default_r.png
+SHA1-Digest: G8Lok4VEgAG3i1r4CXF1rw5rGWM=
+
+Name: res/drawable/com_facebook_top_background.xml
+SHA1-Digest: 2jGeRfgb5Xm7OmXOYRKQWRbaaUw=
+
+Name: assets/common/game_res/mm_3001048.dat.jpg
+SHA1-Digest: xwHsNlMMJtkVfStZXUlTDl+PICA=
+
+Name: assets/common/game_res/mm_3002027.dat.jpg
+SHA1-Digest: y/i0bokgD1FaI835DJX04/dQaD8=
+
+Name: assets/common/game_res/mm_3200430.dat.jpg
+SHA1-Digest: 9jD6ut6sJep0beNjD1de+X1wviY=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: /7bw14nZmssFy3hqySiiFfoRLtE=
+
+Name: assets/common/game_res/mp_graveyard_301_ground.dat.jpg
+SHA1-Digest: /BwZFEIiDd3BFZsyKY0qlpicVPU=
+
+Name: assets/common/game_res/mm_3001068.dat.jpg
+SHA1-Digest: mI3Sj2dQ4KwHBx9avCs96Zx4AKg=
+
+Name: assets/common/game_res/mp_snowland_300_ground.dat.jpg
+SHA1-Digest: zcil6Ln5rUiOJaQLQxLJ8gqWY78=
+
+Name: assets/common/game_res/mp_deadmine_403_ground.dat.jpg
+SHA1-Digest: 9YlJv35e70EtqKBoDIwSGrCSSJM=
+
+Name: assets/common/game_res/mp_forest_106_ground.dat.jpg
+SHA1-Digest: YrQ4jM+GXVWvJAG8T4yGQMNkmsk=
+
+Name: assets/common/game_res/mp_ruin2_bg_22.dat.jpg
+SHA1-Digest: pHZlC3aQOpQVoOnDKqW3KUArOmU=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: qeM5rd2iODmcmiwbxvt0gCvbkog=
+
+Name: assets/common/mercury/1_length_box_check_s.png
+SHA1-Digest: OJhi/81VyWqnPysZZ6MaMTu52Kw=
+
+Name: assets/common/game_res/mp_woodland_203_ground.dat.jpg
+SHA1-Digest: qOYTsHuy6bjtOHe8Puo0D8ZZfnQ=
+
+Name: res/drawable-xhdpi-v4/com_facebook_picker_magnifier.png
+SHA1-Digest: NjTjXCO0OGIK9fwB/UeOonoc+VI=
+
+Name: assets/common/game_res/mp_raid_305_ground.dat.jpg
+SHA1-Digest: YOuUiMjaXWBBIwkFtQU2Yb6MLc4=
+
+Name: assets/common/game_res/mp_yellowtower_299_ground.dat.jpg
+SHA1-Digest: dKKtCHj7F9s9IU43B+bA+SC6cdU=
+
+Name: assets/common/game_res/mp_snowland_399_ground.dat.jpg
+SHA1-Digest: +nEn/9Cx1bNBsqOLv0J6u+EHtKk=
+
+Name: assets/common/game_res/mp_lavatunnel_306_ground.dat.jpg
+SHA1-Digest: JzfIjvlv+XrbMo1+e51dvr0CnZc=
+
+Name: res/drawable-xxhdpi-v4/ic_c2s_notification_small_icon.png
+SHA1-Digest: qRqQhQpzbkPd6ZYJ09NTWHRi5Ss=
+
+Name: assets/common/game_res/mp_deadmine_bg_42.dat.jpg
+SHA1-Digest: aplzg8uQziKtHUGzsC/oLhlB2Fw=
+
+Name: assets/common/game_res/mp_desert_299_ground.dat.jpg
+SHA1-Digest: O5XCsqhaUUTcf0fEhQccoL5R0Zc=
+
+Name: assets/common/game_res/mp_arena75_105_ground.dat.jpg
+SHA1-Digest: c7sWtbjqvQw6beF9me82LO8A+xQ=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_edge_1.png
+SHA1-Digest: xF7D+Ekz1GXEy3IceVQGFgsu6fI=
+
+Name: assets/common/game_res/mm_3002084.dat.jpg
+SHA1-Digest: lARJWpk7kEkJKz8qumHF5JCmdGg=
+
+Name: assets/common/game_res/mp_mushroom_203_ground.dat.jpg
+SHA1-Digest: uKgPSiMV+f+yq6zVvKVCfwwftWc=
+
+Name: assets/common/game_res/mp_arena_bg_12.dat.jpg
+SHA1-Digest: /8+6PoSheb2SRE9JdnlRULYf+mI=
+
+Name: res/drawable/com_facebook_picker_list_selector.xml
+SHA1-Digest: he6NZwLCEgYNhHhVvmTh4SIF57o=
+
+Name: assets/common/game_res/mp_fieldsnow_399_ground.dat.jpg
+SHA1-Digest: pAYmz2mTW89wh0ihNxH1Xxyc230=
+
+Name: assets/common/game_res/mp_graveyard_105_ground.dat.jpg
+SHA1-Digest: CUoJyfyZQFrIe86XrvMgmA9NCWI=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_blue_focused.9.png
+SHA1-Digest: tEbd6ZHud+WKPmfZRNY10IneUmY=
+
+Name: res/drawable/com_facebook_list_divider.9.png
+SHA1-Digest: 45BAgKtOkC0fHYqIunSXrQ8YubM=
+
+Name: res/drawable/com_facebook_close.png
+SHA1-Digest: 3ghe2qEAIfHDS2Vog44GyFmuhsA=
+
+Name: res/drawable-mdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: 3ocjamXiDDzZQ9Er9Iv+AG/CvIc=
+
+Name: assets/common/game_res/mp_graveyard_402_ground.dat.jpg
+SHA1-Digest: HDu3vt5egiGuo2T9mD6lfFfe60E=
+
+Name: assets/common/game_res/mp_desert_102_ground.dat.jpg
+SHA1-Digest: zlHW+CK2Pt2076gSaRbRhOU38HI=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: rk4+RrLhcP6lThhrsLhux6sOaW0=
+
+Name: assets/common/game_res/mm_3002061.dat.jpg
+SHA1-Digest: 9AXSvD8X7il9+BUykwkr4rcRJjc=
+
+Name: assets/common/game_res/mp_devilcastle_104_ground.dat.jpg
+SHA1-Digest: KLL532q+D8ib5tQA5xfWqPmL4cM=
+
+Name: assets/common/game_res/mp_volcano_399_ground.dat.jpg
+SHA1-Digest: SX6G+/+KJxJt1ChcBbCxycNGiTs=
+
+Name: assets/common/game_res/mp_ruin_305_ground.dat.jpg
+SHA1-Digest: F3+3wMsI3QC7ZLnF/S3xk11VRf8=
+
+Name: assets/common/ActiveUserImage/00_check_btn.png
+SHA1-Digest: NOxvJwGqI8WA16bwMvswx2PCBus=
+
+Name: assets/common/game_res/mp_yellowtower_bg_12.dat.jpg
+SHA1-Digest: Df3nIbPvF4eEVGq7R2k4OmKXAZU=
+
+Name: assets/common/game_res/mm_3002024.dat.jpg
+SHA1-Digest: Wwp3u20w/2pTtVP7Roj/MpZp390=
+
+Name: assets/common/game_res/dt_st_boss_imp.dat.jpg
+SHA1-Digest: gBMi6MTQPtQGM+Eb4h7KhgnAJC4=
+
+Name: assets/common/game_res/mp_raid_202_ground.dat.jpg
+SHA1-Digest: 0nDi8xz6uIbvDvAByGeN21YMQnY=
+
+Name: assets/common/game_res/mm_3000186.dat.jpg
+SHA1-Digest: mVmrSvGPupmPe+oghqjbMX/HbTw=
+
+Name: assets/common/game_res/mm_3200280.dat.jpg
+SHA1-Digest: ZRYu7KZL/T5tLdWP6NXQ9SELb54=
+
+Name: assets/common/game_res/lg_ja_140.dat.jpg
+SHA1-Digest: Aod8uR6qnddYw31mM0jEy4hiF7s=
+
+Name: assets/common/game_res/mp_goblinwoods_201_ground.dat.jpg
+SHA1-Digest: R5OyuUw2v6NBJdYGgZSpsJRcoVw=
+
+Name: assets/common/game_res/mm_3200240.dat.jpg
+SHA1-Digest: JXQPvLhzLz5vQ6qcuNNmARcoxd8=
+
+Name: assets/common/mercury/2_wide_box_close.png
+SHA1-Digest: r+RZwoIgBpVZVa2Fr8FrgFsAfhk=
+
+Name: assets/common/game_res/mp_woodland_301_ground.dat.jpg
+SHA1-Digest: ql4ebrpZ4jwWkgtbrbaMOkRi3dY=
+
+Name: assets/common/game_res/mp_alchemist_304_ground.dat.jpg
+SHA1-Digest: erIViV85wG32/XJKrctFz8FCCC0=
+
+Name: res/drawable-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: UCzYT6RE8m1+z99KNVBkhnl38jY=
+
+Name: assets/common/game_res/mm_3250411.dat.jpg
+SHA1-Digest: zv/YQcuC/piY9ec70qME7xRJ8S4=
+
+Name: assets/common/game_res/mm_3200131.dat.jpg
+SHA1-Digest: CerTc1umo+sLe9HhsO3/MFGCCoU=
+
+Name: assets/common/game_res/mp_graveyard_206_ground.dat.jpg
+SHA1-Digest: nS3KqSFtpu0LN8bKaRBTsNq9U5A=
+
+Name: assets/common/game_res/mm_3004041.dat.jpg
+SHA1-Digest: ISymH+CwkEcm/SAPmCTJfORWVSg=
+
+Name: assets/common/game_res/mm_3000141.dat.jpg
+SHA1-Digest: pvk7WCGzNEvKY6KC7vVWkEH4brA=
+
+Name: assets/common/game_res/mm_3001024.dat.jpg
+SHA1-Digest: f0GE9ZBRQDmiwcbxVznknHc5grY=
+
+Name: assets/common/game_res/mm_3200610.dat.jpg
+SHA1-Digest: 7pfTyVMJG5159PWzcTCPGRzZJHg=
+
+Name: assets/common/game_res/mm_3100037.dat.jpg
+SHA1-Digest: lgYLQNhwJMCJU/0EfFVvwvRv5z4=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: f0EJjdbMj9zLfOj/d3UbE5N6BjA=
+
+Name: assets/common/game_res/mp_ruin_bg_21.dat.jpg
+SHA1-Digest: OnOqcf3dpH41irgh2AuTXEy11r0=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: 1nB29gilkMG21U2c1UzWz5vtjpc=
+
+Name: assets/common/game_res/mp_ruin_104_ground.dat.jpg
+SHA1-Digest: /2CA5OrsE+oY05g6QFDg3+v2hxg=
+
+Name: assets/common/game_res/mp_ruin_206_ground.dat.jpg
+SHA1-Digest: rn0QEBjEPv9WID7Ia0v/OYj+51U=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: ZDogSdlgVekmFIAbKguvig7+XGg=
+
+Name: assets/common/game_res/mp_graveyard_bg_12.dat.jpg
+SHA1-Digest: 6LgYqt/XWebiAu704bcdWuOjgsY=
+
+Name: assets/common/game_res/mp_snowland_106_ground.dat.jpg
+SHA1-Digest: EEv9Z/Cj9oAnCrZhrfpJt2Tbh2M=
+
+Name: assets/common/NoticeImage/imgNotice_News_GroundIn.png
+SHA1-Digest: dBPbBZQeEni+ohhOD4eN7lq48qs=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_blue_normal.9.png
+SHA1-Digest: BEUCE9mA+fbTS9B593yrPaMniKQ=
+
+Name: assets/common/game_res/mm_3003084.dat.jpg
+SHA1-Digest: 0YBe0hJpDEvNMagHM8bH53WJm2k=
+
+Name: assets/common/game_res/mp_venomtemple_201_ground.dat.jpg
+SHA1-Digest: jKZZJfmDkL4Ur7I3pDUwP/QGGmc=
+
+Name: assets/common/ActiveUserImage/00_board_textbox_center_down.png
+SHA1-Digest: Qah9vb9LikpP1/qQPUiZMwt8JeE=
+
+Name: assets/common/game_res/mp_deadmine_105_ground.dat.jpg
+SHA1-Digest: DrW7/VAOELBX1LrMhdvuv4+jpCg=
+
+Name: assets/common/game_res/mp_lavatunnel_300_ground.dat.jpg
+SHA1-Digest: ZnGMOFPby2W9wRxXYBf+cAdkmTo=
+
+Name: res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: bCfalDf3dtwVG4mH7KjMYlR/m8c=
+
+Name: assets/common/game_res/mp_deadmine_304_ground.dat.jpg
+SHA1-Digest: WFuwAwRo/n8wjhPr029iGK1Xir8=
+
+Name: assets/common/game_res/mp_icecave_206_ground.dat.jpg
+SHA1-Digest: OyGQCLFJsmbTy+tIFutB/dw85oA=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_grey_focused.9.png
+SHA1-Digest: vME29rlA8fBBFjwLzHUWQ2vVQ2k=
+
+Name: assets/common/game_res/dt_st_raid_livingarmor.dat.jpg
+SHA1-Digest: 0SI9BT1iK896CWNZM27QuwAHRrU=
+
+Name: assets/common/game_res/mp_icecastle_199_ground.dat.jpg
+SHA1-Digest: 4WNc+2Xl/aw3DqN/KlTxobx53KA=
+
+Name: assets/common/game_res/mp_devilcastle_201_ground.dat.jpg
+SHA1-Digest: j9TBarwW7Emi3Seljb1KOPpfEZI=
+
+Name: assets/common/game_res/mp_icecastle_105_ground.dat.jpg
+SHA1-Digest: STU467okkEhANzh1duBM+DeXoLU=
+
+Name: assets/common/game_res/mm_3000026.dat.jpg
+SHA1-Digest: 47mb3xEo65PjHfGTxxkjg7hFjL8=
+
+Name: assets/common/game_res/mm_3250211.dat.jpg
+SHA1-Digest: 5P7WCPzZ/ClOX172ROGqIcZJboo=
+
+Name: assets/common/game_res/mp_goblinwoods_103_ground.dat.jpg
+SHA1-Digest: lyuIE4ystm71zhhj88pQ8JJgN9M=
+
+Name: assets/common/game_res/mp_ruin2_104_ground.dat.jpg
+SHA1-Digest: HF9+GZ4SjiqjxLxpHG9Rx0uEeyo=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_focus_dark
+ .9.png
+SHA1-Digest: /ps9lLPOdDdwDt2YyGRRyGkRCMw=
+
+Name: assets/common/game_res/mp_goblincastle_304_ground.dat.jpg
+SHA1-Digest: g5B2a36HEQaMhLP5+TsTToBH3vE=
+
+Name: assets/common/game_res/mp_ruin2_304_ground.dat.jpg
+SHA1-Digest: Yihy6U6RIZIXLP9mxGFUcKhPef8=
+
+Name: assets/common/game_res/mm_3200800.dat.jpg
+SHA1-Digest: ZUXSXPr50g4TSewlgHukTeZTrF8=
+
+Name: assets/common/game_res/mp_raid_104_ground.dat.jpg
+SHA1-Digest: lgjv7syvFygK33Z3i2oe1xgJZqY=
+
+Name: assets/common/game_res/mp_town_bg_32.dat.jpg
+SHA1-Digest: 9ZBFeT3VX5efDOgvAM3FdYsexzo=
+
+Name: assets/common/game_res/mp_forest_101_ground.dat.jpg
+SHA1-Digest: I9k3Nj0I2fClNa0WwGjGcAi9OsY=
+
+Name: res/drawable-hdpi-v4/powered_by_google_light.png
+SHA1-Digest: 1p8HkYSQc6asTjUOCQeAiFfr8oU=
+
+Name: assets/common/game_res/mp_coast_101_ground.dat.jpg
+SHA1-Digest: w5Qhf8HfKrSjP1q6a+rtue7c8fA=
+
+Name: assets/common/game_res/mp_yellowtower_101_ground.dat.jpg
+SHA1-Digest: xNwyxH34TOf2cKuJBDK1tdNqOSg=
+
+Name: assets/common/game_res/mm_3002023.dat.jpg
+SHA1-Digest: Q1atZhIYGZXO8sGqs67EnjMzRkU=
+
+Name: assets/common/NoticeImage/imgNotice_News_CeilingIn.png
+SHA1-Digest: hgA6cE5aEGCBXaaWDYhrSZCHULg=
+
+Name: assets/common/game_res/mp_townsnow_bg_21.dat.jpg
+SHA1-Digest: bFcqzhV9oToXqlJ5veZ4P1M/5eQ=
+
+Name: assets/common/game_res/mm_3001065.dat.jpg
+SHA1-Digest: a0eg1cd2GkWacyZWgaGZJSO8EDM=
+
+Name: assets/common/game_res/mp_icecave_102_ground.dat.jpg
+SHA1-Digest: F7CcXwhvTf30qigqdzuS/QVLICA=
+
+Name: res/drawable-hdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: SfY+3G0ROn26yscNfyqLheYZY3o=
+
+Name: assets/common/game_res/dt_st_boss_ogre.dat.jpg
+SHA1-Digest: MvC0eoxeCO5yf87HGBAelSHKcP0=
+
+Name: assets/common/game_res/mm_3003083.dat.jpg
+SHA1-Digest: zg/fGH1QXjOxD/E8XSpj/mTHjD4=
+
+Name: assets/common/game_res/mp_goblincastle_299_ground.dat.jpg
+SHA1-Digest: cBn18jzGCAkSTu17GnQqermngbA=
+
+Name: assets/common/game_res/mp_deadmine_205_ground.dat.jpg
+SHA1-Digest: UxbUhMtEVVYpN4LEY/MWC1UKSLY=
+
+Name: assets/common/game_res/mp_desert_303_ground.dat.jpg
+SHA1-Digest: nptdD+RLkO8XTw6ttzffcaqsw08=
+
+Name: assets/common/game_res/mp_graveyard_bg_41.dat.jpg
+SHA1-Digest: LtT+FmYiEGs0eTeJvcT7RCdjvkI=
+
+Name: assets/common/game_res/mp_cave_105_ground.dat.jpg
+SHA1-Digest: MkxaG5ky9k0AzZv8cKvciOOzc4I=
+
+Name: assets/common/game_res/mm_3002066.dat.jpg
+SHA1-Digest: YBNEuOyKDscc0hnUQ6/WbbEAo38=
+
+Name: assets/common/ActiveUserImage/00_board_top_l.png
+SHA1-Digest: hyh4StHNsZRdC2MagEW7YjjiP24=
+
+Name: assets/common/game_res/mp_ghostforest_bg_12.dat.jpg
+SHA1-Digest: G0BmeV3DNY4WKL7FbJPh46EZspA=
+
+Name: assets/common/game_res/mp_icecastle_201_ground.dat.jpg
+SHA1-Digest: FWQPpB8Q+V9oH9ge1C2qmcSWmNc=
+
+Name: assets/common/game_res/mm_3001043.dat.jpg
+SHA1-Digest: jOtKLp/QvHiBM/bMxkF9q4wjjjw=
+
+Name: assets/common/NoticeImage/imgNotice_News_CeilingOut@2x.png
+SHA1-Digest: VyFDQuh27TKi0yu3INk0VSRMweo=
+
+Name: assets/common/game_res/mm_3200621.dat.jpg
+SHA1-Digest: GGJmum5jLJlHZBND3GrkSaqto+c=
+
+Name: assets/common/game_res/dt_achieve_pkg_140.dat.jpg
+SHA1-Digest: c5JdHc1IDUaOcTPT0V2DHREEJNs=
+
+Name: assets/common/game_res/mp_forest_104_ground.dat.jpg
+SHA1-Digest: OZJUE8sv4F3EIscwctfA3u1jcyc=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: zeUJW+N1oH+oj9U7hL70+0TC4pk=
+
+Name: assets/common/game_res/mm_3200022.dat.jpg
+SHA1-Digest: vs8zK5hH0hBvuDqf47F9dsAqhm0=
+
+Name: assets/common/game_res/mp_forest_bg_32.dat.jpg
+SHA1-Digest: CT/BUTa7wZMGA7n7+sUaeW1FQLY=
+
+Name: assets/common/game_res/mp_ghostforest_305_ground.dat.jpg
+SHA1-Digest: nL3vkKDPUhd6AEF0nH/wgBIr/y4=
+
+Name: assets/common/game_res/ui_string_info_wc.dat.jpg
+SHA1-Digest: DdgS/R9SyL+8GpIMMm3B23Yv1T4=
+
+Name: assets/common/game_res/mm_3004025.dat.jpg
+SHA1-Digest: JWZLmjTUKFmX8EPu1y+VWaaYieQ=
+
+Name: res/drawable-hdpi-v4/com_facebook_button_like_background.png
+SHA1-Digest: VB1+UZ2hGAaVxKJQIt8xYr5+K0c=
+
+Name: res/drawable-xhdpi-v4/com_facebook_button_like_pressed.png
+SHA1-Digest: UamQCE7EnlmMUm+f1n7CH5GYdIY=
+
+Name: assets/common/game_res/mp_deadmine_106_ground.dat.jpg
+SHA1-Digest: 8j4NelKrDDuHcbW12uzyraE9ZNc=
+
+Name: assets/common/game_res/mm_3000187.dat.jpg
+SHA1-Digest: EIecEzszlw1/4oR/5GV0brFo5W8=
+
+Name: assets/common/game_res/mp_forest_102_ground.dat.jpg
+SHA1-Digest: 1GFGC27cNlH8ri4ZSl7bV2zsCBM=
+
+Name: assets/common/game_res/mp_ghostforest_bg_41.dat.jpg
+SHA1-Digest: +23b6b22T5LN2yQ0iS23cXj5CAg=
+
+Name: res/drawable-mdpi-v4/powered_by_google_dark.png
+SHA1-Digest: SYwxuihJgUaoyjHCQQvZHUzSvgw=
+
+Name: res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: 5DJcJTVQZ/5EfOcHn52XOrGisZk=
+
+Name: assets/common/game_res/mp_raid_302_ground.dat.jpg
+SHA1-Digest: 2AxCx6EW8keWPvJILpQsm86aytY=
+
+Name: assets/common/game_res/mm_3000024.dat.jpg
+SHA1-Digest: JftPSqAiPitgdD+MFPbgnpvfSR0=
+
+Name: assets/common/game_res/lg_fr_140.dat.jpg
+SHA1-Digest: It+0plUpPBGHqSngkEJJHmofgpw=
+
+Name: assets/common/game_res/mm_3000171.dat.jpg
+SHA1-Digest: SO738I/SJisj/YfJkeZLZDM6FvM=
+
+Name: res/drawable/com_facebook_usersettingsfragment_background_gradie
+ nt.xml
+SHA1-Digest: UudkMujfDbVwQrl+1pBZ2WIJ8ro=
+
+Name: assets/common/game_res/mp_fieldsnow_300_ground.dat.jpg
+SHA1-Digest: qt+jHAkeObxRHUz4q2m5aygCARY=
+
+Name: assets/common/game_res/dt_st_boss_lizardman.dat.jpg
+SHA1-Digest: FfHDcjilF0Z82zRjLncIzxMfHH8=
+
+Name: assets/common/game_res/mp_desert_203_ground.dat.jpg
+SHA1-Digest: Uu7PGaDtYL3ksQIP27nkzoHnwzI=
+
+Name: assets/common/game_res/mm_3002021.dat.jpg
+SHA1-Digest: wXh6noKk8Sw0Y+H7cD7rS/OAny0=
+
+Name: assets/common/game_res/mp_town_306_ground.dat.jpg
+SHA1-Digest: fNCE7CDVuyNF1bPBTdObUOCxJ3g=
+
+Name: assets/common/game_res/mm_3200541.dat.jpg
+SHA1-Digest: AzH74fMiZrYyhneH/H+NJ0udaJA=
+
+Name: assets/common/game_res/mp_graveyard_404_ground.dat.jpg
+SHA1-Digest: FUJS6E5y4svZ1sOu0limWYwN4Is=
+
+Name: assets/common/game_res/mp_graveyard_305_ground.dat.jpg
+SHA1-Digest: Ot4CpLRQhhE9Q+1HvpF+Zw4ji/8=
+
+Name: resources.arsc
+SHA1-Digest: anOTL+ZRWrFWeB9QqUUSVxJdwOQ=
+
+Name: assets/common/game_res/mp_cliff_bg_12.dat.jpg
+SHA1-Digest: Axr4COZB1Kx2S5mQ/LDKpbQMzwQ=
+
+Name: assets/common/game_res/mp_arena_103_ground.dat.jpg
+SHA1-Digest: 4J9hHnDbKK3k1mKKI8thsn2eFgQ=
+
+Name: assets/common/game_res/ui_game_new_pi_gl.dat.jpg
+SHA1-Digest: +ho+JC6AT0doS4WSHr7PoeH/1Jg=
+
+Name: res/drawable/com_facebook_button_grey_normal.9.png
+SHA1-Digest: kZ9314YgSZHYcEuP+vXCuujxd48=
+
+Name: assets/common/game_res/mp_goblinwoods_104_ground.dat.jpg
+SHA1-Digest: asa+j1lIGE4coxDZip3snScF/1c=
+
+Name: assets/common/game_res/mp_castle_bg_11.dat.jpg
+SHA1-Digest: lxnoipxKT1Jxg2CPQrNtWedpn+M=
+
+Name: assets/common/game_res/mp_hive_104_ground.dat.jpg
+SHA1-Digest: l5XRMhZBP2eLInaERNz4y3TOre0=
+
+Name: assets/common/game_res/mm_3000061.dat.jpg
+SHA1-Digest: fgMgwFBYbG3bT/7QJ47D6ej9UAA=
+
+Name: assets/common/game_res/mm_3200351.dat.jpg
+SHA1-Digest: vuATgagWbKOQGkJHPG6vIbDP/Xo=
+
+Name: assets/common/game_res/mp_ghostforest_403_ground.dat.jpg
+SHA1-Digest: 8G+2u5xtutB6DfEZu8cN6QmSsO8=
+
+Name: assets/common/game_res/mp_goblinwoods_199_ground.dat.jpg
+SHA1-Digest: zi1ftMcGb3t3IkMO9jmJHsYXwTU=
+
+Name: assets/common/game_res/mp_coast_300_ground.dat.jpg
+SHA1-Digest: izYgUErwNH5wwdovqdrybVA/dqI=
+
+Name: res/drawable/com_facebook_top_button.xml
+SHA1-Digest: zaZd31WgnpebQo2h+uypPuo4Zps=
+
+Name: assets/common/game_res/dt_quest_140.dat.jpg
+SHA1-Digest: KzOZo/DsiHVe3xMi1HYEkwFl0Jk=
+
+Name: assets/common/game_res/mp_coast_bg_12.dat.jpg
+SHA1-Digest: KNm0TQskcB7TbcTDnogFFG0O7YY=
+
+Name: res/drawable/common_signin_btn_text_dark.xml
+SHA1-Digest: RsrRr+yW+IoamW8k1LFDgJ07hLI=
+
+Name: assets/common/game_res/mp_ruin2_106_ground.dat.jpg
+SHA1-Digest: 5ja68FgZvsYMWm00ilwjo6by0eo=
+
+Name: assets/common/game_res/mp_goblinwoods_205_ground.dat.jpg
+SHA1-Digest: ZkA7jlpl7WXVIfMlZLbRaphgkRo=
+
+Name: assets/common/game_res/nm_p_gl.dat.jpg
+SHA1-Digest: f0XdqvaUfJ8KG3kDx+ss3GiKv64=
+
+Name: assets/common/game_res/mp_deadmine_bg_11.dat.jpg
+SHA1-Digest: e4gt8JgAiLBgyd/JtAwQE+bjEN8=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: /w/b5Ahd692RhVH4wOIahCMTR9s=
+
+Name: assets/common/game_res/dt_st_boss_orc.dat.jpg
+SHA1-Digest: bSHNp68bx8EmTN/zyMecUYqqUgk=
+
+Name: assets/common/game_res/mm_3000166.dat.jpg
+SHA1-Digest: jGZHOgrcsyhE2Hrl4h8ysPybbfI=
+
+Name: assets/common/game_res/mm_3001008.dat.jpg
+SHA1-Digest: qk6LnIeCudfxTHoIsMsubtXXSIg=
+
+Name: assets/common/game_res/mp_icecastle_bg_21.dat.jpg
+SHA1-Digest: k7um5u6bO/7X6cybvSeCFQ/tn4g=
+
+Name: assets/common/game_res/mp_castle_104_ground.dat.jpg
+SHA1-Digest: 0e7S/zBlrGDd+bJSQFFa1a+lWac=
+
+Name: assets/common/game_res/mm_3200641.dat.jpg
+SHA1-Digest: mQ3mqRvvzumKhqgZqLcYexmtIGY=
+
+Name: assets/common/game_res/mm_3200441.dat.jpg
+SHA1-Digest: UOt0h7Qi6WEik1oyAQJep9gD6u0=
+
+Name: res/drawable/com_facebook_button_blue_focused.9.png
+SHA1-Digest: rZf/vriiPguZZUS/3ww/w7LJ8fo=
+
+Name: assets/common/game_res/mm_3000167.dat.jpg
+SHA1-Digest: azNbihT/cX6RvWDLMLpKqrgrrWw=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: IkOjI29UDeEmriO620NWQRYQBQM=
+
+Name: assets/common/game_res/mm_3200951.dat.jpg
+SHA1-Digest: XZSbgRg2novyfVvcae3W0L3bhtI=
+
+Name: assets/common/game_res/mp_ghostforest_bg_31.dat.jpg
+SHA1-Digest: 4427pNiPVcoMThL9a2keN5MocvQ=
+
+Name: assets/common/game_res/mm_3000142.dat.jpg
+SHA1-Digest: RPLvpxBIM0Mc0V2PjM8TIVyDFNg=
+
+Name: assets/common/ActiveUserAgreement/1409219265_M10_3.html
+SHA1-Digest: p4TGkT9fK+uFVCOqOw/Qs04GcDY=
+
+Name: assets/common/game_res/mp_coast_301_ground.dat.jpg
+SHA1-Digest: Qf2EL8cW6vFVmOHSEUYl4iidNXA=
+
+Name: assets/common/mercury/btn_native_X.png
+SHA1-Digest: BntmYh306WHSnrWsG0dVw9WpHdY=
+
+Name: assets/common/game_res/mp_raid_106_ground.dat.jpg
+SHA1-Digest: 6VO3de0zAe/wmA9qLiFPES9U1NM=
+
+Name: assets/common/game_res/mp_town_bg_22.dat.jpg
+SHA1-Digest: 5n33ZChVI4OsmUlHZ1ck/MNe8CY=
+
+Name: assets/common/game_res/mm_3000161.dat.jpg
+SHA1-Digest: PApxsboHfiCiTQZLJzcx+IGl54Y=
+
+Name: assets/common/game_res/lg_de_140.dat.jpg
+SHA1-Digest: out5cBINW+9NONPMWazMbCWI20o=
+
+Name: assets/common/NoticeImage/imgNotice_News_CeilingOut.png
+SHA1-Digest: Bpy2rkyKk/jE1r6RoyU5mBB75DE=
+
+Name: assets/common/game_res/mp_devilcastle_299_ground.dat.jpg
+SHA1-Digest: uWRdsRqCPHpzhHjPGFCzL+5Y/zg=
+
+Name: assets/common/game_res/mp_goblincastle_204_ground.dat.jpg
+SHA1-Digest: mX2Tv+9kPv8rMXJCmiWr3oOPNQM=
+
+Name: assets/common/game_res/mm_3003061.dat.jpg
+SHA1-Digest: y2KJplcKGVKVUg9h2hJLOFQq1uA=
+
+Name: assets/common/game_res/mp_lavatunnel_204_ground.dat.jpg
+SHA1-Digest: Sv5HG9bi9AkMqSFN/odOMijbDlc=
+
+Name: assets/common/game_res/dt_st_orc_normal.dat.jpg
+SHA1-Digest: A3UXRI2aTrPLkKYA4K0HXlAG238=
+
+Name: assets/common/game_res/mm_3003005.dat.jpg
+SHA1-Digest: pDESTjO//fxDfOpfvsFXDkCAAFE=
+
+Name: assets/common/game_res/dt_fellowitem_pkg_140.dat.jpg
+SHA1-Digest: ywa6SR3TylTr44eEsp7Ob5e5ZCU=
+
+Name: res/drawable/com_facebook_button_grey_pressed.9.png
+SHA1-Digest: nb+MTz2iMIoFiJsFSBLZkxUeWgI=
+
+Name: assets/common/game_res/mp_cliff_399_ground.dat.jpg
+SHA1-Digest: y+9H/AoNGZ051FBwRBVxzfor9Ks=
+
+Name: res/drawable-xhdpi-v4/powered_by_google_dark.png
+SHA1-Digest: psVwTFCoE8L/YbYPXiTtAelEWs8=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: VSw7l3gn6Xmrfp6USiW4t6QJmPw=
+
+Name: assets/common/game_res/mm_3003041.dat.jpg
+SHA1-Digest: FY78rjX8S9rloTyPEFA0RCCo5OA=
+
+Name: assets/common/game_res/mp_devilcastle_102_ground.dat.jpg
+SHA1-Digest: K2hMd0fz3TsbYyNG8o5hincOtjw=
+
+Name: assets/common/game_res/mm_3004021.dat.jpg
+SHA1-Digest: 0WyXwksE8n2elyzWNJEEfTtbEtE=
+
+Name: assets/common/game_res/nm_pi_gl.dat.jpg
+SHA1-Digest: tQQLjBHIgkf4HewzpiJE4ZNCQNg=
+
+Name: assets/common/game_res/mp_raid_304_ground.dat.jpg
+SHA1-Digest: CTm+VTAsT+TBcjV3uIR6G9UooWE=
+
+Name: assets/common/game_res/mp_graveyard_300_ground.dat.jpg
+SHA1-Digest: ZjHKR2RZP19hmcrMeleILVLft+A=
+
+Name: assets/common/game_res/mm_3004002.dat.jpg
+SHA1-Digest: 0ohRVzjIv8ogTwONf1mgsxg08Nw=
+
+Name: assets/common/game_res/mm_3000071.dat.jpg
+SHA1-Digest: 2tu1OiY+6VkBquZ7833pOHjqql0=
+
+Name: res/color/wallet_primary_text_holo_light.xml
+SHA1-Digest: urXIhzzsRnXTbAVrrfyzIoqN6dw=
+
+Name: assets/common/game_res/mp_yellowtower_104_ground.dat.jpg
+SHA1-Digest: GNUzA2YPuwbxxw1CjemXpZU+QSM=
+
+Name: assets/common/game_res/mp_graveyard_399_ground.dat.jpg
+SHA1-Digest: lbpozDdy/ag61ROWPWZE//c/uWw=
+
+Name: assets/common/game_res/mp_coast_104_ground.dat.jpg
+SHA1-Digest: Ur5dmiZL8QTK4nPVgeOvSrnY+CU=
+
+Name: assets/common/game_res/mm_3001004.dat.jpg
+SHA1-Digest: MVm76fWUv8W15noZSwibpWnYM2Y=
+
+Name: assets/common/game_res/mm_3250500.dat.jpg
+SHA1-Digest: 1cBNt9L0qy/QvnGc68/UAtqHNLg=
+
+Name: assets/common/game_res/mp_ruin_301_ground.dat.jpg
+SHA1-Digest: EoWW49TLadkj2ff259mhw8WrN2U=
+

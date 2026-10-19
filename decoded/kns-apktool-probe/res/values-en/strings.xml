@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Knights N Squires</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancle</string>
+    <string name="exitMsg">Do you want to exit 1M Hero?</string>
+</resources>

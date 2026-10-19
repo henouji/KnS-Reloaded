@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/DeviceLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/ViewPortPaddingLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/ViewPortSizeLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/GLViewLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <FrameLayout android:id="@id/TextInputLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <FrameLayout android:id="@id/UserInputLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ProgressBarLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/WebViewTouchLayout" android:background="#99000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/WebViewLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <WebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageButton android:id="@id/webViewCancel" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
