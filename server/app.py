@@ -96,18 +96,36 @@ def handle_hub(path: str, params: dict) -> dict:
 
 
 def handle_hive(path: str, params: dict) -> dict:
-    """Com2uS Hive/Peppermint guest auth (guest/create, auth, acquire_uid, bind).
-    Auth token fields the client stores: did, uid, sessionkey, auth_by
-    (from PeppermintAuthToken). Envelope: flat JSON, error_code=0 (as int)."""
-    uid = new_uid()
-    did = "DID" + uid
-    session = "sk_" + uid
-    body = {"did": did, "uid": uid, "sessionkey": session, "auth_by": "guest",
-            "is_authorized": 1, "country": "US", "user_id": uid}
-    # error_code MUST be a string: the client does (String)get("error_code") then
-    # parseInt (PeppermintCallbackJSON). Sending a JSON number throws ClassCastException.
-    return {"error_code": "0", "error_msg": "", "result": 0,
-            **body, "body": dict(body), "data": dict(body)}
+    """Com2uS Hive/Peppermint guest auth. Response formats captured VERBATIM from the
+    still-live real Hive server (http://api.com2us.com) -- error_code is a number, and
+    `type` echoes the endpoint. We keep a stable did/uid per device in SQLite."""
+    conn = db()
+    guest = params.get("guest_uid") or params.get("did") or "dev"
+    row = conn.execute("SELECT uid, guest_uid FROM account WHERE guest_uid=?",
+                       (guest,)).fetchone()
+    if row:
+        did, guest_uid = row
+    else:
+        guest_uid = "905" + str(int(time.time() * 100) % 100000000)
+        did = "539" + str(int(time.time() * 10) % 10000000)
+        conn.execute("INSERT INTO account(uid,guest_uid,login_key,session_key,did,created)"
+                     " VALUES(?,?,?,?,?,?)", (did, guest_uid, "", "", did, time.time()))
+        conn.commit()
+    conn.close()
+
+    p = path.lower()
+    if "device/registered" in p:
+        return {"error_code": 0, "type": "device/registered", "is_registered": False}
+    if "guest/create" in p:
+        return {"error_code": 0, "type": "guest/create", "did": did, "guest_uid": guest_uid}
+    if "guest/auth" in p or p.endswith("/auth"):
+        return {"error_code": 0, "type": "guest/auth", "did": did, "is_auth": True}
+    if "acquire_uid" in p:
+        return {"error_code": 0, "type": "guest/acquire_uid", "uid": guest_uid, "did": did}
+    if "guest/bind" in p:
+        return {"error_code": 0, "type": "guest/bind", "did": did}
+    # generic Hive success
+    return {"error_code": 0, "type": p.strip("/"), "did": did, "guest_uid": guest_uid}
 
 
 def handle_mercury(path: str, params: dict) -> dict:
@@ -231,12 +249,12 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Content-Length", str(len(raw)))
             self.end_headers()
             return self.wfile.write(raw)
-        # Hive/Peppermint guest auth -> auth-token fields (did/uid/sessionkey).
-        if any(k in p for k in ("guest", "/auth")):
+        # Hive/Peppermint: guest auth + device registration (real formats from live Hive).
+        if any(k in p for k in ("guest", "/auth", "device", "registered", "acquire_uid")):
             return self._send(handle_hive(self.path, params))
-        # Other Hub / Peppermint surfaces (device, billing, policy, .c2s).
+        # Other Hub / Peppermint surfaces (billing, policy, .c2s).
         if any(k in p for k in ("/hub", "/user", "member", "policy",
-                                "device", "registered", "billing", ".c2s", "/api")):
+                                "billing", ".c2s", "/api")):
             return self._send(handle_hub(self.path, params))
         # unknown: benign envelope covering both protocol families
         return self._send({"errno": 0, "error": "", "error_code": 0, "error_detail": "",
