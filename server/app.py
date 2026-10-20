@@ -252,9 +252,14 @@ class Handler(BaseHTTPRequestHandler):
         # Hive/Peppermint: guest auth + device registration (real formats from live Hive).
         if any(k in p for k in ("guest", "/auth", "device", "registered", "acquire_uid")):
             return self._send(handle_hive(self.path, params))
-        # Other Hub / Peppermint surfaces (billing, policy, .c2s).
+        # InApp billing target selection (check2.c2s): client reads int `type`
+        # (1 = Google Play). SelectTarget$1 parses this plaintext JSON.
+        if "billing" in p or "check2" in p:
+            return self._send({"type": 1, "error_code": 0, "google_service": 1,
+                               "last_iap": 1, "state": 0})
+        # Other Hub / Peppermint surfaces (policy, .c2s).
         if any(k in p for k in ("/hub", "/user", "member", "policy",
-                                "billing", ".c2s", "/api")):
+                                ".c2s", "/api")):
             return self._send(handle_hub(self.path, params))
         # unknown: benign envelope covering both protocol families
         return self._send({"errno": 0, "error": "", "error_code": 0, "error_detail": "",
