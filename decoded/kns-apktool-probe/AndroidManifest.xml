@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.com2us.imhero.normal.freefull.google.global.android.common" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
-    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name=".MainActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name=".MainActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -26,14 +26,14 @@
         <activity android:launchMode="singleInstance" android:name="com.com2us.module.push.NotificationMessage" android:theme="@android:style/Theme.Translucent"/>
         <activity android:launchMode="singleInstance" android:name="com.com2us.module.push.PushWakeLock" android:theme="@android:style/Theme.Translucent"/>
         <receiver android:name="com.com2us.module.push.LocalPushReceiver" android:process=":remote"/>
-        <receiver android:name="com.com2us.module.push.DeviceStatusReceiver">
+        <receiver android:exported="true" android:name="com.com2us.module.push.DeviceStatusReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.TIME_SET"/>
                 <category android:name="com.com2us.imhero.normal.freefull.google.global.android.common"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+        <receiver android:exported="true" android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
@@ -42,7 +42,7 @@
         </receiver>
         <service android:name="com.com2us.module.push.GCMIntentService"/>
         <service android:name="com.android.vending.billing.BillingService"/>
-        <receiver android:name="com.android.vending.billing.BillingReceiver">
+        <receiver android:exported="true" android:name="com.android.vending.billing.BillingReceiver">
             <intent-filter>
                 <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
                 <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
