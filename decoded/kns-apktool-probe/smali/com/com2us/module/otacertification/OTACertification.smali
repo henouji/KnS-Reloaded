@@ -18,7 +18,7 @@
 
 
 # static fields
-.field private static final SERVER:Ljava/lang/String; = "http://s.com2us.net/common/ota/certify.c2s"
+.field private static final SERVER:Ljava/lang/String; = "http://10.0.2.2:8080/common/ota/certify.c2s"
 
 
 # instance fields
@@ -488,7 +488,7 @@
     :try_start_2
     new-instance v12, Lorg/apache/http/client/methods/HttpPost;
 
-    const-string v17, "http://s.com2us.net/common/ota/certify.c2s"
+    const-string v17, "http://10.0.2.2:8080/common/ota/certify.c2s"
 
     move-object/from16 v0, v17
 
