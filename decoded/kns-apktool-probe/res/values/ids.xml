@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <id name="large" />
-    <id name="normal" />
-    <id name="small" />
-    <id name="box_count" />
-    <id name="button" />
-    <id name="standard" />
-    <id name="bottom" />
-    <id name="inline" />
-    <id name="top" />
-    <id name="center" />
-    <id name="left" />
-    <id name="right" />
-    <id name="hybrid" />
-    <id name="none" />
-    <id name="satellite" />
-    <id name="terrain" />
-    <id name="holo_dark" />
-    <id name="holo_light" />
-    <id name="production" />
-    <id name="sandbox" />
-    <id name="strict_sandbox" />
-    <id name="buyButton" />
-    <id name="selectionDetails" />
-    <id name="match_parent" />
-    <id name="wrap_content" />
-    <id name="book_now" />
-    <id name="buy_now" />
-    <id name="buy_with_google" />
-    <id name="classic" />
-    <id name="grayscale" />
-    <id name="monochrome" />
-    <id name="com_facebook_picker_list_view" />
-    <id name="com_facebook_picker_activity_circle" />
-    <id name="com_facebook_login_activity_progress_bar" />
-    <id name="com_facebook_picker_row_activity_circle" />
-    <id name="com_facebook_picker_checkbox" />
-    <id name="com_facebook_picker_image" />
-    <id name="com_facebook_picker_profile_pic_stub" />
-    <id name="com_facebook_picker_title" />
-    <id name="com_facebook_picker_checkbox_stub" />
-    <id name="com_facebook_picker_list_section_header" />
-    <id name="com_facebook_picker_top_bar" />
-    <id name="com_facebook_picker_done_button" />
-    <id name="com_facebook_picker_divider" />
-    <id name="com_facebook_picker_title_bar_stub" />
-    <id name="com_facebook_picker_title_bar" />
-    <id name="picker_subtitle" />
-    <id name="com_facebook_search_bar_view" />
-    <id name="com_facebook_picker_search_text" />
-    <id name="com_facebook_body_frame" />
-    <id name="com_facebook_tooltip_bubble_view_top_pointer" />
-    <id name="com_facebook_button_xout" />
-    <id name="com_facebook_tooltip_bubble_view_text_body" />
-    <id name="com_facebook_tooltip_bubble_view_bottom_pointer" />
-    <id name="com_facebook_usersettingsfragment_logo_image" />
-    <id name="com_facebook_usersettingsfragment_profile_name" />
-    <id name="com_facebook_usersettingsfragment_login_button" />
-    <id name="DeviceLayout" />
-    <id name="ViewPortPaddingLayout" />
-    <id name="ViewPortSizeLayout" />
-    <id name="GLViewLayout" />
-    <id name="TextInputLayout" />
-    <id name="UserInputLayout" />
-    <id name="ProgressBarLayout" />
-    <id name="progressBar" />
-    <id name="WebViewTouchLayout" />
-    <id name="WebViewLayout" />
-    <id name="webView" />
-    <id name="webViewCancel" />
-    <id name="videoView2" />
-    <id name="button1" />
-    <id name="menu_settings" />
+    <item type="id" name="large" />
+    <item type="id" name="normal" />
+    <item type="id" name="small" />
+    <item type="id" name="box_count" />
+    <item type="id" name="button" />
+    <item type="id" name="standard" />
+    <item type="id" name="bottom" />
+    <item type="id" name="inline" />
+    <item type="id" name="top" />
+    <item type="id" name="center" />
+    <item type="id" name="left" />
+    <item type="id" name="right" />
+    <item type="id" name="hybrid" />
+    <item type="id" name="none" />
+    <item type="id" name="satellite" />
+    <item type="id" name="terrain" />
+    <item type="id" name="holo_dark" />
+    <item type="id" name="holo_light" />
+    <item type="id" name="production" />
+    <item type="id" name="sandbox" />
+    <item type="id" name="strict_sandbox" />
+    <item type="id" name="buyButton" />
+    <item type="id" name="selectionDetails" />
+    <item type="id" name="match_parent" />
+    <item type="id" name="wrap_content" />
+    <item type="id" name="book_now" />
+    <item type="id" name="buy_now" />
+    <item type="id" name="buy_with_google" />
+    <item type="id" name="classic" />
+    <item type="id" name="grayscale" />
+    <item type="id" name="monochrome" />
+    <item type="id" name="com_facebook_picker_list_view" />
+    <item type="id" name="com_facebook_picker_activity_circle" />
+    <item type="id" name="com_facebook_login_activity_progress_bar" />
+    <item type="id" name="com_facebook_picker_row_activity_circle" />
+    <item type="id" name="com_facebook_picker_checkbox" />
+    <item type="id" name="com_facebook_picker_image" />
+    <item type="id" name="com_facebook_picker_profile_pic_stub" />
+    <item type="id" name="com_facebook_picker_title" />
+    <item type="id" name="com_facebook_picker_checkbox_stub" />
+    <item type="id" name="com_facebook_picker_list_section_header" />
+    <item type="id" name="com_facebook_picker_top_bar" />
+    <item type="id" name="com_facebook_picker_done_button" />
+    <item type="id" name="com_facebook_picker_divider" />
+    <item type="id" name="com_facebook_picker_title_bar_stub" />
+    <item type="id" name="com_facebook_picker_title_bar" />
+    <item type="id" name="picker_subtitle" />
+    <item type="id" name="com_facebook_search_bar_view" />
+    <item type="id" name="com_facebook_picker_search_text" />
+    <item type="id" name="com_facebook_body_frame" />
+    <item type="id" name="com_facebook_tooltip_bubble_view_top_pointer" />
+    <item type="id" name="com_facebook_button_xout" />
+    <item type="id" name="com_facebook_tooltip_bubble_view_text_body" />
+    <item type="id" name="com_facebook_tooltip_bubble_view_bottom_pointer" />
+    <item type="id" name="com_facebook_usersettingsfragment_logo_image" />
+    <item type="id" name="com_facebook_usersettingsfragment_profile_name" />
+    <item type="id" name="com_facebook_usersettingsfragment_login_button" />
+    <item type="id" name="DeviceLayout" />
+    <item type="id" name="ViewPortPaddingLayout" />
+    <item type="id" name="ViewPortSizeLayout" />
+    <item type="id" name="GLViewLayout" />
+    <item type="id" name="TextInputLayout" />
+    <item type="id" name="UserInputLayout" />
+    <item type="id" name="ProgressBarLayout" />
+    <item type="id" name="progressBar" />
+    <item type="id" name="WebViewTouchLayout" />
+    <item type="id" name="WebViewLayout" />
+    <item type="id" name="webView" />
+    <item type="id" name="webViewCancel" />
+    <item type="id" name="videoView2" />
+    <item type="id" name="button1" />
+    <item type="id" name="menu_settings" />
 </resources>

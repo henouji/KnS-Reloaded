@@ -1,0 +1,9 @@
+{
+  "errno": 0,
+  "error": "",
+  "status": 1,
+  "res": 0,
+  "res_msg": "SUCCESS",
+  "action": "status_check",
+  "server_status": "normal"
+}

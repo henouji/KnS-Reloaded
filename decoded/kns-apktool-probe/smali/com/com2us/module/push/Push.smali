@@ -1785,7 +1785,7 @@
     if-eqz v31, :cond_2
 
     .line 905
-    const-string v4, "http://10.0.2.2:8080/api/"
+    const-string v4, "https://testowner.github.io/testrepo/api/"
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1996,13 +1996,13 @@
 
     if-ne v0, v1, :cond_3
 
-    const-string v4, "http://10.0.2.2:8080/api/"
+    const-string v4, "https://testowner.github.io/testrepo/api/"
 
     :goto_4
     goto/16 :goto_1
 
     :cond_3
-    const-string v4, "http://10.0.2.2:8080/api/"
+    const-string v4, "https://testowner.github.io/testrepo/api/"
 
     goto :goto_4
 

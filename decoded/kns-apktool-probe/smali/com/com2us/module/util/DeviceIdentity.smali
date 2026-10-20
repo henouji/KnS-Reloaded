@@ -10,9 +10,9 @@
 
 .field private static final ENC_FORMAT:Ljava/lang/String; = "AES/CBC/PKCS7Padding"
 
-.field private static final GATEWAY_LIVE_SERVER:Ljava/lang/String; = "http://10.0.2.2:8080/gateway.php"
+.field private static final GATEWAY_LIVE_SERVER:Ljava/lang/String; = "https://testowner.github.io/testrepo/gateway.php"
 
-.field private static final GATEWAY_TEST_SERVER:Ljava/lang/String; = "http://10.0.2.2:8080/gateway.php"
+.field private static final GATEWAY_TEST_SERVER:Ljava/lang/String; = "https://testowner.github.io/testrepo/gateway.php"
 
 .field private static final PROPERTIES:Ljava/lang/String; = "activeuser.props"
 
@@ -79,7 +79,7 @@
     sput-object v0, Lcom/com2us/module/util/DeviceIdentity;->TARGET_PROPERTIES:Ljava/lang/String;
 
     .line 64
-    const-string v0, "http://10.0.2.2:8080/gateway.php"
+    const-string v0, "https://testowner.github.io/testrepo/gateway.php"
 
     sput-object v0, Lcom/com2us/module/util/DeviceIdentity;->TARGET_SERVER:Ljava/lang/String;
 
@@ -454,7 +454,7 @@
     .line 103
     if-eqz p1, :cond_1
 
-    const-string v0, "http://10.0.2.2:8080/gateway.php"
+    const-string v0, "https://testowner.github.io/testrepo/gateway.php"
 
     :goto_0
     sput-object v0, Lcom/com2us/module/util/DeviceIdentity;->TARGET_SERVER:Ljava/lang/String;
@@ -499,7 +499,7 @@
     .line 103
     :cond_1
     :try_start_1
-    const-string v0, "http://10.0.2.2:8080/gateway.php"
+    const-string v0, "https://testowner.github.io/testrepo/gateway.php"
 
     goto :goto_0
 

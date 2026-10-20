@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final GATEWAY_LIVE_SERVER:Ljava/lang/String; = "http://10.0.2.2:8080/gateway.php"
+.field public static final GATEWAY_LIVE_SERVER:Ljava/lang/String; = "https://testowner.github.io/testrepo/gateway.php"
 
-.field public static final GATEWAY_TARGET_SERVER:Ljava/lang/String; = "http://10.0.2.2:8080/gateway.php"
+.field public static final GATEWAY_TARGET_SERVER:Ljava/lang/String; = "https://testowner.github.io/testrepo/gateway.php"
 
-.field public static final GATEWAY_TEST_SERVER:Ljava/lang/String; = "http://10.0.2.2:8080/gateway.php"
+.field public static final GATEWAY_TEST_SERVER:Ljava/lang/String; = "https://testowner.github.io/testrepo/gateway.php"
 
 .field public static final HTTP_REQ_AUTHKEY:Ljava/lang/String; = "REQ-AUTHKEY"
 

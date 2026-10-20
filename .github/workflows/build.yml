@@ -7,6 +7,11 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      server_url:
+        description: 'Custom Mock Server Endpoint URL (defaults to GitHub Pages URL)'
+        required: false
+        default: ''
 
 jobs:
   build:
@@ -25,7 +30,22 @@ jobs:
       - name: Install Apktool and Android Build Tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y apktool apksigner zipalign
+          sudo apt-get install -y apktool apksigner zipalign python3
+
+      - name: Determine Server Endpoint URL
+        id: server_url
+        run: |
+          if [ -n "${{ github.event.inputs.server_url }}" ]; then
+            URL="${{ github.event.inputs.server_url }}"
+          else
+            URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          fi
+          echo "SERVER_URL=$URL" >> $GITHUB_ENV
+          echo "Using Server URL: $URL"
+
+      - name: Patch APK with Server Endpoint URL
+        run: |
+          python3 patch_urls.py "$SERVER_URL"
 
       - name: Build APK with Apktool
         run: |
