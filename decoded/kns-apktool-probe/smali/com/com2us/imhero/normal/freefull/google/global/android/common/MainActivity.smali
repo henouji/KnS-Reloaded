@@ -15,6 +15,8 @@
 
     .prologue
     .line 40
+    invoke-static {}, Lcom/com2us/imhero/normal/freefull/google/global/android/common/TargetSdkSpoofer;->spoof()V
+
     :try_start_0
     const-string v0, "openal"
 
@@ -113,6 +115,8 @@
 
     .prologue
     .line 55
+    invoke-static {}, Lcom/com2us/imhero/normal/freefull/google/global/android/common/CrashLogger;->init()V
+
     invoke-super {p0, p1}, Lcom/com2us/imhero/normal/freefull/google/global/android/common/GooglePlayServicesActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 61

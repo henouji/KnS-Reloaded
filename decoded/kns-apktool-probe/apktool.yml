@@ -4,8 +4,8 @@ usesFramework:
   ids:
   - 1
 sdkInfo:
-  minSdkVersion: 23
-  targetSdkVersion: 36
+  minSdkVersion: 21
+  targetSdkVersion: 22
 versionInfo:
   versionCode: 140
   versionName: 1.4.0
