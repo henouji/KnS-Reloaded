@@ -68,14 +68,15 @@ P_LOAD_USER = 60
 P_INVENTORY = 61
 P_EVENT_INFO = 59
 P_STAGE_START = 71
+P_STAGE_RESULT = 72
 
 # --- new-user template -------------------------------------------------------
 # Fields the client has no master-data cross-check for are plain defaults. The ones
 # that index into the still-encrypted dt_* master data (hero_pcid, fellow_id,
 # item_id) stay at 1 / empty so nothing dangles. Tune these live: the server picks
 # them up on restart.
-START_GOLD = 10_000
-START_CASH = 100
+START_GOLD = 99_999
+START_CASH = 9_999
 START_LEVEL = 1
 START_MAX_EXP = 100
 START_STAMINA = 50
@@ -103,6 +104,10 @@ WEAPON_ITEM_ID = 200001  # master catalog id — weapon range 200000-299999
 # which skips 300k and corresponds to the 400k range at parse-struct+0x28.
 ARMOR_ITEM_NO  = 1002
 ARMOR_ITEM_ID  = 400001  # 400k range → parse-struct+0x28 → context+0xC20
+# 300k range → parse-struct+0x20 → gameInfo+0xC18. DrawResult looks this slot up with no
+# null check, so an empty slot crashes the dungeon result screen.
+SHIELD_ITEM_NO = 1003
+SHIELD_ITEM_ID = 300001
 
 
 def _unpad(b: bytes) -> bytes:
@@ -251,6 +256,57 @@ def hub_did(params: dict) -> dict:
             "strHubGuestUid": u["hub_uid"], "hub_uid": u["hub_uid"]}
 
 
+# Who protocol 60 last loaded. Stage start (71) carries no user_no, but its reply must
+# still repeat user_info: the client runs UpdateUserInfo/UpdateUserGoods on every stage
+# reply and a missing user_info copies zero gold/gems over the real balance.
+_LAST_USER: dict = {}
+
+
+# Currency balances travel as item_etc_info rows, not in user_info: ParsingDataToUserGoods
+# resets the parse struct's gold/cash slots to -1 and refills them from rows keyed by these
+# master item ids, which is what UpdateUserGoods then copies into the game state.
+GOLD_ITEM_ID = 1900008
+CASH_ITEM_ID = 1900009
+
+
+def _goods() -> list:
+    return [{"item_id": GOLD_ITEM_ID, "count": START_GOLD},
+            {"item_id": CASH_ITEM_ID, "count": START_CASH}]
+
+
+def _user_info(u: dict) -> dict:
+    now = int(time.time())
+    return {
+        "user_no": u["user_no"],
+        "user_hub_id": u["hub_uid"],
+        "user_nickname": u["nickname"],
+        "user_level": START_LEVEL,
+        "user_exp": 0,
+        "user_max_exp": START_MAX_EXP,
+        "user_gold": START_GOLD,
+        "user_cash": START_CASH,
+        "user_friendship_point": 0,
+        "user_fellow_ticket": 0,
+        "user_item_ticket": 0,
+        "user_pvp_point": 0,
+        "user_stamina": START_STAMINA,
+        "user_max_stamina": START_STAMINA,
+        "user_max_stamina_buff": 0,
+        "user_stamina_time_buff": 0,
+        "user_remind_time_stamina": 0,
+        "user_new_mail": 0,
+        "user_inventory_size": START_INVENTORY,
+        "user_inventory_size_cash": 0,
+        "user_fellow_inventory_size_cash": 0,
+        "user_fellow_item_inventory_size_cash": 0,
+        "user_hero_pcid": HERO_PCID,
+        "hero_attack": HERO_ATTACK,
+        "hero_defence": HERO_DEFENCE,
+        "hero_hp": HERO_HP,
+        "user_next_shop_update_time": now + 3600,
+    }
+
+
 # --------------------------------------------------------------------------- 60
 def load_user(params: dict) -> dict:
     """Protocol 60 -- the full user snapshot. Case @0x15bc2c.
@@ -270,39 +326,12 @@ def load_user(params: dict) -> dict:
       buff_etc_info[]    {type, end_date_timestamp}
     """
     u = _user(params)
+    _LAST_USER.update(u)
     now = int(time.time())
     return {
-        "user_info": {
-            "user_no": u["user_no"],
-            "user_hub_id": u["hub_uid"],
-            "user_nickname": u["nickname"],
-            "user_level": START_LEVEL,
-            "user_exp": 0,
-            "user_max_exp": START_MAX_EXP,
-            "user_gold": START_GOLD,
-            "user_cash": START_CASH,
-            "user_friendship_point": 0,
-            "user_fellow_ticket": 0,
-            "user_item_ticket": 0,
-            "user_pvp_point": 0,
-            "user_stamina": START_STAMINA,
-            "user_max_stamina": START_STAMINA,
-            "user_max_stamina_buff": 0,
-            "user_stamina_time_buff": 0,
-            "user_remind_time_stamina": 0,
-            "user_new_mail": 0,
-            "user_inventory_size": START_INVENTORY,
-            "user_inventory_size_cash": 0,
-            "user_fellow_inventory_size_cash": 0,
-            "user_fellow_item_inventory_size_cash": 0,
-            "user_hero_pcid": HERO_PCID,
-            "hero_attack": HERO_ATTACK,
-            "hero_defence": HERO_DEFENCE,
-            "hero_hp": HERO_HP,
-            "user_next_shop_update_time": now + 3600,
-        },
+        "user_info": _user_info(u),
         # consumables / currencies keyed by master-data item id; none for a new user.
-        "item_etc_info": [],
+        "item_etc_info": _goods(),
         # the three active fellow slots (type 1/2/3, position 0..2); none equipped.
         "fellow_active_info": [],
         "server_time": now,
@@ -323,6 +352,7 @@ def load_user(params: dict) -> dict:
             "hero_item_infos": [] if EMPTY_HERO else [
                 {"item_no": WEAPON_ITEM_NO, "item_id": WEAPON_ITEM_ID, "hero_no": 1},
                 {"item_no": ARMOR_ITEM_NO,  "item_id": ARMOR_ITEM_ID,  "hero_no": 1},
+                {"item_no": SHIELD_ITEM_NO, "item_id": SHIELD_ITEM_ID, "hero_no": 1},
             ],
         }],
         "fellow_info": [],               # ParsingDataToFellowInfo elements
@@ -367,6 +397,7 @@ def inventory(params: dict) -> dict:
     items = [] if EMPTY_HERO else [
         {"item_no": WEAPON_ITEM_NO, "item_id": WEAPON_ITEM_ID, "hero_no": 1},
         {"item_no": ARMOR_ITEM_NO,  "item_id": ARMOR_ITEM_ID,  "hero_no": 1},
+                {"item_no": SHIELD_ITEM_NO, "item_id": SHIELD_ITEM_ID, "hero_no": 1},
     ]
     return {
         "inventory_count": len(items),
@@ -397,11 +428,11 @@ MONSTER_KEYS = [
     "ExplosionTime(sec)",
 ]
 MONSTER_SLOTS = 13
-# Tunable on device; units of Sight/MoveSpeed/Cooldown are inferred from column names.
+# Few timed respawns (BornTime/BornProb) so the stage stays sparse. Tunable on device; units of Sight/MoveSpeed/Cooldown are inferred from column names.
 MONSTER_STATS = {
-    "Attack1 Value": 5, "Defence": 0, "MaxHP": 60,
+    "Attack1 Value": 5, "Defence": 0, "MaxHP": 20,
     "Cooldown(millisec)": 1500, "Sight": 600, "AtkProb": 50,
-    "BornTime(sec)": 5, "BornProb": 40, "MoveSpeed(pixel/ms)": 100,
+    "BornTime(sec)": 20, "BornProb": 10, "MoveSpeed(pixel/ms)": 100,
 }
 # The case reads monster_info_<N> and monster_info_<N+1> where N = mapMng[0], which the
 # lobby handler @0x73e10 sets to the selected stage's id (== request stage_id).
@@ -438,11 +469,31 @@ def stage_start(params: dict) -> dict:
     stage_info["monster_info_%d" % stage_id] = rows
     stage_info["monster_info_%d" % (stage_id + 1)] = rows
     return {
+        "user_info": _user_info(_LAST_USER or _user(params)),
+        "update_item_etc_info": _goods(),
         "stage_info": stage_info,
         "verify_info": {"verify_type": 0, "attack": HERO_ATTACK,
                         "defence": HERO_DEFENCE, "hp": HERO_HP},
         "drop_item_list": {"1": [], "4": []},
         "drop_event_item_list": [],
+    }
+
+
+# --------------------------------------------------------------------------- 72
+def stage_result(params: dict) -> dict:
+    """Protocol 72 -- dungeon stage result. Case @0x15fcd0.
+
+    Response fields (all off the root): stage_result, user_info, update_item_etc_info,
+    item_infos[] (drops shown on the result screen, <=10), drop_fellow_infos[],
+    fellow_info[], update_achievement_info, stage_attainment_info, fellow_book_info[],
+    daily_quest_info, max_item_infos[], story_info.
+    No drops yet. The result screen (DrawResult) crashes unless every equipped slot the
+    hero has resolves to an inventory node, see SHIELD_ITEM_* above.
+    """
+    return {
+        "stage_result": params.get("stage_result", 1),
+        "user_info": _user_info(_LAST_USER or _user(params)),
+        "update_item_etc_info": _goods(),
     }
 
 
@@ -455,6 +506,7 @@ PROTOCOL_HANDLERS = {
     P_LOAD_USER: load_user,
     P_INVENTORY: inventory,
     P_STAGE_START: stage_start,
+    P_STAGE_RESULT: stage_result,
 }
 
 
