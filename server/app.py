@@ -211,7 +211,70 @@ class Handler(BaseHTTPRequestHandler):
         with (LOG.parent / "requests.jsonl").open("a", encoding="utf-8") as f:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
+    def _serve_addition(self) -> bool:
+        """Serve an archived addition-data file: /addition/<version>/<name>.
+
+        Protocol 48 hands the client `addition_file_download_url` as the base and a
+        [{PatchFileName, PatchFileVersion}] list; DownloadFile builds each URL as
+        base + version + "/" + name, so this mirrors the original CDN layout. The
+        client resumes partial downloads with `Range: bytes=<start>-`, so honour that
+        -- without it a retry restarts at 0 and the size check fails.
+
+        The CDN served every file with a 68-byte (0x44) trailer that
+        `DownloadFile.ValidateFile` checks and the client strips once the download
+        succeeds -- which is why the archived copies (pulled off a real device) no
+        longer carry it and have to have it rebuilt here. Layout, from the end:
+
+            -0x44  16 bytes  version string ("1.4.0"), compared by prefix
+            -0x34  48 bytes  file name
+            -0x04   4 bytes  total length INCLUDING the trailer, big-endian
+
+        Serving the bare archived bytes makes the client log "ValidateFile version
+        fail" and retry the same file forever.
+        """
+        from urllib.parse import unquote
+
+        import gamegw
+        rel = unquote(self.path.split("?", 1)[0])[len("/addition/"):]
+        parts = [seg for seg in rel.split("/") if seg not in ("", ".", "..")]
+        if len(parts) != 2 or "\\" in rel:
+            self.send_error(404)
+            return True
+        path = (gamegw.ADDITION_ROOT / parts[0] / parts[1]).resolve()
+        if not str(path).startswith(str(gamegw.ADDITION_ROOT.resolve())) or not path.is_file():
+            print(f"[addition] MISSING {rel}")
+            self.send_error(404)
+            return True
+        import struct
+        body = path.read_bytes()
+        total = len(body) + 0x44
+        data = (body
+                + parts[0].encode("utf-8")[:16].ljust(16, b"\0")
+                + parts[1].encode("utf-8")[:48].ljust(48, b"\0")
+                + struct.pack(">I", total))
+        start, end = 0, len(data) - 1
+        rng = self.headers.get("Range", "")
+        if rng.startswith("bytes="):
+            lo, _, hi = rng[len("bytes="):].partition("-")
+            start = int(lo) if lo.isdigit() else 0
+            end = int(hi) if hi.isdigit() else end
+            start, end = max(0, start), min(end, len(data) - 1)
+        chunk = data[start:end + 1]
+        partial = (start, end) != (0, len(data) - 1)
+        self.send_response(206 if partial else 200)
+        self.send_header("Content-Type", "application/octet-stream")
+        self.send_header("Accept-Ranges", "bytes")
+        if partial:
+            self.send_header("Content-Range", f"bytes {start}-{end}/{len(data)}")
+        self.send_header("Content-Length", str(len(chunk)))
+        self.end_headers()
+        self.wfile.write(chunk)
+        return True
+
     def route(self):
+        if self.path.startswith("/addition/"):
+            self._log(f"-> addition {self.path}")
+            return self._serve_addition()
         body = self._body()
         params = {}
         if body:
@@ -243,6 +306,14 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(handle_wall(self.path, params))
         if "/1mhero" in p:
             import gamegw
+            # KNS_GW_DELAY adds artificial latency to every gateway reply. The mock
+            # answers in microseconds over LAN where the original servers took ~100ms,
+            # so the whole post-login burst (51,60,61,330,501,601,140,141) lands at
+            # once -- a timing the client never saw in the wild. Use this to tell a
+            # genuine protocol bug apart from a race the speed exposes.
+            gw_delay = float(os.environ.get("KNS_GW_DELAY", "0") or 0)
+            if gw_delay:
+                time.sleep(gw_delay)
             raw = gamegw.handle(self.headers, body)
             self.send_response(200)
             self.send_header("Content-Type", "text/plain; charset=ISO-8859-1")
@@ -255,6 +326,14 @@ class Handler(BaseHTTPRequestHandler):
         # InApp billing target selection (check2.c2s): client reads int `type`
         # (1 = Google Play). SelectTarget$1 parses this plaintext JSON.
         if "billing" in p or "check2" in p:
+            # KNS_BILLING_DELAY lets us tell apart "the client exits because of what
+            # check2 answers" from "the client exits regardless": stall the reply and
+            # see whether the process death moves with it.
+            import os
+            delay = float(os.environ.get("KNS_BILLING_DELAY", "0") or 0)
+            if delay:
+                print("[billing] stalling check2 reply %.1fs" % delay)
+                time.sleep(delay)
             return self._send({"type": 1, "error_code": 0, "google_service": 1,
                                "last_iap": 1, "state": 0})
         # Other Hub / Peppermint surfaces (policy, .c2s).
