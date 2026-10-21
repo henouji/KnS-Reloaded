@@ -29,9 +29,12 @@ lists with `tools/analyze/walk_fields.py <lib> <addr>`):
   51 (0x33) @0x15f9a2  GAME LOGIN   -> user_no + session + client toggles
   52 (0x34) @0x15f986  hub_uid echo
   53 (0x35) @0x15f942  hub did/uid echo
+  59 (0x3b) @0x15b036  event info   -> event_info[]
   60 (0x3c) @0x15bc2c  LOAD USER    -> the full user snapshot
-  61 (0x3d) @0x15bb7c  inventory
+  61 (0x3d) @0x15bb7c  inventory    -> inventory_count, item_infos[]
   62 (0x3e) @0x15be26  friend list
+  NOTE: 140 (0x8c) and 141 (0x8d) have NO case in JanssonParser — the binary
+  search falls through to default for both; bare errno=0 is the correct response.
 """
 from __future__ import annotations
 
@@ -62,6 +65,8 @@ P_LOGIN = 51
 P_HUB_UID = 52
 P_HUB_DID = 53
 P_LOAD_USER = 60
+P_INVENTORY = 61
+P_EVENT_INFO = 59
 
 # --- new-user template -------------------------------------------------------
 # Fields the client has no master-data cross-check for are plain defaults. The ones
@@ -83,6 +88,20 @@ MUTE = bool(__import__("os").environ.get("KNS_MUTE"))
 HERO_ATTACK = 10
 HERO_DEFENCE = 10
 HERO_HP = 100
+
+# Starting weapon item: item_no is the UNIQUE instance id (must be non-zero so the hero
+# has a resolvable equipped weapon), item_id is the master catalog id (weapons are in the
+# 200000-299999 range per the engine's item_id dispatch in ParsingDataToCharacterInfo).
+# Protocol 61's item_infos must contain the same item_no so GetItemNodeByUniqueItemID
+# (searches node+0x78 = equip_node+0x68 = item_no lo) can find it.
+WEAPON_ITEM_NO = 1001   # unique instance id — any non-zero value
+WEAPON_ITEM_ID = 200001  # master catalog id — weapon range 200000-299999
+# DrawUICharInfo+544 reads hero+0xC20. The uid storage offsets in
+# ParsingDataToCharacterInfo are 8 bytes apart per range (0x18=200k, 0x20=300k,
+# 0x28=400k), and DrawUICharInfo reads at +0xC10 and +0xC20 (16 bytes apart),
+# which skips 300k and corresponds to the 400k range at parse-struct+0x28.
+ARMOR_ITEM_NO  = 1002
+ARMOR_ITEM_ID  = 400001  # 400k range → parse-struct+0x28 → context+0xC20
 
 
 def _unpad(b: bytes) -> bytes:
@@ -296,7 +315,14 @@ def load_user(params: dict) -> dict:
             "hero_item_bonus": 0,
             "hero_gold_bonus": 0,
             "hero_potion_bonus": 0,
-            "hero_item_infos": [],       # [{item_no, item_id, value}]
+            # item_no is the unique instance id; item_id must be in the weapon range
+            # (200000-299999) so the engine's ParsingDataToCharacterInfo fills the
+            # weapon slot and sets the equipped-weapon uid in the hero object.
+            # Protocol 61 item_infos must carry the same item_no.
+            "hero_item_infos": [] if EMPTY_HERO else [
+                {"item_no": WEAPON_ITEM_NO, "item_id": WEAPON_ITEM_ID, "hero_no": 1},
+                {"item_no": ARMOR_ITEM_NO,  "item_id": ARMOR_ITEM_ID,  "hero_no": 1},
+            ],
         }],
         "fellow_info": [],               # ParsingDataToFellowInfo elements
         "fellow_book_info": [],
@@ -315,12 +341,46 @@ def load_user(params: dict) -> dict:
     }
 
 
+# --------------------------------------------------------------------------- 59
+def event_info(params: dict) -> dict:
+    """Protocol 59 — event info. Case @0x15b036.
+
+    Response: event_info array of {item_id, value, No, ...}.  Empty is safe.
+    """
+    return {"event_info": []}
+
+
+# --------------------------------------------------------------------------- 61
+def inventory(params: dict) -> dict:
+    """Protocol 61 — item inventory. Case @0x15bb7c.
+
+    Response: inventory_count (int), item_infos (array parsed by
+    ParsingDataToItemArray -> ParsingDataToItem -> ParsingDataToEquipItem).
+
+    Each element: {item_no (unique instance id, int64), item_id (master id, int32),
+                   hero_no, ...}.  ParsingDataToEquipItem stores item_no lo at
+    equip_node+0x68 = slot+0x78, which is what GetItemNodeByUniqueItemID searches
+    (node+0x78) when looking up the hero's equipped weapon uid.  The item_no here
+    MUST match the item_no in protocol 60's hero_item_infos weapon entry.
+    """
+    items = [] if EMPTY_HERO else [
+        {"item_no": WEAPON_ITEM_NO, "item_id": WEAPON_ITEM_ID, "hero_no": 1},
+        {"item_no": ARMOR_ITEM_NO,  "item_id": ARMOR_ITEM_ID,  "hero_no": 1},
+    ]
+    return {
+        "inventory_count": len(items),
+        "item_infos": items,
+    }
+
+
 PROTOCOL_HANDLERS = {
     P_VERSION: version_check,
+    P_EVENT_INFO: event_info,
     P_LOGIN: login,
     P_HUB_UID: hub_uid,
     P_HUB_DID: hub_did,
     P_LOAD_USER: load_user,
+    P_INVENTORY: inventory,
 }
 
 
