@@ -33,12 +33,15 @@ lists with `tools/analyze/walk_fields.py <lib> <addr>`):
   60 (0x3c) @0x15bc2c  LOAD USER    -> the full user snapshot
   61 (0x3d) @0x15bb7c  inventory    -> inventory_count, item_infos[]
   62 (0x3e) @0x15be26  friend list
-  NOTE: 140 (0x8c) and 141 (0x8d) have NO case in JanssonParser — the binary
-  search falls through to default for both; bare errno=0 is the correct response.
+  201 (0xc9) @0x15a8c0 hero buy     -> user_info, update_item_etc_info, hero_info
+  202 (0xca) @0x15e65e hero change  -> hero_no, hero_pcid
+  140 (0x8c) and 141 (0x8d) DO have cases (see docs/protocol-gamegw.md); they are not
+  implemented yet and get a bare errno=0, which the client accepts.
 """
 from __future__ import annotations
 
 import base64
+import csv
 import random
 import json
 import sqlite3
@@ -53,13 +56,25 @@ BLOCK = 16
 
 # KNS_DB points tests at a scratch database so they never touch real saved progress.
 DB = Path(__import__("os").environ.get("KNS_DB", str(Path("work") / "kns.sqlite")))
-MASTER_ITEMS_CSV = Path(__file__).with_name("seed") / "master_items.csv"
+SEED_DIR = Path(__file__).with_name("seed")
+MASTER_ITEMS_CSV = SEED_DIR / "master_items.csv"
+# Other master tables dumped from game memory by tools/dump_master_tables.py:
+# {table: seed csv}; the first CSV column is the primary key.
+MASTER_TABLES = {"master_hero": SEED_DIR / "master_heroes.csv",
+                 "master_etc_item": SEED_DIR / "master_etc_items.csv",
+                 "master_level": SEED_DIR / "master_levels.csv",
+                 "master_stage": SEED_DIR / "master_stages.csv",
+                 "master_stage_area": SEED_DIR / "master_stage_areas.csv"}
+# master_stage column taken as the exp a cleared stage awards. Unconfirmed: it is the only
+# per-stage field that grows like a reward (20/24/28 for stages 3000001-3).
+STAGE_EXP_COLUMN = "c87"
 
 # Archived "additional data" (the 239MB the live CDN used to serve). Layout mirrors
 # the device's own external dir: <root>/<version>/<file>, e.g. files/1.4.0/bgm_menu.ogg.
 PKG = "com.com2us.imhero.normal.freefull.google.global.android.common"
 ADDITION_ROOT = Path("original") / PKG / "files"
 SERVER_VERSION = "1.01.10"   # what the client echoes back in protocol 50
+SERVE_ADDITION = bool(__import__("os").environ.get("KNS_SERVE_ADDITION"))
 
 P_VERSION = 48
 P_DOWNLOAD = 49
@@ -70,9 +85,12 @@ P_HUB_DID = 53
 P_LOAD_USER = 60
 P_INVENTORY = 61
 P_EVENT_INFO = 59
+P_STAGE_INFO = 70
 P_STAGE_START = 71
 P_STAGE_RESULT = 72
 P_EQUIP_ITEM = 80
+P_HERO_BUY = 201
+P_HERO_CHANGE = 202
 
 # --- new-user template -------------------------------------------------------
 # Fields the client has no master-data cross-check for are plain defaults. The ones
@@ -143,6 +161,24 @@ def _db() -> sqlite3.Connection:
         rowid_alias INTEGER PRIMARY KEY AUTOINCREMENT,
         user_no INTEGER, hub_did TEXT UNIQUE, hub_uid TEXT,
         nickname TEXT, created REAL)""")
+    # Wallet (gold, gems) and the hero the user plays (user_info.user_hero_pcid).
+    have = {r[1] for r in conn.execute("PRAGMA table_info(gameuser)")}
+    for col, default in (("gold", START_GOLD), ("cash", START_CASH), ("hero_pcid", HERO_PCID),
+                         ("level", START_LEVEL), ("exp", 0)):
+        if col not in have:
+            conn.execute("ALTER TABLE gameuser ADD COLUMN %s INTEGER DEFAULT %d" % (col, default))
+    # Heroes a user owns. hero_no is the per-user hero id the client echoes back (we use the
+    # hero_pcid); the default hero is added on first read by _heroes().
+    conn.execute("""CREATE TABLE IF NOT EXISTS user_hero(
+        user_no INTEGER, hero_no INTEGER, hero_pcid INTEGER,
+        PRIMARY KEY(user_no, hero_no))""")
+    # Stages a user has cleared (stage_mode 1 normal, 2 hard), recorded by protocol 72 and
+    # sent back by protocol 70.
+    conn.execute("""CREATE TABLE IF NOT EXISTS stage_clear(
+        user_no INTEGER, stage_id INTEGER, stage_mode INTEGER, clear_count INTEGER,
+        PRIMARY KEY(user_no, stage_id, stage_mode))""")
+    for table, path in MASTER_TABLES.items():
+        _seed(conn, table, path)
     # Every item id the client's master data knows, dumped from a running game
     # (tools/dump_master_items.py). Seeded from the CSV so the server serves ids from the
     # database rather than from code.
@@ -169,6 +205,24 @@ def _db() -> sqlite3.Connection:
             rows = [tuple(map(int, line.split(","))) for line in f.read().split()[1:]]
             conn.executemany("INSERT OR IGNORE INTO master_item VALUES(?,?)", rows)
     return conn
+
+
+def _seed(conn: sqlite3.Connection, table: str, path: Path) -> None:
+    """Create `table` from a seed CSV's header and load the rows if the table is empty."""
+    if not path.exists():
+        return
+    with path.open(encoding="utf-8", newline="") as f:
+        rows = list(csv.reader(f))
+    cols = rows[0]
+    conn.execute("CREATE TABLE IF NOT EXISTS %s(%s PRIMARY KEY, %s)"
+                 % (table, cols[0], ", ".join(cols[1:])))
+    if conn.execute("SELECT COUNT(*) FROM %s" % table).fetchone()[0]:
+        return
+    with conn:
+        conn.executemany("INSERT OR IGNORE INTO %s VALUES(%s)"
+                         % (table, ",".join("?" * len(cols))),
+                         [[int(v) if v.lstrip("-").isdigit() else v for v in r]
+                          for r in rows[1:]])
 
 
 def _user(params: dict) -> dict:
@@ -227,12 +281,17 @@ def version_check(params: dict, headers=None) -> dict:
     HttpURLConnection.getContentLength()), so no size belongs in the list. Files the
     device already has are skipped by the client, so listing everything is fine.
 
-    Serving nothing here is what left the game with no addition data at all.
+    Serving nothing here is what left the game with no addition data at all -- for an APK
+    without the bundled assets. The current build bundles them (tools/bundle_resources.py),
+    and a fresh boot re-downloads the 239MB only to discard it, so the list is empty unless
+    KNS_SERVE_ADDITION=1 (needed again for an unbundled APK).
     """
     ver = str(params.get("strClientVersion") or "1.4.0")
     names = []
     d = ADDITION_ROOT / ver
-    if d.is_dir():
+    if not SERVE_ADDITION:
+        print("[gamegw] protocol 48: assets are bundled in the APK -- empty addition list")
+    elif d.is_dir():
         names = sorted(p.name for p in d.iterdir() if p.is_file())
     else:
         print("[gamegw] WARNING: no addition data at %s -- client gets an empty list" % d)
@@ -298,13 +357,61 @@ GOLD_ITEM_ID = 1900008
 CASH_ITEM_ID = 1900009
 
 
-# Running balance for this server process; stage rewards are credited here.
-_BALANCE = {"gold": START_GOLD, "cash": START_CASH}
+def _account(user_no: int) -> dict:
+    """The user's wallet and active hero, as stored on their gameuser row."""
+    conn = _db()
+    row = conn.execute("SELECT gold, cash, hero_pcid, level, exp FROM gameuser"
+                       " WHERE user_no=?", (user_no,)).fetchone()
+    conn.close()
+    gold, cash, pcid, level, exp = row if row else (START_GOLD, START_CASH, HERO_PCID,
+                                                    START_LEVEL, 0)
+    return {"gold": gold, "cash": cash, "hero_pcid": pcid, "level": level, "exp": exp,
+            "max_exp": _exp_to_next(level)}
 
 
-def _goods() -> list:
-    return [{"item_id": GOLD_ITEM_ID, "count": _BALANCE["gold"]},
-            {"item_id": CASH_ITEM_ID, "count": _BALANCE["cash"]}]
+def _exp_to_next(level: int) -> int:
+    """Exp needed to leave `level` (master_level.exp_to_next; GetUserDataByLv row +4)."""
+    conn = _db()
+    row = conn.execute("SELECT exp_to_next FROM master_level WHERE level=?",
+                       (level,)).fetchone()
+    conn.close()
+    return row[0] if row else START_MAX_EXP
+
+
+def _gain_exp(user_no: int, stage_id: int) -> int:
+    """Award a cleared stage's exp, levelling up while the bar is full. Returns the gain."""
+    conn = _db()
+    row = conn.execute("SELECT %s FROM master_stage WHERE stage_id=?" % STAGE_EXP_COLUMN,
+                       (stage_id,)).fetchone()
+    need = dict(conn.execute("SELECT level, exp_to_next FROM master_level"))
+    conn.close()
+    gain = row[0] if row and row[0] > 0 else 0
+    acct = _account(user_no)
+    level, exp = acct["level"], acct["exp"] + gain
+    while level + 1 in need and exp >= need[level]:   # the last level never fills
+        exp -= need[level]
+        level += 1
+    conn = _db()
+    with conn:
+        conn.execute("UPDATE gameuser SET level=?, exp=? WHERE user_no=?",
+                     (level, exp, user_no))
+    conn.close()
+    return gain
+
+
+def _credit(user_no: int, gold: int = 0, cash: int = 0) -> None:
+    """Add (or with negative amounts, deduct) currency on the user's wallet."""
+    conn = _db()
+    with conn:
+        conn.execute("UPDATE gameuser SET gold=gold+?, cash=cash+? WHERE user_no=?",
+                     (gold, cash, user_no))
+    conn.close()
+
+
+def _goods(user_no: int) -> list:
+    acct = _account(user_no)
+    return [{"item_id": GOLD_ITEM_ID, "count": acct["gold"]},
+            {"item_id": CASH_ITEM_ID, "count": acct["cash"]}]
 
 
 def _current_user(params: dict) -> dict:
@@ -325,15 +432,20 @@ def _current_user(params: dict) -> dict:
 
 def _user_info(u: dict) -> dict:
     now = int(time.time())
+    acct = _account(u["user_no"])
     return {
         "user_no": u["user_no"],
-        "user_hub_id": u["hub_uid"],
+        # UpdateUserInfo strcpy's a non-empty user_hub_id to gameInfo+0xa08, the player name
+        # the result screen header shows. Guest logins store hub_uid "-1", so send the name.
+        "user_hub_id": u["nickname"],
         "user_nickname": u["nickname"],
-        "user_level": START_LEVEL,
-        "user_exp": 0,
-        "user_max_exp": START_MAX_EXP,
-        "user_gold": _BALANCE["gold"],
-        "user_cash": _BALANCE["cash"],
+        # UpdateUserInfo skips the whole update while user_level <= 0. It keeps the previous
+        # level/exp (gameInfo+0xae4/+0xae8) so the result screen can animate the gain.
+        "user_level": acct["level"],
+        "user_exp": acct["exp"],
+        "user_max_exp": acct["max_exp"],
+        "user_gold": acct["gold"],
+        "user_cash": acct["cash"],
         "user_friendship_point": 0,
         "user_fellow_ticket": 0,
         "user_item_ticket": 0,
@@ -348,7 +460,8 @@ def _user_info(u: dict) -> dict:
         "user_inventory_size_cash": 0,
         "user_fellow_inventory_size_cash": 0,
         "user_fellow_item_inventory_size_cash": 0,
-        "user_hero_pcid": HERO_PCID,
+        # UpdateUserInfo copies this to gameInfo+0xb90, the hero the town and stages use.
+        "user_hero_pcid": acct["hero_pcid"],
         "hero_attack": HERO_ATTACK,
         "hero_defence": HERO_DEFENCE,
         "hero_hp": HERO_HP,
@@ -380,26 +493,16 @@ def load_user(params: dict) -> dict:
     return {
         "user_info": _user_info(u),
         # consumables / currencies keyed by master-data item id; none for a new user.
-        "item_etc_info": _goods(),
+        "item_etc_info": _goods(u["user_no"]),
         # the three active fellow slots (type 1/2/3, position 0..2); none equipped.
         "fellow_active_info": [],
         "server_time": now,
         "last_grade": 0,
         "server_date_time": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(now)),
-        "hero_info": [] if EMPTY_HERO else [{
-            "hero_no": 1,
-            "hero_pcid": HERO_PCID,
-            "hero_perfect_guard_bonus": 0,
-            "hero_booster_bonus": 0,
-            "hero_item_bonus": 0,
-            "hero_gold_bonus": 0,
-            "hero_potion_bonus": 0,
-            # item_no is the unique instance id; item_id must be in the weapon range
-            # (200000-299999) so the engine's ParsingDataToCharacterInfo fills the
-            # weapon slot and sets the equipped-weapon uid in the hero object.
-            # Protocol 61 item_infos must carry the same item_no.
-            "hero_item_infos": [] if EMPTY_HERO else _worn_json(u["user_no"]),
-        }],
+        # Every owned hero: the client switches heroes with ChangeMainCharacter, which looks
+        # the pcid up in this list and crashes on a hero it was never given.
+        "hero_info": [] if EMPTY_HERO else [_hero_json(u["user_no"], no, pcid)
+                                            for no, pcid in _heroes(u["user_no"])],
         "fellow_info": [],               # ParsingDataToFellowInfo elements
         "fellow_book_info": [],
         "daily_reward_info": {
@@ -426,24 +529,54 @@ def event_info(params: dict) -> dict:
     return {"event_info": []}
 
 
-def _worn_json(user_no: int) -> list:
-    """The hero's equipped items as protocol 60's hero_item_infos entries."""
-    worn = _equipped(user_no)
+def _worn_json(user_no: int, hero_no: int = 1) -> list:
+    """A hero's equipped items as hero_info.hero_item_infos entries.
+
+    item_no is the unique instance id; protocol 61's item_infos must carry the same item_no
+    so the client can resolve each equipped slot to an inventory node.
+    """
+    worn = _equipped(user_no, hero_no)
     starter_ids = {no: iid for no, iid in STARTER_ITEMS.values()}
     conn = _db()
     out = []
     for item_no in worn.values():
         if item_no in starter_ids:
             out.append({"item_no": item_no, "item_id": starter_ids[item_no],
-                        "hero_no": HERO_NO})
+                        "hero_no": hero_no})
             continue
         row = conn.execute("SELECT item_id, upgrade, attack, defence, hp FROM item"
                            " WHERE rowid_alias=? AND user_no=? AND claimed=1",
                            (item_no - ITEM_NO_BASE, user_no)).fetchone()
         if row:
-            out.append(_item_json(item_no, *row, hero_no=HERO_NO))
+            out.append(_item_json(item_no, *row, hero_no=hero_no))
     conn.close()
     return out
+
+
+def _heroes(user_no: int) -> list:
+    """[(hero_no, hero_pcid)] the user owns; everyone owns the default hero."""
+    conn = _db()
+    with conn:
+        conn.execute("INSERT OR IGNORE INTO user_hero VALUES(?,?,?)",
+                     (user_no, HERO_NO, HERO_PCID))
+        rows = conn.execute("SELECT hero_no, hero_pcid FROM user_hero WHERE user_no=?"
+                            " ORDER BY hero_no", (user_no,)).fetchall()
+    conn.close()
+    return rows
+
+
+def _hero_json(user_no: int, hero_no: int, hero_pcid: int) -> dict:
+    """One hero_info element, parsed by ParsingDataToCharacterInfo@0x14cdd0."""
+    return {
+        "hero_no": hero_no,
+        "hero_pcid": hero_pcid,
+        "hero_perfect_guard_bonus": 0,
+        "hero_booster_bonus": 0,
+        "hero_item_bonus": 0,
+        "hero_gold_bonus": 0,
+        "hero_potion_bonus": 0,
+        "hero_item_infos": _worn_json(user_no, hero_no),
+    }
 
 
 # --------------------------------------------------------------------------- 80
@@ -470,11 +603,93 @@ def equip_item(params: dict) -> dict:
     if item_id is not None:
         conn = _db()
         with conn:
+            # An item is worn by one hero at a time.
+            conn.execute("DELETE FROM hero_equip WHERE user_no=? AND item_no=? AND hero_no!=?",
+                         (user_no, item_no, hero_no))
             conn.execute("INSERT OR REPLACE INTO hero_equip VALUES(?,?,?,?)",
                          (user_no, hero_no, _category(item_id), item_no))
         conn.close()
     print("[gamegw] equip: hero %s item_no %s item_id %s" % (hero_no, item_no, item_id))
     return {"hero_no": hero_no, "item_no": item_no, "update_achievement_info": []}
+
+
+# --------------------------------------------------------------------------- 201
+HERO_GEAR_COLUMNS = ("weapon_id", "slot300_id", "armor_id")   # master_hero default gear
+
+
+def hero_buy(params: dict) -> dict:
+    """Protocol 201 -- unlock a hero on the Characters screen. Case @0x15a8c0.
+
+    Request {user_no, hero_pcid}. The client has already checked the gem price
+    (master_hero.price_gems) against its balance. The reply's post-handler runs
+    Net_AddDataCharacterInfo(hero_info) -- adding the hero and inserting its
+    hero_item_infos into the inventory -- then Net_HeroBuy(hero_info.hero_pcid), and closing
+    the popup switches the main hero to that pcid. A reply without hero_info switches to
+    pcid 0, which has no master row: ChangeMainCharacter memcpy's from NULL (SIGSEGV).
+    The new hero gets its master default gear; every equipped range must resolve to an
+    inventory item or the result screen crashes (see SHIELD_ITEM_*).
+    """
+    user = _current_user(params)
+    user_no = user["user_no"]
+    pcid = int(params.get("hero_pcid") or 0)
+    conn = _db()
+    row = conn.execute("SELECT price_gems, %s FROM master_hero WHERE hero_pcid=?"
+                       % ", ".join(HERO_GEAR_COLUMNS), (pcid,)).fetchone()
+    owned = conn.execute("SELECT hero_no FROM user_hero WHERE user_no=? AND hero_pcid=?",
+                         (user_no, pcid)).fetchone()
+    conn.close()
+    if row is None:
+        print("[gamegw] hero buy: unknown hero_pcid %s" % pcid)
+        return {"errno": 1, "error": "unknown hero"}
+    price, gear = row[0], row[1:]
+    if owned is None:
+        if _account(user_no)["cash"] < price:
+            print("[gamegw] hero buy: pcid %s costs %d gems, not enough" % (pcid, price))
+            return {"errno": 1, "error": "not enough gems"}
+        conn = _db()
+        with conn:
+            conn.execute("INSERT INTO user_hero VALUES(?,?,?)", (user_no, pcid, pcid))
+            for item_id in gear:
+                cur = conn.execute("INSERT INTO item(user_no,item_id,claimed) VALUES(?,?,1)",
+                                   (user_no, item_id))
+                conn.execute("INSERT OR REPLACE INTO hero_equip VALUES(?,?,?,?)",
+                             (user_no, pcid, _category(item_id),
+                              cur.lastrowid + ITEM_NO_BASE))
+            conn.execute("UPDATE gameuser SET cash=cash-?, hero_pcid=? WHERE user_no=?",
+                         (price, pcid, user_no))
+        conn.close()
+        print("[gamegw] hero buy: pcid %s for %d gems, gear %s" % (pcid, price, gear))
+    hero_no = owned[0] if owned else pcid
+    return {
+        "user_info": _user_info(user),
+        "update_item_etc_info": _goods(user_no),
+        "hero_info": _hero_json(user_no, hero_no, pcid),
+        "update_achievement_info": [],
+    }
+
+
+# --------------------------------------------------------------------------- 202
+def hero_change(params: dict) -> dict:
+    """Protocol 202 -- play an owned hero. Case @0x15e65e.
+
+    Request carries the owned hero's hero_no. The reply's hero_pcid goes to Net_HeroChange,
+    and closing the Characters popup switches the main hero to it. The choice is stored as
+    gameuser.hero_pcid and sent back as user_info.user_hero_pcid at the next login.
+    """
+    user_no = _current_user(params)["user_no"]
+    hero_no = int(params.get("hero_no") or 0)
+    # _heroes() also creates the default hero's row, which may not exist yet right after a
+    # server restart (the client can switch back to it before reloading protocol 60).
+    pcid = dict(_heroes(user_no)).get(hero_no)
+    if pcid is None:
+        print("[gamegw] hero change: user %s has no hero_no %s" % (user_no, hero_no))
+        return {"errno": 1, "error": "unknown hero"}
+    conn = _db()
+    with conn:
+        conn.execute("UPDATE gameuser SET hero_pcid=? WHERE user_no=?", (pcid, user_no))
+    conn.close()
+    print("[gamegw] hero change: hero_no %s pcid %s" % (hero_no, pcid))
+    return {"hero_no": hero_no, "hero_pcid": pcid}
 
 
 # --------------------------------------------------------------------------- 61
@@ -491,8 +706,9 @@ def inventory(params: dict) -> dict:
     MUST match the item_no in protocol 60's hero_item_infos weapon entry.
     """
     user_no = _current_user(params)["user_no"]
-    items = [] if EMPTY_HERO else _starter_json(set(_equipped(user_no).values()))
-    items += _owned_items(user_no)
+    worn = _worn_by(user_no)
+    items = [] if EMPTY_HERO else _starter_json(worn)
+    items += _owned_items(user_no, worn)
     return {
         "inventory_count": len(items),
         "item_infos": items,
@@ -531,6 +747,9 @@ MONSTER_STATS = {
     "Attack1 Value": 5, "Defence": 0, "MaxHP": 10,
     "Cooldown(millisec)": 1500, "Sight": 600, "AtkProb": 50,
     "BornTime(sec)": 20, "BornProb": 10, "MoveSpeed(pixel/ms)": 100,
+    # Chance (%) a killed monster drops a potion (master_etc_item 1900001/1900002). Potions
+    # are used on pickup inside the stage; nothing about them reaches the server.
+    "CommoditiesItemProb": 20,
 }
 # The case reads monster_info_<N> and monster_info_<N+1> where N = mapMng[0], which the
 # lobby handler @0x73e10 sets to the selected stage's id (== request stage_id).
@@ -567,19 +786,26 @@ def _category(item_id: int) -> int:
     return item_id // 100000 * 100000
 
 
-def _equipped(user_no: int) -> dict:
-    """{category: item_no} the user's hero currently wears."""
-    worn = {cat: no for cat, (no, _) in STARTER_ITEMS.items()}
+def _equipped(user_no: int, hero_no: int = HERO_NO) -> dict:
+    """{category: item_no} a hero currently wears. The default hero starts in the fixed
+    starter gear; bought heroes get hero_equip rows for their gear when bought."""
+    worn = {cat: no for cat, (no, _) in STARTER_ITEMS.items()} if hero_no == HERO_NO else {}
     conn = _db()
     for cat, no in conn.execute("SELECT category, item_no FROM hero_equip"
-                                " WHERE user_no=? AND hero_no=?", (user_no, HERO_NO)):
+                                " WHERE user_no=? AND hero_no=?", (user_no, hero_no)):
         worn[cat] = no
     conn.close()
     return worn
 
 
-def _starter_json(worn: set) -> list:
-    return [{"item_no": no, "item_id": iid, "hero_no": HERO_NO if no in worn else 0}
+def _worn_by(user_no: int) -> dict:
+    """{item_no: hero_no} for every item any of the user's heroes wears."""
+    return {item_no: hero_no for hero_no, _ in _heroes(user_no)
+            for item_no in _equipped(user_no, hero_no).values()}
+
+
+def _starter_json(worn: dict) -> list:
+    return [{"item_no": no, "item_id": iid, "hero_no": worn.get(no, 0)}
             for no, iid in STARTER_ITEMS.values()]
 
 
@@ -650,15 +876,14 @@ def _claim_items(user_no: int, reward_items) -> list:
     return claimed
 
 
-def _owned_items(user_no: int) -> list:
-    worn = set(_equipped(user_no).values())
+def _owned_items(user_no: int, worn: dict) -> list:
     conn = _db()
     rows = conn.execute("SELECT rowid_alias, item_id, upgrade, attack, defence, hp FROM item"
                         " WHERE user_no=? AND claimed=1 ORDER BY rowid_alias",
                         (user_no,)).fetchall()
     conn.close()
-    return [_item_json(r[0] + ITEM_NO_BASE, *r[1:],
-                       hero_no=HERO_NO if r[0] + ITEM_NO_BASE in worn else 0) for r in rows]
+    return [_item_json(r[0] + ITEM_NO_BASE, *r[1:], hero_no=worn.get(r[0] + ITEM_NO_BASE, 0))
+            for r in rows]
 
 
 def stage_start(params: dict) -> dict:
@@ -683,7 +908,7 @@ def stage_start(params: dict) -> dict:
     stage_info["monster_info_%d" % (stage_id + 1)] = rows
     return {
         "user_info": _user_info(user),
-        "update_item_etc_info": _goods(),
+        "update_item_etc_info": _goods(user["user_no"]),
         "stage_info": stage_info,
         "verify_info": {"verify_type": 0, "attack": HERO_ATTACK,
                         "defence": HERO_DEFENCE, "hp": HERO_HP},
@@ -703,23 +928,88 @@ def stage_result(params: dict) -> dict:
     No drops yet. The result screen (DrawResult) crashes unless every equipped slot the
     hero has resolves to an inventory node, see SHIELD_ITEM_* above.
     """
+    user = _current_user(params)
     try:
-        _BALANCE["gold"] += max(0, int(params.get("reward_gold") or 0))
+        _credit(user["user_no"], gold=max(0, int(params.get("reward_gold") or 0)))
     except (TypeError, ValueError):
         pass
     print("[gamegw] stage result: reward_gold=%s gold now %d"
-          % (params.get("reward_gold"), _BALANCE["gold"]))
+          % (params.get("reward_gold"), _account(user["user_no"])["gold"]))
     print("[gamegw] stage result drops: reward_items=%s event_items=%s max_damage=%s"
           % (json.dumps(params.get("reward_items")), json.dumps(params.get("event_items")),
              params.get("max_damage")))
-    user = _current_user(params)
     dropped = _claim_items(user["user_no"], params.get("reward_items"))
     print("[gamegw] stage result: dropped items %s" % dropped)
+    stage_id = int(params.get("stage_no") or 0)
+    if params.get("stage_result", 1) == 1:
+        gain = _gain_exp(user["user_no"], stage_id)
+        acct = _account(user["user_no"])
+        print("[gamegw] stage result: +%d exp -> Lv.%d %d/%d"
+              % (gain, acct["level"], acct["exp"], acct["max_exp"]))
+        _record_clear(user["user_no"], stage_id, int(params.get("stage_mode") or 1))
+    area = _area_of(stage_id)
     return {
         "stage_result": params.get("stage_result", 1),
         "user_info": _user_info(user),
-        "update_item_etc_info": _goods(),
+        "update_item_etc_info": _goods(user["user_no"]),
         "item_infos": dropped,
+        # Net_SetStageAreaInfo replaces the client's counts for this area with these.
+        "stage_attainment_info": _attainment(user["user_no"]).get(area, {}) if area else {},
+    }
+
+
+# --------------------------------------------------------------------------- 70
+def _area_of(stage_id: int):
+    conn = _db()
+    row = conn.execute("SELECT area_id FROM master_stage_area WHERE stage_id=?",
+                       (stage_id,)).fetchone()
+    conn.close()
+    return row[0] if row else None
+
+
+def _record_clear(user_no: int, stage_id: int, stage_mode: int) -> None:
+    conn = _db()
+    with conn:
+        conn.execute("INSERT INTO stage_clear VALUES(?,?,?,1) ON CONFLICT(user_no, stage_id,"
+                     " stage_mode) DO UPDATE SET clear_count=clear_count+1",
+                     (user_no, stage_id, stage_mode))
+    conn.close()
+
+
+def _attainment(user_no: int) -> dict:
+    """{area_id: stage_attainment_info} -- distinct stages cleared per area and mode."""
+    conn = _db()
+    rows = conn.execute(
+        "SELECT a.area_id, SUM(c.stage_mode=1), SUM(c.stage_mode!=1) FROM stage_clear c"
+        " JOIN master_stage_area a ON a.stage_id=c.stage_id WHERE c.user_no=?"
+        " GROUP BY a.area_id", (user_no,)).fetchall()
+    conn.close()
+    return {area: {"area_id": area, "normal_user_clear_count": normal,
+                   "hard_user_clear_count": hard} for area, normal, hard in rows}
+
+
+def stage_info(params: dict) -> dict:
+    """Protocol 70 -- the user's stage progress, requested when the world map opens.
+    Case @0x15abca.
+
+    Request {user_no}. The post-handler wipes the client's stage-clear bits and area counts
+    and rebuilds them from this reply, so a bare reply forgets every cleared stage:
+      clear_stage_infos              [{stage_id, stage_mode}] -> SetStageClear(id, mode != 1)
+      stage_attainment_infos         [{area_id, normal_user_clear_count,
+                                       hard_user_clear_count}] -> Net_SetStageAreaInfo
+      stage_attainment_reward_infos  [{area_id, stage_mode}] -> Net_SetStageAreaReward
+                                     (area rewards claimed; not tracked yet)
+    """
+    user_no = _current_user(params)["user_no"]
+    conn = _db()
+    clears = conn.execute("SELECT stage_id, stage_mode FROM stage_clear WHERE user_no=?"
+                          " ORDER BY stage_id", (user_no,)).fetchall()
+    conn.close()
+    print("[gamegw] stage info: %d cleared stages" % len(clears))
+    return {
+        "clear_stage_infos": [{"stage_id": s, "stage_mode": m} for s, m in clears],
+        "stage_attainment_infos": list(_attainment(user_no).values()),
+        "stage_attainment_reward_infos": [],
     }
 
 
@@ -731,9 +1021,12 @@ PROTOCOL_HANDLERS = {
     P_HUB_DID: hub_did,
     P_LOAD_USER: load_user,
     P_INVENTORY: inventory,
+    P_STAGE_INFO: stage_info,
     P_STAGE_START: stage_start,
     P_STAGE_RESULT: stage_result,
     P_EQUIP_ITEM: equip_item,
+    P_HERO_BUY: hero_buy,
+    P_HERO_CHANGE: hero_change,
 }
 
 

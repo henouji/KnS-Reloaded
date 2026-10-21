@@ -404,3 +404,74 @@ encrypted dt_st_* master tables. The stage-end/result protocol has not been seen
 - **User resolution:** stage start (71) has no `user_no`; the server remembers the last user
   seen (`_LAST_USER`) and falls back to the newest registered user.
 - Set `KNS_DB` to run tests against a scratch database.
+
+### Heroes, potions and the wallet (2026-10-22, session 9)
+
+- **Hero master data** (`master_hero`, seeded from `server/seed/master_heroes.csv`): 5 rows of
+  0xb8 bytes dumped by `tools/dump_master_tables.py` (table owner from the GOT slot at
+  libgame+0x1fd2c4, count at +0x1ec8, rows at +0x1ed4; `GetCharacterDataByID`@0xf49fc).
+  Known columns: `hero_pcid`, `resource` (ch_knight / ch_demonhunter), `attack`, `crit_rate`,
+  `max_hp`, default gear `weapon_id`/`slot300_id`/`armor_id`/`slot600_id` (row+0x54..0x60, used
+  by AddDataCharacterInfo), `price_gems` (row+0x68; SC_POPUP_STORECHAR compares it with the gems
+  at gameInfo+0xaf0). `raw_hex` keeps the whole row. Heroes 1-2 use the 200/300/400 item series,
+  3-5 use 201/301/401.
+- **201 hero buy** `{user_no, hero_pcid}` (case @0x15a8c0): reply `user_info`,
+  `update_item_etc_info`, `hero_info` (ONE object, ParsingDataToCharacterInfo),
+  `update_achievement_info`. Post-handler: Net_AddDataCharacterInfo(hero_info) (adds the hero and
+  inserts its `hero_item_infos` into the inventory), then Net_HeroBuy(hero_info.hero_pcid); closing
+  the popup runs ChangeMainCharacter on that pcid. A bare reply switched to pcid 0, which has no
+  master row: ChangeMainCharacter+86 memcpy from NULL (the session-8 crash).
+- **202 hero change** `{user_no, hero_no}` (case @0x15e65e): reply `hero_no`, `hero_pcid`;
+  Net_HeroChange(hero_pcid) then the same popup-close switch.
+- **Active hero at login**: `user_info.user_hero_pcid` is copied by UpdateUserInfo to
+  gameInfo+0xb90, the main hero. Protocol 60 must list every owned hero in `hero_info[]`
+  (ChangeMainCharacter looks the pcid up there).
+- Server: `user_hero(user_no, hero_no, hero_pcid)` (hero_no = pcid; the default hero 1 is added on
+  first read), `gameuser.gold/cash/hero_pcid` (wallet persisted; 72 credits `reward_gold`, 201
+  deducts `price_gems`). A bought hero gets its master default gear as owned `item` rows plus
+  `hero_equip` rows.
+- **Potions** are in-stage pickups, never server data: `CommoditiesItemProb` (now 20) is the
+  per-kill drop chance; the ids are 1900001 / 1900002 in `master_etc_item`
+  (`server/seed/master_etc_items.csv`, the 0x30-byte 19xxxxx table: 1900007 gold pile,
+  1900008 gold, 1900009 gems, 1900010-1920001 misc). ParsingDataToUserGoods only stores
+  1900008/09/11/12/13/14(stamina)/16/17, 1901001-08 and 1902001-08 as owned stock.
+- Unhandled protocols seen on the Characters/lobby screens: 70, 121, 122 (bare errno=0, no
+  visible problem).
+
+### Player name, experience, protocol 48, monster stats (2026-10-22, session 9)
+
+- **Result-screen "-1"**: UpdateUserInfo strcpy's a non-empty `user_info.user_hub_id` to
+  gameInfo+0xa08, the player-name string the result screen, profile, options, friend info and
+  chat show. Guest logins store hub_uid "-1"; the server now sends the nickname there.
+- **Experience**: UpdateUserInfo (skipped entirely while `user_level` <= 0) keeps the previous
+  level/exp at gameInfo+0xae4/+0xae8 and writes the new ones to +0xacc/+0xae0, so the result
+  screen animates whatever 72's `user_info` carries. DrawResult takes the bar size from
+  GetUserDataByLv(level)+4. Player level table `master_level` (150 rows of 0x28 bytes: level,
+  exp_to_next, exp_total, max_stamina, ...; `server/seed/master_levels.csv`). Stage table
+  `master_stage` (197 rows of 0x2e0 bytes, `server/seed/master_stages.csv`). The exp per clear is
+  taken from stage column `c87` (20/24/28/... for 3000001/2/3) -- **unconfirmed**, see
+  `STAGE_EXP_COLUMN`. `gameuser.level/exp` persist it; `user_max_exp` = exp_to_next.
+- **Protocol 48** now returns an empty `additionfile_filelist` (the APK bundles the assets);
+  `KNS_SERVE_ADDITION=1` restores the full list for an unbundled APK.
+- **Monster stats cannot be dumped**: GetMonsterDataByStage(slot) only indexes the 13 slots
+  protocol 71 fills; the client has no dungeon-monster master table. (dt_monster_lvup /
+  GetMonsterLevelupDataByID is the fellow level-up table.) `MONSTER_STATS` stays hand-tuned.
+
+### Stage progress: protocol 70 (2026-10-22, session 9)
+
+- **70** `{user_no}` is sent when the world map opens (case @0x15abca). Its post-handler
+  (NetworkEvent, `cmp r2,#0x46`) frees the client's area list, memsets the stage-clear bits
+  (owner+0x110, 0x1388 bytes) and rebuilds both from the reply -- so the bare errno=0 we sent
+  wiped every cleared stage on each launch. Reply:
+  `clear_stage_infos` `[{stage_id, stage_mode}]` -> SetStageClear(stage_id, stage_mode != 1)
+  (bit index stage_id-3000000 normal, stage_id-2997500 hard);
+  `stage_attainment_infos` `[{area_id, normal_user_clear_count, hard_user_clear_count}]` ->
+  Net_SetStageAreaInfo; `stage_attainment_reward_infos` `[{area_id, stage_mode}]` ->
+  Net_SetStageAreaReward (claimed area rewards; sent empty, not tracked).
+- **72** also returns `stage_attainment_info` (one area record) for the cleared stage's area.
+  The client's own SetStageAreaInfo has no callers: area counts only come from the server.
+- Areas: stage package 4 (`GetStageAreaIDByStageID`@0xf4dfc), dumped to `master_stage_area`
+  (`server/seed/master_stage_areas.csv`, one row per stage: stage_id, area_id, world_id,
+  area_level; 197 stages). Packages live at owner+0x2228 with big-endian offsets/counts.
+- Server: `stage_clear(user_no, stage_id, stage_mode, clear_count)`, written by 72 on
+  stage_result 1. Counts are distinct stages cleared per area and mode.
