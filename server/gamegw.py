@@ -77,9 +77,9 @@ P_STAGE_RESULT = 72
 # them up on restart.
 START_GOLD = 99_999
 START_CASH = 9_999
-START_LEVEL = 1
+START_LEVEL = 3
 START_MAX_EXP = 100
-START_STAMINA = 50
+START_STAMINA = 100
 START_INVENTORY = 50
 HERO_PCID = 1          # which hero row in the dt_* master data
 # A brand-new account may be expected to have NO hero yet, so the client runs its
@@ -269,9 +269,13 @@ GOLD_ITEM_ID = 1900008
 CASH_ITEM_ID = 1900009
 
 
+# Running balance for this server process; stage rewards are credited here.
+_BALANCE = {"gold": START_GOLD, "cash": START_CASH}
+
+
 def _goods() -> list:
-    return [{"item_id": GOLD_ITEM_ID, "count": START_GOLD},
-            {"item_id": CASH_ITEM_ID, "count": START_CASH}]
+    return [{"item_id": GOLD_ITEM_ID, "count": _BALANCE["gold"]},
+            {"item_id": CASH_ITEM_ID, "count": _BALANCE["cash"]}]
 
 
 def _user_info(u: dict) -> dict:
@@ -283,8 +287,8 @@ def _user_info(u: dict) -> dict:
         "user_level": START_LEVEL,
         "user_exp": 0,
         "user_max_exp": START_MAX_EXP,
-        "user_gold": START_GOLD,
-        "user_cash": START_CASH,
+        "user_gold": _BALANCE["gold"],
+        "user_cash": _BALANCE["cash"],
         "user_friendship_point": 0,
         "user_fellow_ticket": 0,
         "user_item_ticket": 0,
@@ -428,9 +432,13 @@ MONSTER_KEYS = [
     "ExplosionTime(sec)",
 ]
 MONSTER_SLOTS = 13
+# Per-pile gold cap for stage drops; the client rolls the actual piles and reports the
+# total back as reward_gold in protocol 72.
+DROP_GOLD_MAX = 100
+DROP_COUNT = 10
 # Few timed respawns (BornTime/BornProb) so the stage stays sparse. Tunable on device; units of Sight/MoveSpeed/Cooldown are inferred from column names.
 MONSTER_STATS = {
-    "Attack1 Value": 5, "Defence": 0, "MaxHP": 20,
+    "Attack1 Value": 5, "Defence": 0, "MaxHP": 10,
     "Cooldown(millisec)": 1500, "Sight": 600, "AtkProb": 50,
     "BornTime(sec)": 20, "BornProb": 10, "MoveSpeed(pixel/ms)": 100,
 }
@@ -462,8 +470,8 @@ def stage_start(params: dict) -> dict:
     stage_info = {
         "stage_no": stage_id,
         "rand_key": 1,
-        "drop_count": 0,
-        "drop_gold_max": 0,
+        "drop_count": DROP_COUNT,
+        "drop_gold_max": DROP_GOLD_MAX,
         "gold_gain_bonus": 0,
     }
     stage_info["monster_info_%d" % stage_id] = rows
@@ -490,6 +498,12 @@ def stage_result(params: dict) -> dict:
     No drops yet. The result screen (DrawResult) crashes unless every equipped slot the
     hero has resolves to an inventory node, see SHIELD_ITEM_* above.
     """
+    try:
+        _BALANCE["gold"] += max(0, int(params.get("reward_gold") or 0))
+    except (TypeError, ValueError):
+        pass
+    print("[gamegw] stage result: reward_gold=%s gold now %d"
+          % (params.get("reward_gold"), _BALANCE["gold"]))
     return {
         "stage_result": params.get("stage_result", 1),
         "user_info": _user_info(_LAST_USER or _user(params)),

@@ -354,3 +354,28 @@ Verified on device: damage numbers, combo counter, hero HP dropping, enemies fla
 on hit, boss and flying enemies. Stat values in `MONSTER_STATS` are guesses (units of
 `Sight`, `MoveSpeed(pixel/ms)`, `Cooldown(millisec)` unconfirmed); real rows live in the
 encrypted dt_st_* master tables. The stage-end/result protocol has not been seen yet.
+
+### Protocol 71/72 follow-up (2026-10-22): rewards, currency, result screen
+
+- **Currency is not in `user_info`.** ParsingDataToUserGoods@0x14c878 resets the parse
+  struct's gold/cash slots to -1 and refills them from `item_etc_info` rows keyed by master
+  item id: **1900008 = gold, 1900009 = gems**. UpdateUserGoods then copies them into the game
+  state. Protocol 60 sends them in `item_etc_info`; 71 and 72 send them as
+  `update_item_etc_info`.
+- **Every stage reply must repeat `user_info` + `update_item_etc_info`.** The post-reply
+  handlers run UpdateUserInfo/UpdateUserGoods unconditionally; a reply without them copies
+  zeros over the real balances (HUD showed 0 gold / 0 gems after a stage).
+- **Result-screen crash (DrawResult+326):** DrawResult resolves the hero's equipped item at
+  gameInfo+0xC18 with no null check. That slot is the 300000-399999 item-id range
+  (ParsingDataToCharacterInfo stores 200k/300k/400k/... at hero+0x18/0x20/0x28/...), so the hero
+  needs a 300k item (we send id 300001, uid 1003) in protocols 60/61.
+- **Gold rewards:** the client rolls gold piles itself and reports the total as `reward_gold`
+  in the 72 request. It rolls none while `stage_info.drop_count` is 0 -- 71 now sends
+  `drop_count` 10 and `drop_gold_max` 100. The server credits `reward_gold` to an in-memory
+  balance and returns it in 72's `update_item_etc_info`. Verified: 553G reward, added to the
+  town gold.
+- Debug trick: the build is debuggable, so game memory can be read with
+  `adb exec-out run-as <pkg> dd if=/proc/<pid>/mem` (libgame base from /proc/<pid>/maps;
+  gameInfo = base + 0x61f730).
+- Not done: 72 experience gain (result screen header "-1" is the player-name string, not exp),
+  item drops, persistence of the balance across server restarts.
