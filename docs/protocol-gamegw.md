@@ -325,3 +325,32 @@ Tried and did **not** fix it:
 
 Note the game sits on the title screen indefinitely without crashing, so the trigger
 is specifically post-login/lobby entry.
+
+
+## Protocol 71 — dungeon stage start (IMPLEMENTED, live-verified 2026-10-22)
+
+Case @0x15e324. Request `{friend_type, stage_id, stage_mode, friend_user_no}`.
+
+Answering with a bare errno=0 leaves the client's 13 monster stat slots all-zero:
+the stage's monsters still spawn (their sprites/positions are client-side stage data)
+but are dead-on-spawn (MaxHP 0), never move and never attack, so the dungeon looks
+inert with a gold pile under every enemy.
+
+Response (all off the root): `stage_info` {stage_no, rand_key, drop_count,
+drop_gold_max, gold_gain_bonus, `monster_info_<N>`, `monster_info_<N+1>`},
+`verify_info` {verify_type, attack, defence, hp}, `drop_item_list` {"1":[], "4":[]},
+`drop_event_item_list`. Also read, left empty: `user_info`, `update_item_etc_info`,
+`friend_detail_info`, `daily_quest_info`.
+
+**N is the stage id**: the lobby handler @0x73e10 does `*mapMng = stageData[0]`, and
+the case formats `monster_info_%d` from it. Sending small N (0..11) did nothing;
+`monster_info_3000001` / `monster_info_3000002` made combat work.
+
+Each array holds up to 13 rows parsed by ParsingDataToMonsterData@0x14b2ec (47 int keys,
+master-table column names; see `MONSTER_KEYS` in `server/gamegw.py`). NetworkEvent
+copies each row with key>0 into slot `key % 100`, so use `key = 1000 + slot`.
+
+Verified on device: damage numbers, combo counter, hero HP dropping, enemies flashing
+on hit, boss and flying enemies. Stat values in `MONSTER_STATS` are guesses (units of
+`Sight`, `MoveSpeed(pixel/ms)`, `Cooldown(millisec)` unconfirmed); real rows live in the
+encrypted dt_st_* master tables. The stage-end/result protocol has not been seen yet.

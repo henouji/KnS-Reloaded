@@ -67,6 +67,7 @@ P_HUB_DID = 53
 P_LOAD_USER = 60
 P_INVENTORY = 61
 P_EVENT_INFO = 59
+P_STAGE_START = 71
 
 # --- new-user template -------------------------------------------------------
 # Fields the client has no master-data cross-check for are plain defaults. The ones
@@ -373,6 +374,78 @@ def inventory(params: dict) -> dict:
     }
 
 
+# --------------------------------------------------------------------------- 71
+# Monster row keys, in the order ParsingDataToMonsterData@0x14b2ec reads them
+# (master-table column names). Every row carries all 47; the client copies each
+# row with key>0 into slot key%100.
+MONSTER_KEYS = [
+    "key", "Stage",
+    "Attack1 Attribute", "Attack1 Value", "Attack1 Attribute Value",
+    "Attack1 Mez", "Attack1 Mez Value", "Attack1 Mez Time",
+    "Attack2 Attribute", "Attack2 Value", "Attack2 Attribute Value",
+    "Attack2 Mez", "Attack2 Mez Value", "Attack2 Mez Time",
+    "Attack3 Attribute", "Attack3 Value", "Attack3 Attribute Value",
+    "Attack3 Mez", "Attack3 Mez Value", "Attack3 Mez Time",
+    "Defence",
+    "Fire Registance", "Lightning Registance", "Poison Registance",
+    "Physics Immune", "Fire Immune", "Lightning Immune", "Poison Immune",
+    "Bloodsucking Immune", "Frozen Immune",
+    "Stun Immune", "Atk Debuff Immune", "Def Debuff Immune",
+    "MaxHP", "Cooldown(millisec)", "Sight", "AttackNuckback", "IdlePoint(Pixel)",
+    "ReflexProb", "AtkProb", "BulletSpd(Sec)", "BulletAttackNum",
+    "CommoditiesItemProb", "BornTime(sec)", "BornProb", "MoveSpeed(pixel/ms)",
+    "ExplosionTime(sec)",
+]
+MONSTER_SLOTS = 13
+# Tunable on device; units of Sight/MoveSpeed/Cooldown are inferred from column names.
+MONSTER_STATS = {
+    "Attack1 Value": 5, "Defence": 0, "MaxHP": 60,
+    "Cooldown(millisec)": 1500, "Sight": 600, "AtkProb": 50,
+    "BornTime(sec)": 5, "BornProb": 40, "MoveSpeed(pixel/ms)": 100,
+}
+# The case reads monster_info_<N> and monster_info_<N+1> where N = mapMng[0], which the
+# lobby handler @0x73e10 sets to the selected stage's id (== request stage_id).
+
+
+def _monster_rows(stage_id: int) -> list:
+    rows = []
+    for slot in range(MONSTER_SLOTS):
+        row = {k: 0 for k in MONSTER_KEYS}
+        row.update(MONSTER_STATS)
+        row["key"] = 1000 + slot
+        row["Stage"] = stage_id
+        rows.append(row)
+    return rows
+
+
+def stage_start(params: dict) -> dict:
+    """Protocol 71 -- dungeon stage start. Case @0x15e324.
+
+    Request: {friend_type, stage_id, stage_mode, friend_user_no}.
+    Without stage_info.monster_info_* the client's 13 monster stat slots stay
+    all-zero: monsters spawn (from client-side stage data) but are dead-on-spawn
+    (MaxHP 0), never attack and never move.
+    """
+    stage_id = int(params.get("stage_id", 0) or 0)
+    rows = _monster_rows(stage_id)
+    stage_info = {
+        "stage_no": stage_id,
+        "rand_key": 1,
+        "drop_count": 0,
+        "drop_gold_max": 0,
+        "gold_gain_bonus": 0,
+    }
+    stage_info["monster_info_%d" % stage_id] = rows
+    stage_info["monster_info_%d" % (stage_id + 1)] = rows
+    return {
+        "stage_info": stage_info,
+        "verify_info": {"verify_type": 0, "attack": HERO_ATTACK,
+                        "defence": HERO_DEFENCE, "hp": HERO_HP},
+        "drop_item_list": {"1": [], "4": []},
+        "drop_event_item_list": [],
+    }
+
+
 PROTOCOL_HANDLERS = {
     P_VERSION: version_check,
     P_EVENT_INFO: event_info,
@@ -381,6 +454,7 @@ PROTOCOL_HANDLERS = {
     P_HUB_DID: hub_did,
     P_LOAD_USER: load_user,
     P_INVENTORY: inventory,
+    P_STAGE_START: stage_start,
 }
 
 
