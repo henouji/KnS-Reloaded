@@ -20,6 +20,13 @@ DEFAULT_TARGETS = [
     "_ZN10Protection19isRunningMemoryHackEv",  # confirmed crash (system())
     "_ZN10Protection8isRootedEv",              # root check (also shells out)
     "_ZN10Protection6verifyEv",                # signature/integrity verify
+    # Signing-cert check, called from NetworkEvent during the post-login protocol
+    # burst: strcmp(Java GetSHA1(), "EA:DD:CD:E7:...") and exit(0) on mismatch. We
+    # re-sign with a debug key, so this always mismatched -> a clean exit(0) that
+    # looked like the "lobby crash". Stub returns 0 (the success value) without ever
+    # calling GetSHA1 or exit. This is the game's own exit, not a system-lib throw;
+    # the intermittent libc++abi mutex line was teardown noise during exit().
+    "jCheckSHA1",
 ]
 
 # operator delete / nothrow delete. Each is `push{r4,lr}; cmp r0,#0; beq end; free(r0); end`.
