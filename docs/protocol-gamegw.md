@@ -379,3 +379,28 @@ encrypted dt_st_* master tables. The stage-end/result protocol has not been seen
   gameInfo = base + 0x61f730).
 - Not done: 72 experience gain (result screen header "-1" is the player-name string, not exp),
   item drops, persistence of the balance across server restarts.
+
+### Items, drops and equipping (2026-10-22)
+
+- **Item ids live in SQLite.** `master_item(item_id, category)` holds the 210 equipment ids the
+  client knows (ranges 200000 / 300000 / 400000 / 700000 / 800000 / 900000), seeded from
+  `server/seed/master_items.csv`. The CSV was dumped from a running game's memory with
+  `tools/dump_master_items.py` (the master tables on disk are encrypted; the client keeps
+  them decrypted as runs of 0xa8-byte rows whose first int is the item id).
+- **Drops (71 -> 72).** 71's `drop_item_list` has two arrays (`"1"`, `"4"`), up to 4
+  `{item_id, item_no}` each. The server assigns the unique `item_no` (rowid + 2000) and stores
+  the offered items unclaimed in `item`. The client copies them into battle state and reports
+  the dropped ones as plain ints in 72's `reward_items`; 72 marks them claimed and returns them
+  as `item_infos`. `DROP_ITEMS_TOTAL` caps the offer (3). What picks which monster drops them
+  is not fully traced: InitMonster flags random monsters per list count, CreateDropItem
+  consumes them (the `CommoditiesItemProb` roll is for potions).
+- **Item stats** are per-instance fields: `item_upgrade`, `item_attack`, `item_defence`,
+  `item_hp`, `item_lock`, `item_option_count`, `item_options[]`. Stored in `item`; placeholder
+  values per range in `DROP_STATS`.
+- **Equipping = protocol 80** `{user_no, hero_no, item_no, achievement_list}`. The reply must echo
+  `hero_no` and `item_no` (the post-reply handler reads them from the response to run
+  ChangeEquip). The worn item per range is persisted in `hero_equip`; protocol 60's
+  `hero_item_infos` and 61's `hero_no` are built from it (starter gear until swapped).
+- **User resolution:** stage start (71) has no `user_no`; the server remembers the last user
+  seen (`_LAST_USER`) and falls back to the newest registered user.
+- Set `KNS_DB` to run tests against a scratch database.

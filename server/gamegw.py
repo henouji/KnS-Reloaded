@@ -39,6 +39,7 @@ lists with `tools/analyze/walk_fields.py <lib> <addr>`):
 from __future__ import annotations
 
 import base64
+import random
 import json
 import sqlite3
 import time
@@ -50,7 +51,9 @@ KEY = b"1m!1HUB2@hero#Re"
 IV = bytes.fromhex("de295106d3872f949783942fdc9f01e2")  # const @0x1D2594
 BLOCK = 16
 
-DB = Path("work") / "kns.sqlite"
+# KNS_DB points tests at a scratch database so they never touch real saved progress.
+DB = Path(__import__("os").environ.get("KNS_DB", str(Path("work") / "kns.sqlite")))
+MASTER_ITEMS_CSV = Path(__file__).with_name("seed") / "master_items.csv"
 
 # Archived "additional data" (the 239MB the live CDN used to serve). Layout mirrors
 # the device's own external dir: <root>/<version>/<file>, e.g. files/1.4.0/bgm_menu.ogg.
@@ -69,6 +72,7 @@ P_INVENTORY = 61
 P_EVENT_INFO = 59
 P_STAGE_START = 71
 P_STAGE_RESULT = 72
+P_EQUIP_ITEM = 80
 
 # --- new-user template -------------------------------------------------------
 # Fields the client has no master-data cross-check for are plain defaults. The ones
@@ -139,6 +143,31 @@ def _db() -> sqlite3.Connection:
         rowid_alias INTEGER PRIMARY KEY AUTOINCREMENT,
         user_no INTEGER, hub_did TEXT UNIQUE, hub_uid TEXT,
         nickname TEXT, created REAL)""")
+    # Every item id the client's master data knows, dumped from a running game
+    # (tools/dump_master_items.py). Seeded from the CSV so the server serves ids from the
+    # database rather than from code.
+    conn.execute("""CREATE TABLE IF NOT EXISTS master_item(
+        item_id INTEGER PRIMARY KEY, category INTEGER)""")
+    # Items a user owns (claimed=1) or was offered by the current stage start (claimed=0).
+    # item_no = rowid + ITEM_NO_BASE keeps clear of the fixed starter gear (1001..1003).
+    conn.execute("""CREATE TABLE IF NOT EXISTS item(
+        rowid_alias INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_no INTEGER, item_id INTEGER, claimed INTEGER DEFAULT 0,
+        upgrade INTEGER DEFAULT 0, attack INTEGER DEFAULT 0,
+        defence INTEGER DEFAULT 0, hp INTEGER DEFAULT 0)""")
+    # Which item a user's hero wears in each equipment range (200000 = weapon, ...). A
+    # missing row means the starter item for that range.
+    conn.execute("""CREATE TABLE IF NOT EXISTS hero_equip(
+        user_no INTEGER, hero_no INTEGER, category INTEGER, item_no INTEGER,
+        PRIMARY KEY(user_no, hero_no, category))""")
+    have = {r[1] for r in conn.execute("PRAGMA table_info(item)")}
+    for col in ("upgrade", "attack", "defence", "hp"):
+        if col not in have:
+            conn.execute("ALTER TABLE item ADD COLUMN %s INTEGER DEFAULT 0" % col)
+    if conn.execute("SELECT COUNT(*) FROM master_item").fetchone()[0] == 0             and MASTER_ITEMS_CSV.exists():
+        with conn, MASTER_ITEMS_CSV.open(encoding="utf-8") as f:
+            rows = [tuple(map(int, line.split(","))) for line in f.read().split()[1:]]
+            conn.executemany("INSERT OR IGNORE INTO master_item VALUES(?,?)", rows)
     return conn
 
 
@@ -278,6 +307,22 @@ def _goods() -> list:
             {"item_id": CASH_ITEM_ID, "count": _BALANCE["cash"]}]
 
 
+def _current_user(params: dict) -> dict:
+    """The user a request belongs to. Stage start (71) carries no user_no, so after a
+    server restart (before the client logs in again) use the newest registered user."""
+    if _LAST_USER:
+        return _LAST_USER
+    if not params.get("user_no"):
+        conn = _db()
+        row = conn.execute("SELECT user_no, hub_uid, nickname FROM gameuser"
+                           " WHERE user_no>0 ORDER BY user_no DESC LIMIT 1").fetchone()
+        conn.close()
+        if row:
+            return {"user_no": row[0], "hub_uid": row[1],
+                    "nickname": row[2] or "Squire%d" % row[0]}
+    return _user(params)
+
+
 def _user_info(u: dict) -> dict:
     now = int(time.time())
     return {
@@ -353,11 +398,7 @@ def load_user(params: dict) -> dict:
             # (200000-299999) so the engine's ParsingDataToCharacterInfo fills the
             # weapon slot and sets the equipped-weapon uid in the hero object.
             # Protocol 61 item_infos must carry the same item_no.
-            "hero_item_infos": [] if EMPTY_HERO else [
-                {"item_no": WEAPON_ITEM_NO, "item_id": WEAPON_ITEM_ID, "hero_no": 1},
-                {"item_no": ARMOR_ITEM_NO,  "item_id": ARMOR_ITEM_ID,  "hero_no": 1},
-                {"item_no": SHIELD_ITEM_NO, "item_id": SHIELD_ITEM_ID, "hero_no": 1},
-            ],
+            "hero_item_infos": [] if EMPTY_HERO else _worn_json(u["user_no"]),
         }],
         "fellow_info": [],               # ParsingDataToFellowInfo elements
         "fellow_book_info": [],
@@ -385,6 +426,57 @@ def event_info(params: dict) -> dict:
     return {"event_info": []}
 
 
+def _worn_json(user_no: int) -> list:
+    """The hero's equipped items as protocol 60's hero_item_infos entries."""
+    worn = _equipped(user_no)
+    starter_ids = {no: iid for no, iid in STARTER_ITEMS.values()}
+    conn = _db()
+    out = []
+    for item_no in worn.values():
+        if item_no in starter_ids:
+            out.append({"item_no": item_no, "item_id": starter_ids[item_no],
+                        "hero_no": HERO_NO})
+            continue
+        row = conn.execute("SELECT item_id, upgrade, attack, defence, hp FROM item"
+                           " WHERE rowid_alias=? AND user_no=? AND claimed=1",
+                           (item_no - ITEM_NO_BASE, user_no)).fetchone()
+        if row:
+            out.append(_item_json(item_no, *row, hero_no=HERO_NO))
+    conn.close()
+    return out
+
+
+# --------------------------------------------------------------------------- 80
+def equip_item(params: dict) -> dict:
+    """Protocol 80 -- equip an item on a hero. Case @0x15e1de.
+
+    Request {user_no, hero_no, item_no, achievement_list}. The reply must echo hero_no and
+    item_no: the post-reply handler reads them back from the response to run ChangeEquip, so
+    an empty reply equips nothing. update_achievement_info is parsed too.
+    """
+    user_no = int(params.get("user_no") or _current_user(params)["user_no"])
+    hero_no = int(params.get("hero_no") or HERO_NO)
+    item_no = int(params.get("item_no") or 0)
+    item_id = None
+    for no, iid in STARTER_ITEMS.values():
+        if no == item_no:
+            item_id = iid
+    if item_id is None:
+        conn = _db()
+        row = conn.execute("SELECT item_id FROM item WHERE rowid_alias=? AND user_no=?"
+                           " AND claimed=1", (item_no - ITEM_NO_BASE, user_no)).fetchone()
+        conn.close()
+        item_id = row[0] if row else None
+    if item_id is not None:
+        conn = _db()
+        with conn:
+            conn.execute("INSERT OR REPLACE INTO hero_equip VALUES(?,?,?,?)",
+                         (user_no, hero_no, _category(item_id), item_no))
+        conn.close()
+    print("[gamegw] equip: hero %s item_no %s item_id %s" % (hero_no, item_no, item_id))
+    return {"hero_no": hero_no, "item_no": item_no, "update_achievement_info": []}
+
+
 # --------------------------------------------------------------------------- 61
 def inventory(params: dict) -> dict:
     """Protocol 61 — item inventory. Case @0x15bb7c.
@@ -398,11 +490,9 @@ def inventory(params: dict) -> dict:
     (node+0x78) when looking up the hero's equipped weapon uid.  The item_no here
     MUST match the item_no in protocol 60's hero_item_infos weapon entry.
     """
-    items = [] if EMPTY_HERO else [
-        {"item_no": WEAPON_ITEM_NO, "item_id": WEAPON_ITEM_ID, "hero_no": 1},
-        {"item_no": ARMOR_ITEM_NO,  "item_id": ARMOR_ITEM_ID,  "hero_no": 1},
-                {"item_no": SHIELD_ITEM_NO, "item_id": SHIELD_ITEM_ID, "hero_no": 1},
-    ]
+    user_no = _current_user(params)["user_no"]
+    items = [] if EMPTY_HERO else _starter_json(set(_equipped(user_no).values()))
+    items += _owned_items(user_no)
     return {
         "inventory_count": len(items),
         "item_infos": items,
@@ -457,6 +547,120 @@ def _monster_rows(stage_id: int) -> list:
     return rows
 
 
+ITEM_NO_BASE = 2000        # item_no = item.rowid_alias + ITEM_NO_BASE
+DROP_LISTS = ("1", "4")    # the two drop_item_list arrays the client parses
+DROP_PER_LIST = 4          # the client reads at most 4 per list
+DROP_ITEMS_TOTAL = 3       # items offered per stage, filled into the lists in order
+DROP_TIER_ROWS = 3         # offer only the first N ids (lowest tier) of each category
+DROP_CATEGORIES = (200000, 300000, 400000)   # weapon / 300k slot / armor ranges
+
+
+# Starter gear every hero begins with, by equipment range (item_no is fixed and below
+# ITEM_NO_BASE; item_id is a catalog id the client can draw).
+STARTER_ITEMS = {200000: (WEAPON_ITEM_NO, WEAPON_ITEM_ID),
+                 300000: (SHIELD_ITEM_NO, SHIELD_ITEM_ID),
+                 400000: (ARMOR_ITEM_NO, ARMOR_ITEM_ID)}
+HERO_NO = 1
+
+
+def _category(item_id: int) -> int:
+    return item_id // 100000 * 100000
+
+
+def _equipped(user_no: int) -> dict:
+    """{category: item_no} the user's hero currently wears."""
+    worn = {cat: no for cat, (no, _) in STARTER_ITEMS.items()}
+    conn = _db()
+    for cat, no in conn.execute("SELECT category, item_no FROM hero_equip"
+                                " WHERE user_no=? AND hero_no=?", (user_no, HERO_NO)):
+        worn[cat] = no
+    conn.close()
+    return worn
+
+
+def _starter_json(worn: set) -> list:
+    return [{"item_no": no, "item_id": iid, "hero_no": HERO_NO if no in worn else 0}
+            for no, iid in STARTER_ITEMS.values()]
+
+
+# Per-instance stats the client reads for an equipment item (item_attack / item_defence /
+# item_hp, shown on top of the master-data base). Real values are rolled by the live
+# server; these are placeholders by category: (attack, defence, hp).
+DROP_STATS = {200000: (12, 0, 0), 300000: (0, 6, 0), 400000: (0, 4, 30)}
+
+
+def _item_stats(item_id: int) -> tuple:
+    return DROP_STATS.get(item_id // 100000 * 100000, (0, 0, 0))
+
+
+def _item_json(item_no: int, item_id: int, upgrade=0, attack=0, defence=0, hp=0,
+               hero_no=0) -> dict:
+    return {"item_no": item_no, "item_id": item_id, "hero_no": hero_no, "item_upgrade": upgrade,
+            "item_attack": attack, "item_defence": defence, "item_hp": hp, "item_lock": 0,
+            "item_option_count": 0, "item_options": []}
+
+
+def _offer_drops(user_no: int) -> dict:
+    """Roll this stage's drop lists from master_item and record them unclaimed."""
+    conn = _db()
+    with conn:
+        conn.execute("DELETE FROM item WHERE user_no=? AND claimed=0", (user_no,))
+        pool = []
+        for cat in DROP_CATEGORIES:
+            pool += [r[0] for r in conn.execute(
+                "SELECT item_id FROM master_item WHERE category=? ORDER BY item_id LIMIT ?",
+                (cat, DROP_TIER_ROWS))]
+        lists = {}
+        left = DROP_ITEMS_TOTAL
+        for key in DROP_LISTS:
+            offered = []
+            take = min(DROP_PER_LIST, left, len(pool))
+            left -= take
+            for item_id in random.sample(pool, take):
+                atk, dfn, hp = _item_stats(item_id)
+                cur = conn.execute("INSERT INTO item(user_no,item_id,claimed,attack,defence,hp)"
+                                   " VALUES(?,?,0,?,?,?)", (user_no, item_id, atk, dfn, hp))
+                offered.append({"item_id": item_id,
+                                "item_no": cur.lastrowid + ITEM_NO_BASE})
+            lists[key] = offered
+    conn.close()
+    return lists
+
+
+def _claim_items(user_no: int, reward_items) -> list:
+    """Turn the offered items the client reports as dropped into owned ones."""
+    wanted = set()
+    for r in reward_items or []:
+        no = r.get("item_no") if isinstance(r, dict) else r
+        try:
+            wanted.add(int(no) - ITEM_NO_BASE)
+        except (TypeError, ValueError):
+            pass
+    conn = _db()
+    claimed = []
+    with conn:
+        for rowid in wanted:
+            cur = conn.execute("UPDATE item SET claimed=1 WHERE rowid_alias=? AND user_no=?",
+                               (rowid, user_no))
+            if cur.rowcount:
+                row = conn.execute("SELECT item_id, upgrade, attack, defence, hp FROM item"
+                                   " WHERE rowid_alias=?", (rowid,)).fetchone()
+                claimed.append(_item_json(rowid + ITEM_NO_BASE, *row))
+    conn.close()
+    return claimed
+
+
+def _owned_items(user_no: int) -> list:
+    worn = set(_equipped(user_no).values())
+    conn = _db()
+    rows = conn.execute("SELECT rowid_alias, item_id, upgrade, attack, defence, hp FROM item"
+                        " WHERE user_no=? AND claimed=1 ORDER BY rowid_alias",
+                        (user_no,)).fetchall()
+    conn.close()
+    return [_item_json(r[0] + ITEM_NO_BASE, *r[1:],
+                       hero_no=HERO_NO if r[0] + ITEM_NO_BASE in worn else 0) for r in rows]
+
+
 def stage_start(params: dict) -> dict:
     """Protocol 71 -- dungeon stage start. Case @0x15e324.
 
@@ -466,6 +670,7 @@ def stage_start(params: dict) -> dict:
     (MaxHP 0), never attack and never move.
     """
     stage_id = int(params.get("stage_id", 0) or 0)
+    user = _current_user(params)
     rows = _monster_rows(stage_id)
     stage_info = {
         "stage_no": stage_id,
@@ -477,12 +682,12 @@ def stage_start(params: dict) -> dict:
     stage_info["monster_info_%d" % stage_id] = rows
     stage_info["monster_info_%d" % (stage_id + 1)] = rows
     return {
-        "user_info": _user_info(_LAST_USER or _user(params)),
+        "user_info": _user_info(user),
         "update_item_etc_info": _goods(),
         "stage_info": stage_info,
         "verify_info": {"verify_type": 0, "attack": HERO_ATTACK,
                         "defence": HERO_DEFENCE, "hp": HERO_HP},
-        "drop_item_list": {"1": [], "4": []},
+        "drop_item_list": _offer_drops(user["user_no"]),
         "drop_event_item_list": [],
     }
 
@@ -504,10 +709,17 @@ def stage_result(params: dict) -> dict:
         pass
     print("[gamegw] stage result: reward_gold=%s gold now %d"
           % (params.get("reward_gold"), _BALANCE["gold"]))
+    print("[gamegw] stage result drops: reward_items=%s event_items=%s max_damage=%s"
+          % (json.dumps(params.get("reward_items")), json.dumps(params.get("event_items")),
+             params.get("max_damage")))
+    user = _current_user(params)
+    dropped = _claim_items(user["user_no"], params.get("reward_items"))
+    print("[gamegw] stage result: dropped items %s" % dropped)
     return {
         "stage_result": params.get("stage_result", 1),
-        "user_info": _user_info(_LAST_USER or _user(params)),
+        "user_info": _user_info(user),
         "update_item_etc_info": _goods(),
+        "item_infos": dropped,
     }
 
 
@@ -521,6 +733,7 @@ PROTOCOL_HANDLERS = {
     P_INVENTORY: inventory,
     P_STAGE_START: stage_start,
     P_STAGE_RESULT: stage_result,
+    P_EQUIP_ITEM: equip_item,
 }
 
 
@@ -532,6 +745,8 @@ def handle(headers, body: bytes) -> bytes:
         return encrypt({"protocol": 0, "errno": -1, "error": "decrypt failed"})
     proto = req.get("protocol")
     params = req.get("params", {})
+    if params.get("user_no"):
+        _LAST_USER.update(_user(params))
     print("[gamegw] protocol=%s params=%s" % (proto, json.dumps(params)[:200]))
     fn = PROTOCOL_HANDLERS.get(proto)
     if fn is None:
