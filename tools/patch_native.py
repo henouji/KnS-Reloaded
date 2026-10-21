@@ -33,6 +33,17 @@ _LSLS_R4_R0_28 = bytes([0x04, 0x07])  # lsls r4, r0, #28
 _BEQ = bytes([0x01, 0xd0])            # beq .+2 (over the free call)
 _BNE = bytes([0x01, 0xd1])            # bne .+2
 
+# PLT stubs to neuter outright. `Protection::nativeFinish(int)` spawns
+# `Protection::threadExitApplication`, which does sleep(n) -> kill(getpid(), SIGKILL):
+# a self-SIGKILL that leaves no crash log, no tombstone and no Java exception, so it
+# looks like a clean exit. `kill` has exactly one call site in the whole library, so
+# turning its PLT entry into `mov r0,#0 ; bx lr` disables every anti-tamper self-kill
+# regardless of which check fired. PLT stubs are ARM-mode, hence ARM encodings.
+PLT_RET0_TARGETS = ["kill"]
+_ARM_MOV_R0_0 = bytes.fromhex("0000a0e3")  # mov r0, #0
+_ARM_BX_LR = bytes.fromhex("1eff2fe1")     # bx lr
+_ARM_NOP = bytes.fromhex("0000a0e1")       # mov r0, r0
+
 
 def find_lib(arg: Path) -> Path:
     if arg.is_file():
@@ -60,6 +71,17 @@ def main() -> int:
                 for s in sec.iter_symbols():
                     if s.name:
                         syms[s.name] = s['st_value']
+        # imported-symbol -> PLT stub address. ARM .plt is a 20-byte header followed by
+        # 12-byte stubs, one per .rel.plt entry, in relocation order.
+        plt_addr = {}
+        plt_sec = elf.get_section_by_name('.plt')
+        rel_plt = elf.get_section_by_name('.rel.plt')
+        dynsym = elf.get_section_by_name('.dynsym')
+        if plt_sec is not None and rel_plt is not None and dynsym is not None:
+            for i, r in enumerate(rel_plt.iter_relocations()):
+                nm = dynsym.get_symbol(r['r_info_sym']).name
+                if nm:
+                    plt_addr[nm] = plt_sec['sh_addr'] + 20 + i * 12
 
     def vaddr_to_off(vaddr):
         for v, o, fsz in segs:
@@ -101,6 +123,20 @@ def main() -> int:
         else:
             print(f"[skip] {name} @0x{va:08x}: unexpected prologue "
                   f"{bytes(data[off+2:off+6]).hex()}")
+
+    # Anti-tamper self-kill: make kill() a no-op (see PLT_RET0_TARGETS).
+    for name in PLT_RET0_TARGETS:
+        va = plt_addr.get(name)
+        if va is None:
+            print(f"[skip] PLT {name} not found")
+            continue
+        off = vaddr_to_off(va)
+        if off is None:
+            continue
+        orig = bytes(data[off:off + 12])
+        data[off:off + 12] = _ARM_MOV_R0_0 + _ARM_BX_LR + _ARM_NOP
+        print(f"[patch] PLT {name}() @0x{va:08x} (off 0x{off:x}): {orig.hex()} -> no-op")
+        patched += 1
 
     if patched:
         lib.write_bytes(bytes(data))
