@@ -60,7 +60,7 @@ Protocol ids dispatch through a compiler-generated binary search inside
 | **60 `0x3c`** | **`0x15bc2c`** | **load user** |
 | 61 `0x3d` | `0x15bb7c` | inventory |
 | 62 `0x3e` | `0x15be26` | friend list |
-| 59 `0x3b` | `0x15b05e` | event info |
+| 59 `0x3b` | `0x15b036` | event info |
 
 To re-derive any of them:
 
@@ -277,16 +277,24 @@ client resumes partial downloads.
 -> TITLE SCREEN with "Guest Play" / "Log In"      <-- stable, sits here indefinitely
 -> (tap Guest Play)
 -> 51 -> 60 -> 61 -> 330 -> 601 -> 141 -> 501 -> 140 -> 141 -> 140
--> process exits
+-> process exits  (was the old blocker — jCheckSHA1 exit(0); now patched)
+```
+
+**Session 5 boot flow (stable, no crash):**
+
+```
+boot → title → auto-login (guest) → 51 → 60 → 61 → 330 → 501/601 → 140/141 → 59
+→ TEXTREL dialog (2× ENTER to dismiss) → lobby "Tap!" → tap
+→ 501 → 59 → 701 (repeats every ~10 s) → main town UI (full nav bar, no crash)
 ```
 
 ### Which of the new protocols actually parse a response
 
 Scanning `JanssonParser` (`0x15a298`, 31032 bytes) for the dispatch constants:
-**140 (`0x8c`) and 141 (`0x8d`) have cases; 330, 501, 601 and 1000 have none.** The
-latter fall through to `default`, so the bare `{"protocol": N, "errno": 0}` reply is
-correct for them and they are not worth implementing. Still unimplemented and worth
-deriving: **61** (inventory), **140**, **141**, **59**.
+**140 (`0x8c`) and 141 (`0x8d`) have cases; 330, 501, 601, 701 and 1000 have none.**
+The latter fall through to `default`, so the bare `{"protocol": N, "errno": 0}` reply
+is correct for them and they are not worth implementing. Still unimplemented and worth
+deriving: **140**, **141**.
 
 ## CURRENT BLOCKER — post-login crash in a system library
 
